@@ -7,8 +7,12 @@
   <head>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500,900" rel="stylesheet">
     <title>Chris Chung | UX/Product Designer</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 
   </head>
 
@@ -18,20 +22,24 @@
 
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="container">
+      <div class="container-nav">
         <!-- Logo -->
         <div class="navbar-logo">
           <a href="index.html">
-          <img src="" alt="Chris Chung Logo">
+          <img class="logo" src="images/chris-chung-logo.svg" alt="Chris Chung Logo">
           </a>
         </div>
         <!-- Main Menu -->
         <div class="row-navbar-menu">
           <ul>
-            <li><a href="index.html" class="large">Work</a></li>
-            <li><a href="about.html" class="large">About</a></li>
-            <li><a href="contact.html" class="large">Contact</a></li>
+            <li><a href="index.html" class="nav-link">Work</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
+        </div>
+        <!-- Mobile Open Hamburger -->
+        <div class="nav-open">
+          <img src="images/nav-open.svg">
         </div>
       </div>
     </nav>
@@ -40,64 +48,107 @@
 
     <!-- Hero -->
     <section class="hero">
-      <div class="container">
-          <div class="content">
+      <!-- <div class="container-hero"> -->
+          <div class="container-hero">
+
             <div class="hero-heading">
               <h2>Hi there! I'm Chris.</h2>
             </div>
+
             <div class="hero-copy">
               <p>I’m a Bay Area-based architectural designer turned UX/product designer. <span>Systems, patterns,</span> and creating <span>connections</span> (human and abstract) are my thing.
               </p>
             </div>
+
           </div>
-      </div>
+      <!-- </div> -->
     </section>
 
 
 
     <!-- Case Studies and Work -->
-    <div class="case-study">
-      <!-- Image -->
+
+    <div class="area-1">
       <div class="container-case-study-1">
-        <!-- Hover -->
-        <div class="row-hover">
-          <div class="content">
-            <h4 class="case-study-heading">Klutch</h4>
-            <p class="case-study-desc">Visually-oriented cloud product to gather and organize ideas in a simple, intuitive way.
-            </p>
-            <a class="button" href="case-study-klutch.html">See Case Study</a>
+
+        <!-- <img class="cs-image" src="images/home-klutch-bg.svg" alt="Klutch preview image"> -->
+
+          <div class="overlay">
+            <div class="cs-details fadeIn-bottom">
+              <h4 class="case-study-heading">Klutch</h4>
+              <p class="case-study-desc">Visually-oriented cloud product to gather and organize ideas in a simple, intuitive way.
+              </p>
+              <a class="button" href="case-study-klutch.html">See Case Study</a>
+            </div>
           </div>
-        </div>
+
+          <div class="overlay-mobile">
+            <div class="cs-details-mobile">
+              <h4 class="case-study-heading">Klutch</h4>
+              <p class="case-study-desc">Visually-oriented cloud product to gather and organize ideas in a simple, intuitive way.
+              </p>
+              <a class="button" href="case-study-klutch.html">See Case Study</a>
+            </div>
+          </div>
+
       </div>
     </div>
 
-    <div class="case-study">
-      <!-- Image -->
+
+
+    <div class="area-2">
       <div class="container-case-study-2">
-        <!-- Hover -->
-        <div class="row-hover">
-          <div class="content">
+
+        <!-- <img class="cs-image" src="images/home-saleshero-bg-2.png" alt="Saleshero preview image"> -->
+
+          <div class="overlay">
+            <div class="cs-details fadeIn-bottom">
+              <h4 class="case-study-heading">SalesHero_</h4>
+              <p class="case-study-desc">Augmented intelligence SaaS product geared to help sales associates simplify their sales tasks.
+              </p>
+              <a class="button" href="work-saleshero.html">See Work</a>
+            </div>
+          </div>
+
+        <div class="overlay-mobile">
+          <div class="cs-details-mobile">
             <h4 class="case-study-heading">SalesHero_</h4>
             <p class="case-study-desc">Augmented intelligence SaaS product geared to help sales associates simplify their sales tasks.
             </p>
             <a class="button" href="work-saleshero.html">See Work</a>
           </div>
         </div>
+
+
       </div>
     </div>
 
-    <div class="case-study">
+
+
+    <div class="area-3">
       <!-- Image -->
       <div class="container-case-study-3">
-        <!-- Hover -->
-        <div class="row-hover">
-          <div class="content">
-            <h4 class="case-study-heading">Third Project</h4>
-            <p class="case-study-desc">Need to work on third project to actually have text here. This will be a fun networking app.
-            </p>
-            <a class="button" href="case-study-app.html">See Case Study</a>
+
+        <!-- <img class="cs-image" src="images/home-placeholder-bg.png" alt="Placeholder preview image"> -->
+
+          <div class="overlay">
+            <div class="cs-details fadeIn-bottom">
+              <h4 class="case-study-heading">Third Project</h4>
+              <p class="case-study-desc">Need to work on third project to actually have text here. This will be a fun networking app.
+              </p>
+              <a class="button" href="case-study-app.html">See Case Study</a>
+            </div>
           </div>
-        </div>
+
+          <div class="overlay-mobile">
+            <div class="cs-details-mobile">
+              <h4 class="case-study-heading">Third Project</h4>
+              <p class="case-study-desc">Need to work on third project to actually have text here. This will be a fun networking app.
+              </p>
+              <a class="button" href="case-study-app.html">See Case Study</a>
+            </div>
+          </div>
+
       </div>
     </div>
 
@@ -105,23 +156,23 @@
 
     <!-- Footer -->
     <section class="footer">
-      <div class="container">
-        <div class="row">
+      <div class="container-footer">
+
           <div class="footer-copy">
-            <p>Like what you see? Contact me and let's chat.</p>
+            <p>Like what you see? Contact me, let's chat.</p>
           </div>
           <div class="footer-icons">
             <a href="https://github.com/MonkeyTrellis">
-              <img class="github-icon" src="">
+              <img class="f-icon-1" src="images/icon-github.svg">
             </a>
             <a href="https://www.linkedin.com/in/christophersejinchung">
-              <img class="linkedin-icon" src="">
+              <img class="f-icon-2" src="images/icon-linkedin.svg">
             </a>
             <a href="mailto:christophersejinchung@gmail.com">
-              <img class="email-icon" src="">
+              <img class="f-icon-3" src="images/icon-mail.svg">
             </a>
           </div>
-        </div>
+
       </div>
     </section>
 
