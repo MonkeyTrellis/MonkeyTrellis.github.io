@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="963" height="392" viewBox="0 0 963 392">
+  <g fill="none" fill-rule="evenodd">
+    <g fill="#1F2429" font-family="Roboto-Regular, Roboto" font-size="12" transform="translate(806 133)">
+      <text>
+        <tspan x="0" y="11">new</tspan>
+      </text>
+      <text>
+        <tspan x="0" y="123">existing</tspan>
+      </text>
+    </g>
+    <g transform="translate(0 178)">
+      <ellipse cx="26.5" cy="18.5" fill="#1F2429" fill-rule="nonzero" rx="26.5" ry="18.5"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="14.192" y="22">start</tspan>
+      </text>
+    </g>
+    <g transform="translate(910 178)">
+      <ellipse cx="26.5" cy="18.5" fill="#1F2429" fill-rule="nonzero" rx="26.5" ry="18.5"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="16.627" y="22">end</tspan>
+      </text>
+    </g>
+    <g transform="translate(109)">
+      <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="10.248" y="23">create</tspan> <tspan x="11.446" y="37">folder</tspan>
+      </text>
+      <g transform="translate(0 113)">
+        <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+        <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+          <tspan x="9.748" y="23">create</tspan> <tspan x="14.629" y="37">note</tspan>
+        </text>
+      </g>
+      <g transform="translate(0 226)">
+        <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+        <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+          <tspan x="9.301" y="23">upload</tspan> <tspan x="19.543" y="37">file</tspan>
+        </text>
+      </g>
+      <g transform="translate(0 339)">
+        <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+        <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+          <tspan x="12.471" y="23">insert</tspan> <tspan x="18.236" y="37">link</tspan>
+        </text>
+      </g>
+    </g>
+    <g transform="translate(535 113)">
+      <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="16.002" y="23">new</tspan> <tspan x="13.529" y="37">color</tspan>
+      </text>
+      <g transform="translate(0 113)">
+        <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+        <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+          <tspan x="8.367" y="23">default</tspan> <tspan x="13.529" y="37">color</tspan>
+        </text>
+      </g>
+    </g>
+    <g transform="translate(380 150)">
+      <rect width="65" height="65" x="14" y="14" fill="#1F2429" fill-rule="nonzero" transform="rotate(-45 46.5 46.5)"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="26.436" y="43">change</tspan> <tspan x="28.211" y="57">color ?</tspan>
+      </text>
+    </g>
+    <g transform="translate(224 150)">
+      <rect width="65" height="65" x="14" y="14" fill="#1F2429" fill-rule="nonzero" transform="rotate(-45 46.5 46.5)"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="28.516" y="43">name/</tspan> <tspan x="22.946" y="57">rename?</tspan>
+      </text>
+    </g>
+    <g transform="translate(650 150)">
+      <rect width="65" height="65" x="14" y="14" fill="#1F2429" fill-rule="nonzero" transform="rotate(-45 46.5 46.5)"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="26.343" y="44">place in</tspan> <tspan x="28.613" y="58">folder?</tspan>
+      </text>
+    </g>
+    <path fill="#ED9E9A" fill-rule="nonzero" d="M100.5 27.5L82.1923077 27.5 82.1923077 196 82.1923077 196.5 81.6923077 196.5 53 196.5 53 195.5 81.1923077 195.5 81.1923077 27 81.1923077 26.5 81.6923077 26.5 100.5 26.5 100.5 22.5 109.5 27 100.5 31.5 100.5 27.5zM215.5524 197.5L193.241758 197.5 193.241758 366 193.241758 366.5 192.741758 366.5 162 366.5 162 365.5 192.241758 365.5 192.241758 197 192.241758 196.5 192.741758 196.5 215.5524 196.5 215.5524 192.5 224.5524 197 215.5524 201.5 215.5524 197.5zM526.5 140.5L505.266484 140.5 505.266484 196 505.266484 196.5 504.766484 196.5 473 196.5 473 195.5 504.266484 195.5 504.266484 140 504.266484 139.5 504.766484 139.5 526.5 139.5 526.5 135.5 535.5 140 526.5 144.5 526.5 140.5zM641.057277 197.5L618.292081 197.5 618.292081 253 618.292081 253.5 617.792081 253.5 588 253.5 588 252.5 617.292081 252.5 617.292081 197 617.292081 196.5 617.792081 196.5 641.057277 196.5 641.057277 192.5 650.057277 197 641.057277 201.5 641.057277 197.5zM900.025534 196.5L881.292081 196.5 881.292081 252 881.292081 252.5 880.792081 252.5 851 252.5 851 251.5 880.292081 251.5 880.292081 196 880.292081 195.5 880.792081 195.5 900.025534 195.5 900.025534 191.5 909.025534 196 900.025534 200.5 900.025534 196.5z"/>
+    <polyline stroke="#ED9E9A" points="744 196 773.205 196 773.205 140 801 140"/>
+    <polyline stroke="#ED9E9A" points="744 252 773.205 252 773.205 196 801 196" transform="matrix(1 0 0 -1 0 448)"/>
+    <polygon fill="#ED9E9A" fill-rule="nonzero" points="100.5 140 82 140 82 139 100.5 139 100.5 135 109.5 139.5 100.5 144"/>
+    <path stroke="#ED9E9A" d="M162,139.5 L192,139.5"/>
+    <path fill="#ED9E9A" fill-rule="nonzero" d="M100.5,254 L82,254 L82,253 L100.5,253 L100.5,249 L109.5,253.5 L100.5,258 L100.5,254 Z"/>
+    <path stroke="#ED9E9A" d="M162,253.5 L192,253.5"/>
+    <path fill="#ED9E9A" fill-rule="nonzero" d="M215.5 197.5L192.436364 197.5 191.936364 197.5 191.936364 197 191.936364 27.5 162 27.5 162 26.5 192.436364 26.5 192.936364 26.5 192.936364 27 192.936364 196.5 215.5 196.5 215.5 192.5 224.5 197 215.5 201.5 215.5 197.5zM641.5 197.5L618.436364 197.5 617.936364 197.5 617.936364 197 617.936364 140.5 588 140.5 588 139.5 618.436364 139.5 618.936364 139.5 618.936364 140 618.936364 196.5 641.5 196.5 641.5 192.5 650.5 197 641.5 201.5 641.5 197.5zM371.5 196.5L316 196.5 316 195.5 371.5 195.5 371.5 191.5 380.5 196 371.5 200.5 371.5 196.5zM210.5 26.5L817 26.5 817.5 26.5 817.5 27 817.5 133 816.5 133 816.5 27.5 210.5 27.5 210.5 31.5 201.5 27 210.5 22.5 210.5 26.5zM427.5 251.5L427.5 306 427.5 306.5 427 306.5 193 306.5 193 305.5 426.5 305.5 426.5 251.5 422.5 251.5 427 242.5 431.5 251.5 427.5 251.5z"/>
+    <path fill="#ED9E9A" fill-rule="nonzero" d="M697.5,251.5 L697.5,336 L697.5,336.5 L697,336.5 L193,336.5 L193,335.5 L696.5,335.5 L696.5,251.5 L692.5,251.5 L697,242.5 L701.5,251.5 L697.5,251.5 Z"/>
+    <path fill="#ED9E9A" fill-rule="nonzero" d="M937.5 223.5L937.5 366 937.5 366.5 937 366.5 193 366.5 193 365.5 936.5 365.5 936.5 223.5 932.5 223.5 937 214.5 941.5 223.5 937.5 223.5zM100.099253 367.5L81.3653846 367.5 80.8653846 367.5 80.8653846 367 80.8653846 196.5 53 196.5 53 195.5 81.3653846 195.5 81.8653846 195.5 81.8653846 196 81.8653846 366.5 100.099253 366.5 100.099253 362.5 109.099253 367 100.099253 371.5 100.099253 367.5zM526.099253 254.5L504.426438 254.5 503.926438 254.5 503.926438 254 503.926438 196.5 473 196.5 473 195.5 504.426438 195.5 504.926438 195.5 504.926438 196 504.926438 253.5 526.099253 253.5 526.099253 249.5 535.099253 254 526.099253 258.5 526.099253 254.5z"/>
+  </g>
+</svg>

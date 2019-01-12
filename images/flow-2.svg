@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="791" height="382" viewBox="0 0 791 382">
+  <g fill="none" fill-rule="evenodd">
+    <ellipse cx="26.5" cy="200.5" fill="#1F2429" fill-rule="nonzero" rx="26.5" ry="18.5"/>
+    <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+      <tspan x="14.192" y="204">start</tspan>
+    </text>
+    <ellipse cx="764.5" cy="225.5" fill="#1F2429" fill-rule="nonzero" rx="26.5" ry="18.5"/>
+    <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+      <tspan x="754.627" y="229">end</tspan>
+    </text>
+    <g transform="translate(342 109)">
+      <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="20.157" y="23">3x</tspan> <tspan x="16.264" y="37">grid</tspan>
+      </text>
+    </g>
+    <g transform="translate(342 174)">
+      <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="21.157" y="23">4x</tspan> <tspan x="17.264" y="37">grid</tspan>
+      </text>
+    </g>
+    <g transform="translate(342 239)">
+      <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="8.217" y="23">collage</tspan> <tspan x="11.252" y="37">layout</tspan>
+      </text>
+    </g>
+    <g transform="translate(492 329)">
+      <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="17.494" y="30">sort</tspan>
+      </text>
+    </g>
+    <g transform="translate(472)">
+      <rect width="65" height="65" x="14" y="14" fill="#1F2429" fill-rule="nonzero" transform="rotate(-45 46.5 46.5)"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="31.65" y="43">clean</tspan> <tspan x="33.95" y="57">view</tspan>
+      </text>
+    </g>
+    <g transform="translate(620 199)">
+      <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="14.714" y="23">date</tspan> <tspan x="3.095" y="37">modified</tspan>
+      </text>
+    </g>
+    <g transform="translate(620 134)">
+      <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="15.214" y="23">date</tspan> <tspan x="10.406" y="37">added</tspan>
+      </text>
+    </g>
+    <g transform="translate(620 69)">
+      <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="18.839" y="30">A-Z</tspan>
+      </text>
+    </g>
+    <g transform="translate(620 264)">
+      <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="20.295" y="23">by</tspan> <tspan x="13.029" y="37">color</tspan>
+      </text>
+    </g>
+    <g transform="translate(620 329)">
+      <rect width="53" height="53" fill="#1F2429" fill-rule="nonzero"/>
+      <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="5.239" y="24">detailed</tspan> <tspan x="14.45" y="38">view</tspan>
+      </text>
+    </g>
+    <rect width="53" height="53" x="97" y="174" fill="#1F2429" fill-rule="nonzero"/>
+    <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+      <tspan x="112.45" y="197">view</tspan> <tspan x="104.47" y="211">options</tspan>
+    </text>
+    <rect width="65" height="65" x="207" y="168" fill="#1F2429" fill-rule="nonzero" transform="rotate(-45 239.5 200.5)"/>
+    <text fill="#FFF" font-family="Roboto-Regular, Roboto" font-size="12">
+      <tspan x="228.764" y="197">grid</tspan> <tspan x="218.97" y="211">options</tspan>
+    </text>
+    <path fill="#ED9E9A" fill-rule="nonzero" d="M728.5 225.5L704.418182 225.5 703.918182 225.5 703.918182 225 703.918182 96.5 673 96.5 673 95.5 704.418182 95.5 704.918182 95.5 704.918182 96 704.918182 224.5 728.5 224.5 728.5 220.5 737.5 225 728.5 229.5 728.5 225.5zM87.5 201L53 201 53 200 87.5 200 87.5 196 96.5 200.5 87.5 205 87.5 201zM184.5 201L150 201 150 200 184.5 200 184.5 196 193.5 200.5 184.5 205 184.5 201zM333.5 135.5L314.136364 135.5 314.136364 200 314.136364 200.5 313.636364 200.5 286 200.5 286 199.5 313.136364 199.5 313.136364 135 313.136364 134.5 313.636364 134.5 333.5 134.5 333.5 130.5 342.5 135 333.5 139.5 333.5 135.5z"/>
+    <path fill="#ED9E9A" fill-rule="nonzero" d="M728.5 225.5L705.136364 225.5 705.136364 358 705.136364 358.5 704.636364 358.5 673 358.5 673 357.5 704.136364 357.5 704.136364 225 704.136364 224.5 704.636364 224.5 728.5 224.5 728.5 220.5 737.5 225 728.5 229.5 728.5 225.5zM463.061286 46.5L445.772727 46.5 445.772727 201 445.772727 201.5 445.272727 201.5 420.235476 201.5 420.235476 200.5 444.772727 200.5 444.772727 46 444.772727 45.5 445.272727 45.5 463.061286 45.5 463.061286 41.5 472.061286 46 463.061286 50.5 463.061286 46.5zM333.5 201L314 201 314 200 333.5 200 333.5 196 342.5 200.5 333.5 205 333.5 201zM611.5 161L582.5 161 582.5 160 611.5 160 611.5 156 620.5 160.5 611.5 165 611.5 161zM611.5 226L582.5 226 582.5 225 611.5 225 611.5 221 620.5 225.5 611.5 230 611.5 226zM611.5 292L582.5 292 582.5 291 611.5 291 611.5 287 620.5 291.5 611.5 296 611.5 292zM611.5 358L582.5 358 582.5 357 611.5 357 611.5 353 620.5 357.5 611.5 362 611.5 358z"/>
+    <path stroke="#ED9E9A" d="M673 160.5L705 160.5M673 291.5L705 291.5M673 225.5L705 225.5"/>
+    <path fill="#ED9E9A" fill-rule="nonzero" d="M611.5 95.5L582.863636 95.5 582.863636 357 582.863636 357.5 582.363636 357.5 545.232155 357.5 545.232155 356.5 581.863636 356.5 581.863636 95 581.863636 94.5 582.363636 94.5 611.5 94.5 611.5 90.5 620.5 95 611.5 99.5 611.5 95.5zM763.5 198.5L763.5 46.5 565.845853 46.5 565.845853 45.5 764 45.5 764.5 45.5 764.5 46 764.5 198.5 768.5 198.5 764 207.5 759.5 198.5 763.5 198.5z"/>
+    <polyline stroke="#ED9E9A" points="395 134 420 134 420 267 395 267"/>
+    <path stroke="#ED9E9A" d="M395,201.5 L419.498227,201.5"/>
+    <path fill="#ED9E9A" fill-rule="nonzero" d="M333.099253 267.5L314.365385 267.5 313.865385 267.5 313.865385 267 313.865385 200.5 286 200.5 286 199.5 314.365385 199.5 314.865385 199.5 314.865385 200 314.865385 266.5 333.099253 266.5 333.099253 262.5 342.099253 267 333.099253 271.5 333.099253 267.5zM483.061286 358.5L446.020754 358.5 445.520754 358.5 445.520754 358 445.520754 201.5 420.124594 201.5 420.124594 200.5 446.020754 200.5 446.520754 200.5 446.520754 201 446.520754 357.5 483.061286 357.5 483.061286 353.5 492.061286 358 483.061286 362.5 483.061286 358.5z"/>
+  </g>
+</svg>

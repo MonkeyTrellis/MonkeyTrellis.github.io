@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="455" height="456" viewBox="0 0 455 456">
+  <defs>
+    <linearGradient id="klutch-colors-a" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFEF80"/>
+      <stop offset="100%" stop-color="#FFBD00"/>
+    </linearGradient>
+    <linearGradient id="klutch-colors-b" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#00C0FF"/>
+      <stop offset="100%" stop-color="#008CFF"/>
+    </linearGradient>
+    <linearGradient id="klutch-colors-c" x1="50%" x2="50%" y1="0%" y2="96.514%">
+      <stop offset="0%" stop-color="#00C0FF"/>
+      <stop offset="100%" stop-color="#FF005D"/>
+    </linearGradient>
+    <linearGradient id="klutch-colors-d" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF7DBF"/>
+      <stop offset="100%" stop-color="#FF004B"/>
+    </linearGradient>
+    <linearGradient id="klutch-colors-e" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF0082"/>
+      <stop offset="100%" stop-color="#FFBE00"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="93" height="93" x="241" y="363" fill="#818F96"/>
+    <rect width="93" height="93" x="121" y="363" fill="#464E57"/>
+    <rect width="93" height="93" y="363" fill="#1F2429"/>
+    <rect width="93" height="93" x="362" y="363" fill="#CCD3DA"/>
+    <rect width="93" height="93" x="362" y="241" fill="#FFEBB2"/>
+    <rect width="93" height="93" x="241" y="241" fill="#FFBD00"/>
+    <rect width="93" height="93" x="121" y="241" fill="url(#klutch-colors-a)"/>
+    <rect width="93" height="93" x="362" fill="#EBF6FF"/>
+    <rect width="93" height="93" x="241" fill="#008CFF"/>
+    <rect width="93" height="93" x="121" fill="url(#klutch-colors-b)"/>
+    <rect width="93" height="93" fill="url(#klutch-colors-c)"/>
+    <rect width="93" height="93" x="362" y="121" fill="#F9D7E1"/>
+    <rect width="93" height="93" x="241" y="121" fill="#FF004B"/>
+    <rect width="93" height="93" x="121" y="121" fill="url(#klutch-colors-d)"/>
+    <rect width="93" height="93" y="121" fill="url(#klutch-colors-e)"/>
+  </g>
+</svg>
