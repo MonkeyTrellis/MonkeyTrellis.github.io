@@ -26,7 +26,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
   display: grid;
   grid-area: navbar;
-  z-index: 1;
+  background-color: #ffffff;
+  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav-link:link, .nav-link:visited {
@@ -47,6 +52,17 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFE8E0;
 }
 
+/* Slide In Menu */
+
+.nav-link-3:link, .nav-link-3:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link-3:active {
+  color: #ED9E9A;
+}
+
 
 /******************** GLOBAL FOOTER ********************/
 
@@ -60,12 +76,13 @@ h1, h2, h3, h4, h5, h6 {
 .footer-copy {
   padding-top: 4.2rem;
   text-align: center;
+  line-height: 2.1rem;
 }
 
 .footer-icons {
   display: flex;
   justify-content: center;
-  padding: 8% 0% 20% 0%;
+  padding: 8% 0% 30% 0%;
 }
 
 .f-icon-1 {
@@ -170,7 +187,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Comp Analysis Content */
-
 
 .icon-bulleted-list li {
   position: relative;
@@ -358,7 +374,7 @@ ul .minus:before {
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-align: center;
-    z-index: 10;
+    z-index: 1;
     transition: opacity 0.3s ease;
 }
 
@@ -404,7 +420,7 @@ ul .minus:before {
     padding-top: 1%;
     margin: 0 auto;
     text-align: center;
-    z-index: 10;
+    z-index: 1;
 }
 
 .carousel-bullet {
@@ -552,7 +568,16 @@ ul .minus:before {
   }
 
 
-  /* Klutch */
+
+  /***** Klutch *****/
+
+  /* Roles, Deliverables, Tools */
+
+  .area-1 .three-col-box {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+
 
   /* Competitive Analysis */
 
@@ -730,7 +755,7 @@ ul .minus:before {
 
   h2 {
     font-size: 3.6rem;
-    line-height: 4.2rem;
+    line-height: 4.4rem;
     padding-bottom: 1.8rem;
     padding-top: 1.8rem;
     text-align: center;
@@ -738,6 +763,7 @@ ul .minus:before {
 
   h3 {
     font-size: 2.1rem;
+    line-height: 2.7rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -745,6 +771,7 @@ ul .minus:before {
 
 
   /* Headings Secondary (Case Studies Only)*/
+
   h3:before, h3:after {
     content: '';
     background-color: #ED9E9A;
@@ -793,35 +820,26 @@ ul .minus:before {
   }
 
   .hero-copy {
-    font-size: 2.1rem;
-    line-height: 3.2rem;
+    font-size: 1.9rem;
+    line-height: 3.3rem;
+    padding-bottom: 2.7rem;
+    padding-top: 1.8rem;
   }
 
-  .hero-heading, .hero-copy {
+  .hero-heading, .hero-copy, .hero-heading-mobile {
     grid-column: 2/4;
   }
 
-  .hero-copy {
-    font-size: 2.1rem;
-    line-height: 3.3rem;
-    padding-bottom: 3rem;
+  /* Homepage Hero */
+
+  .homepage .hero-heading {
+    display: none;
   }
+
+
 
   /******************** Navbar Global ********************/
 
-  .row-navbar-menu {
-    display: flex;
-    grid-column: 2/6;
-    grid-row: 3/4;
-    justify-content: center;
-  }
-
-  .row-navbar-menu ul li {
-    display: inline;
-    float: right;
-    font-size: 1.2rem;
-    margin: 0 .9rem 0 .9rem;
-  }
 
   .navbar-logo {
     grid-row: 2/4;
@@ -832,17 +850,149 @@ ul .minus:before {
     height: 30px;
   }
 
-  .nav-open {
+
+  /* Slide X-Toggle */
+
+  .trigger-container {
+    grid-column: 6/7;
+    grid-row: 2/4;
+  }
+
+  .trigger {
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    padding-top: 3px;
+  }
+
+  .line-1 {
+    border-top: 4px solid #000;
+    width: 30px;
+    padding-bottom: 6px;
+    transition: all 0.4s;
+  }
+
+  .line-2 {
+    border-top: 4px solid #000;
+    width: 30px;
+    transition: all 0.4s;
+  }
+
+  .line-2-1 {
+    border-top: 4px solid #000;
+    width: 30px;
+    transition: all 0.4s;
+    margin-top: -4px;
+  }
+
+  .line-3 {
+    border-top: 4px solid #000;
+    width: 30px;
+    margin: 0px auto;
+    transition: all 0.4s;
+    margin-top: 6px;
+  }
+
+
+  /*   X-Manipulations    */
+
+  .line-1-x {
+    opacity:0;
+    transition: all 0.4s;
+  }
+
+  .line-2-x {
+    -webkit-transform: rotate(45deg);
+    transition: all 0.4s;
+  }
+
+  .line-2-1-x {
+    -webkit-transform: rotate(-45deg);
+    transition: all 0.4s;
+  }
+
+  .line-3-x {
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+
+  /***** Navbar Homepage *****/
+
+  .homepage .row-navbar-menu {
+    display: flex;
+    grid-column: 2/7;
+    grid-row: 2/4;
+    justify-content: flex-end;
+  }
+
+  .homepage .row-navbar-menu ul li {
+    display: inline;
+    float: right;
+    font-size: 1.5rem;
+    margin-left: 2.1rem;
+    margin-top: .7rem;
+  }
+
+  .homepage .slide-menu {
+    display: none;
+  }
+
+
+  /***** Navbar Klutch *****/
+
+  .row-navbar-menu-klutch {
+    display: none;
+  }
+
+  .trigger-container {
     grid-column: 6/7;
     grid-row: 2/4;
     display: flex;
     justify-content: flex-end;
   }
 
-  /***** Navbar Klutch *****/
+  .klutch .row-navbar-menu {
+    display: flex;
+    grid-column: 2/6;
+    grid-row: 3/4;
+    justify-content: center;
+  }
 
-  .row-navbar-menu-klutch {
+  .klutch .row-navbar-menu ul li {
+    display: inline;
+    float: right;
+    font-size: 1.5rem;
+    margin-left: .9rem;
+    margin-right: .9rem;
+  }
+
+
+  /* Slide Menu */
+
+  .klutch .sidenav {
     display: none;
+    opacity: .9;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    margin-top: 7rem;
+    padding-top: 3rem;
+  }
+
+  .klutch .sidenav ul {
+    padding: 3rem 1rem 0 3rem;
+  }
+
+  .klutch .sidenav li {
+    color: #ffffff;
+    opacity: 1;
+    padding-bottom: 3rem;
+    letter-spacing: .1rem;
   }
 
 
@@ -929,20 +1079,37 @@ ul .minus:before {
   /* Hero */
 
   .hero-image-klutch {
-    background-image: url("/images/klutch-hero.svg");
-    height: 180px;
-    background-size: cover;
+    background-image: url("/images/klutch-hero-laptop.svg");
+    height: 160px;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    grid-column: 1/7;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    z-index: 1;
+  }
+
+  .hero-image-pattern {
+    background-image: url("/images/klutch-hero-pattern.svg");
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/5;
+    grid-row: 2/3;
   }
 
 
   /* Roles, Deliverables, Tools */
 
   .area-1 .column-1, .area-1 .column-2, .area-1 .column-3 {
-    grid-column: 1/4;
+    grid-column: 1/5;
     padding-bottom: 3rem;
+  }
+
+  .area-1 .bulleted-list {
+    grid-column: 2/4;
+    padding: 2.4rem 0 2.4rem 0;
   }
 
   .bulleted-list {
@@ -1003,14 +1170,15 @@ ul .minus:before {
     grid-column: 1/4;
   }
 
+
   /* Competitive Analysis Heading */
 
   .area-5 {
     grid-column: 1/4;
   }
 
-  /* Competitive Analysis Content */
 
+  /* Competitive Analysis Content */
 
   .area-6 .column-1, .area-6 .column-2, .area-6 .column-3 {
     grid-column: 1/4;
@@ -1746,7 +1914,8 @@ ul .minus:before {
 
   .area-38 .test-feed-head {
     padding-left: 2.4rem;
-}
+  }
+
 
   /* Reflections Heading */
 
@@ -1754,9 +1923,15 @@ ul .minus:before {
     grid-column: 1/4;
   }
 
+
   /* What Worked, Things Differently, and More Time Headings */
+
   .area-40, .area-42, .area-44 {
     grid-column: 1/4;
+  }
+
+  .area-42 .desktop {
+    display: none;
   }
 
 
@@ -1771,10 +1946,1259 @@ ul .minus:before {
 
 
 
-
 /******************** MIN WIDTH 720 PX ********************/
 
-@media (min-width: 72rem) {
+@media (min-width: 45rem) {
+  body {
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-areas:
+    "navbar  navbar  navbar"
+    "hero  hero  hero"
+    "area-1  area-1  area-1"
+    "area-2  area-2  area-2"
+    "area-3  area-3  area-3"
+    ".  area-4  ."
+    ".  area-5  ."
+    "area-6  area-6  area-6"
+    ".  area-7  ."
+    ".  area-8  ."
+    ".  area-9  ."
+    ".  area-10  ."
+    ".  area-11  ."
+    ".  area-12  ."
+    ".  area-13  ."
+    "area-14  area-14  area-14"
+    ".  area-15  ."
+    ".  area-16  ."
+    ".  area-17  ."
+    ".  area-18  ."
+    "area-19  area-19  area-19"
+    ".  area-20  ."
+    ".  area-21  ."
+    ".  area-22  ."
+    ".  area-23  ."
+    ".  area-24  ."
+    ".  area-25  ."
+    ".  area-26  ."
+    ".  area-27  ."
+    ".  area-28  ."
+    "area-29  area-29  area-29"
+    ".  area-30  ."
+    ".  area-31  ."
+    ".  area-32  ."
+    ".  area-33  ."
+    ".  area-34  ."
+    ".  area-35  ."
+    ".  area-36  ."
+    ".  area-37  ."
+    ".  area-38  ."
+    "area-39   area-39  area-39"
+    ".  area-40  ."
+    ".  area-41  ."
+    ".  area-42  ."
+    ".  area-43  ."
+    ".  area-44  ."
+    ".  area-45  ."
+    "footer  footer  footer";
+  }
+
+  /***************** Grid Templates Secondary *****************/
+
+  /* Navbar Global */
+
+  .navbar {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .container-nav {
+    display: grid;
+    grid-column: 2/8;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 15px 15px 20px;
+  }
+
+
+  /* Hero Global */
+
+  .hero {
+    display: grid;
+    grid-area: hero;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    padding-top: 4.2rem;
+    padding-bottom: 5.4rem;
+  }
+
+  .container-hero {
+    display: grid;
+    grid-column: 1/5;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+  }
+
+  .area-1, .area-2, .area-3 {
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+
+  /* Homepage Containers */
+
+  .container-case-study-1, .container-case-study-2, .container-case-study-3 {
+    grid-column: 1/9;
+  }
+
+
+
+  /***** Klutch *****/
+
+
+  /* Roles, Deliverables, Tools */
+
+  .area-1 .three-col-box {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+
+
+ /* Roles, Deliverables, Tools */
+
+  .area-6 {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+
+  .area-6 .three-col-box {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+
+
+  /* Survey 1 */
+
+  .area-9 {
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+
+  /* Survey 1 Takeaways */
+
+  .area-10 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+
+
+  /* Survey 2 Content */
+
+  .area-12 {
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 270px;
+  }
+
+  /* Survey 2 Takeaways */
+
+  .area-13 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+
+  /* Personas Content */
+
+  .area-16 {
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+
+  .area-16 .three-col-box {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+
+
+  /* User Stories Content */
+
+  .area-18 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+
+  /* User Flows Content */
+
+  .area-21 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+
+  /* Sitemap Content */
+
+  .area-23 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+
+  /* Image Carousel */
+
+  .area-25 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+
+  /* Sketched Wireframes Takeaways */
+
+  .area-26 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+
+  /* Digitized Wireframes */
+
+  .area-28 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+
+  /* Branding */
+
+  .area-31 {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-row: auto;
+    grid-column-gap: 3rem;
+  }
+
+
+  /* Prototypes and Mockups Content */
+
+  .area-33 {
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 3rem;
+  }
+
+  .container-klutch-ex{
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .container-klutch-tools {
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  /* Preference Tests Content */
+
+  .area-36 {
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-row-gap: 3rem;
+  }
+
+
+  /* Testing w/ Prototypes Content */
+
+  .area-38 {
+    grid-template-columns: 3fr 3fr;
+    grid-row-gap: 3rem;
+    grid-column-gap: 3rem;
+  }
+
+  /* Reflections */
+
+  .area-41, .area-43, .area-45 {
+    grid-template-columns: 3fr 3fr;
+    grid-column-gap: 3rem;
+  }
+
+  /* Footer */
+
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .container-footer {
+    grid-column: 4/6;
+  }
+
+
+  /****************** Navbar Content Global ******************/
+
+  .navbar-logo {
+    grid-row: 2/4;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+
+  /***** Navbar Homepage *****/
+
+  .homepage .row-navbar-menu {
+    display: flex;
+    grid-column: 2/7;
+    grid-row: 2/4;
+    justify-content: flex-end;
+  }
+
+  .homepage .row-navbar-menu ul li {
+    display: inline;
+    float: right;
+    font-size: 1.5rem;
+    margin-left: 2.1rem;
+    margin-top: .7rem;
+  }
+
+
+  /***** Navbar Klutch *****/
+
+  .klutch .row-navbar-menu-klutch {
+    display: none;
+  }
+
+  .nav-open {
+    grid-column: 6/7;
+    grid-row: 2/4;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  /* Slide Menu */
+
+  .klutch .sidenav {
+    width: 33%;
+  }
+
+
+  /* Navbar Klutch */
+
+  .klutch .row-navbar-menu {
+    display: flex;
+    grid-column: 2/6;
+    grid-row: 3/4;
+    justify-content: center;
+  }
+
+  .klutch .row-navbar-menu ul li {
+    display: inline;
+    float: right;
+    font-size: 1.5rem;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+  }
+
+
+  /******************* Text Styles Global ********************/
+
+
+  h1 {
+    font-size: 5.4rem;
+    padding-bottom: 2rem;
+    padding-top: 9rem;
+  }
+
+  h2 {
+    font-size: 4.4rem;
+    line-height: 5.4rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 3.6rem;
+    line-height: 4.5rem;
+  }
+
+
+  /* Headings Secondary (Case Studies Only) */
+
+  .heading-secondary {
+    grid-column: 1/7;
+    padding-bottom: 4.5rem;
+    padding-top: 6.3rem;
+  }
+
+  .heading-secondary-klutch {
+    grid-column: 1/7;
+  }
+
+  h3:before {
+    margin-right: 2rem;
+  }
+
+  h3:after {
+    margin-left: 2rem;
+  }
+  /* ------------------------------------ */
+
+
+  h4 {
+   font-size: 2.1rem;
+   line-height: 2.7rem;
+   padding-bottom: .6rem;
+  }
+
+  h5 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    padding-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  h6 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .hero-copy {
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    padding-bottom: 4.2rem;
+  }
+
+  /* Takeaways */
+
+  .takeaways {
+    grid-column: 2/6;
+  }
+
+
+  /* Homepage Hero */
+
+  .homepage .hero-heading-mobile {
+    display: none;
+  }
+
+  .homepage .hero-heading {
+    display: inherit;
+  }
+
+
+  /* Text Link Style */
+
+  .link-underline {
+    font-size: 1.8rem;
+  }
+
+
+  /******************** Homepage ********************/
+
+  /***** Case Studies *****/
+
+  .container-case-study-1 {
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .container-case-study-2 {
+    height: 270px;
+    background-position: center  -100px;
+    background-repeat: no-repeat;
+  }
+
+  .container-case-study-3 {
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .cs-details {
+    padding-left: 33%;
+    padding-right: 33%;
+  }
+
+  .case-study-desc {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .overlay, .cs-details {
+    display: none;
+  }
+
+  .cs-details-mobile {
+    padding-left: 33%;
+    padding-right: 33%;
+  }
+
+
+
+
+  /************************* Klutch *************************/
+
+  /* Navbar */
+
+  .row-navbar-menu-klutch {
+    display: inline-block;
+  }
+
+  .row-navbar-menu-klutch ul li {
+    float: right;
+    display: inline;
+    margin-right: 4.2rem;
+    padding-top: .9rem;
+  }
+
+
+  /* Hero */
+
+  .container-hero {
+    grid-column: 1/7;
+  }
+
+  .hero-image-klutch {
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Overview Heading */
+
+  .klutch .area-2 {
+    margin-bottom: 3rem;
+    margin-top: 3.6rem;
+  }
+
+
+  /* Roles, Deliverables, Tools */
+
+  .area-1 .column-1, .area-1 .column-2, .area-1 .column-3 {
+    grid-column: 1/5;
+    padding-bottom: 3rem;
+  }
+
+
+  .area-1 .bulleted-list {
+    grid-column: 2/4;
+    padding: 2.4rem 0 2.4rem 0;
+  }
+
+
+  /* Problem, Solution */
+
+
+  .area-3 .column-1 {
+    grid-column: 2/3;
+    padding-right: 1.5rem;
+  }
+
+  .area-3 .column-2 {
+    grid-column: 3/4;
+    padding-left: 1.5rem;
+  }
+
+
+  /* Overview Button */
+
+  .overview-button {
+    grid-column: 2/4;
+    padding-top: 2.1rem;
+  }
+
+  .two-col-copy, .copy-type-2, .pref-copy {
+    font-size: 1.8rem;
+    line-height: 3.3rem;
+  }
+
+  .pref-heading h5, .test-feed-head h5 {
+    text-align: left;
+  }
+
+
+  /* Overview Image*/
+
+  .overview-image {
+    grid-column: 2/4;
+    height: 210px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    width: 100%;
+  }
+
+
+  /* Discovery Heading */
+
+  .area-4 {
+    grid-column: 1/4;
+  }
+
+
+  /* Competitive Analysis Heading */
+
+  .area-5 {
+    grid-column: 1/4;
+  }
+
+
+  /* Competitive Analysis Content */
+
+  .area-6 .column-1, .area-6 .column-2, .area-6 .column-3 {
+    grid-column: 1/5;
+  }
+
+  .area-6 .icon-bulleted-list {
+    grid-column: 2/3;
+    padding: 2.4rem 0 2.4rem 0;
+  }
+
+  .c-icon {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 2.1rem;
+  }
+
+  .area-6 .takeaways {
+    grid-column: 2/3;
+  }
+
+
+  /* Takeaways */
+
+  .takeaways {
+    padding-top: 6.3rem;
+    padding-bottom: 6.3rem;
+  }
+
+  .take-line-top, .take-line-bottom {
+    background-color: #ED9E9A;
+    display: flex;
+    flex: 1;
+    height: 1px;
+  }
+
+  .take-heading {
+    display: flex;
+  }
+
+  .take-heading h4 {
+    padding-top: 2.7rem;
+    padding-left: 1.5rem;
+  }
+
+  .take-copy {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding-bottom: 3.3rem;
+  }
+
+
+  /* User Research Heading */
+
+  .area-7 {
+    grid-column: 1/4;
+  }
+
+
+  /* Survey 1 Heading */
+
+  .area-8 {
+    grid-column: 2/3;
+  }
+
+
+  /* Survey 1 Content */
+
+  .area-9 .container {
+    padding: 1.8rem;
+  }
+
+  .area-9 .box-1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  .area-9 .box-2 {
+    grid-column: 3/7;
+    grid-row: 1/2;
+  }
+
+  .area-9 .box-3 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+
+  .area-9 .box-4 {
+    grid-column: 5/7;
+    grid-row: 2/3;
+  }
+
+  .res-question {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    padding-bottom: 0;
+  }
+
+  .num-1 {
+    font-size: 3.3rem;
+    line-height: 5.1rem;
+    letter-spacing: .1rem;
+  }
+
+  .desc-1 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+
+  .data-1 {
+    padding: 2.1rem;
+  }
+
+  .data-2 {
+    padding: 2.1rem 2.1rem 1.8rem 2.1rem;
+  }
+
+  .num-2 {
+    font-size: 2.4rem;
+    line-height: 4.2rem;
+    letter-spacing: .1rem;
+  }
+
+  .desc-2 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+
+  .area-10 .takeaways {
+    grid-column: 1/7;
+  }
+
+  .desc-3 {
+    font-size: 2.1rem;
+    line-height: 3rem;
+    padding-top: 2.1rem;
+  }
+
+  .area-12 .desc-1 {
+    text-align: left;
+    padding-top: 2.1rem;
+  }
+
+
+  /* Survey 2 Content */
+
+  .area-12 .box-1 {
+    grid-column: 1/7;
+  }
+
+  .area-12 .box-2 {
+    grid-column: 1/7;
+  }
+
+
+  /* Survey 2 Box Padding and Display Styles */
+
+  .area-12 .container {
+    padding: 2.4rem;
+  }
+
+
+  /* Donut Chart Styles */
+
+  .area-12 .chart-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .donut-chart-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    padding-top: 1.8rem;
+  }
+
+  .donut-chart {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 18px;
+    stroke-dasharray: 282.6px;
+    stroke-dashoffset: 282.6px;
+    transition: stroke-dashoffset 1.5s ease-in;
+  }
+
+  .donut-chart-bg {
+    stroke-width: 18px;
+  }
+
+  .donut-chart-value {
+    top: 50%;
+  }
+
+
+  /* Survey 2 Quotes */
+
+  .area-12 .q-box-1 {
+    grid-column: 1/4;
+  }
+
+  .area-12 .q-box-2 {
+    grid-column: 4/7;
+  }
+
+  .quote-copy, .quote-auth {
+    color: #5D686D;
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    font-style: italic;
+    font-weight: lighter;
+  }
+
+  /* Survey 2 Takeaways */
+
+  .area-13 .takeaways {
+    grid-column: 1/7;
+  }
+
+
+
+  /* Personas Heading */
+  .area-15 {
+    grid-column: 1/4;
+  }
+
+
+  /* Personas */
+
+  .pers-list ul {
+    padding-top: 2.1rem;
+    padding-bottom: 2.1rem;
+  }
+
+  .pers-list p {
+    line-height: 2.1rem;
+  }
+
+
+  /* Personas Content */
+
+  .area-16 .column-1, .area-16 .column-2, .area-16 .column-3 {
+    grid-column: 1/4;
+    padding-bottom: 4.8rem;
+  }
+
+  .pers-image img {
+    width: 240px;
+    height: 240px;
+    padding-bottom: 1.8rem;
+  }
+
+  .area-16 .pers-col {
+    grid-column: 1/4;
+  }
+
+  .area-16 .three-col-box {
+    height: 300px;
+  }
+
+
+  /* User Stories Heading */
+  .area-17 {
+    grid-column: 1/4;
+  }
+
+
+  /* User Stories Content */
+
+  .area-18 .column {
+    grid-column: 1/7;
+  }
+
+
+  /* User Flows Heading */
+
+  .area-20 {
+    grid-column: 1/4;
+  }
+
+
+  /* User Flows Content */
+
+  .area-21 .flows {
+    grid-column: 1/7;
+  }
+
+  .area-21 .one-col-heading h4 {
+    font-size: 2.4rem;
+  }
+
+  .flow-image-1, .flow-image-2 {
+    height: 330px;
+    margin: 1.2rem;
+  }
+
+  .area-21 .takeaways {
+    grid-column: 1/7;
+  }
+
+
+  /* Sitemap Heading */
+
+  .area-22 {
+    grid-column: 2/3;
+  }
+
+
+  /* Sitemap Content */
+
+  .sitemap {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 330px;
+  }
+
+  .area-23 .row-1 {
+    grid-column: 1/7;
+  }
+
+  .area-23 .takeaways {
+    grid-column: 1/7;
+  }
+
+
+  /* Sketched Wireframes Heading */
+
+  .area-24 {
+    grid-column: 1/4;
+  }
+
+
+  /* Sketched Wireframes Content / Carousel */
+
+  .area-25 .container-carousel {
+    grid-column: 1/7;
+  }
+
+  .carousel-item > div {
+      height: 750px;
+  }
+
+
+  /* Next / Prev Buttons */
+
+  .carousel-prev,
+  .carousel-next {
+    top: 43%;
+  }
+
+  .carousel-prev {
+    left: 0;
+  }
+
+  .carousel-next {
+    right: 0;
+  }
+
+
+
+  /* Sketched Wireframes Takeaways */
+
+  .area-26 .takeaways {
+    grid-column: 1/7;
+  }
+
+
+  /* Digitized Wireframes Heading */
+
+  .area-27 {
+    grid-column: 1/4;
+  }
+
+
+  /* Digitized Wireframes Content*/
+
+  .area-28 .container {
+    padding: 3rem;
+  }
+
+  .digi-wireframes {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 480px;
+  }
+
+  /* Digitized Wireframes Takeaways */
+
+  .area-28 .takeaways {
+    grid-column: 1/7;
+  }
+
+
+  /* Branding Heading */
+
+  .area-30 {
+    grid-column: 1/4;
+  }
+
+
+  /* Branding Pics */
+
+  .process-pic-1, .process-pic-2, .process-pic-3, .process-pic-4 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 270px;
+  }
+
+
+  /* Prototypes and Mockups Heading */
+
+  .area-32 {
+    grid-column: 1/4;
+  }
+
+
+  /* Prototypes and Mockups Content */
+
+  .area-33 .column-1, .area-33 .column-2, .area-33 .column-3 {
+    padding-bottom: 5.4rem;
+  }
+
+  .area-33 .column-1 {
+    grid-column: 1/3;
+  }
+
+  .area-33 .column-2 {
+    grid-column: 3/5;
+  }
+
+  .area-33 .column-3 {
+    grid-column: 5/7;
+  }
+
+  .area-33 .row-2 {
+    grid-column: 2/6;
+    padding-bottom: 4.2rem;
+  }
+
+  .area-33 .h-above-image {
+    grid-column: 1/7;
+  }
+
+  .area-33 .p-below-image {
+    grid-column: 2/6;
+    padding-top: 2.4rem;
+  }
+
+  .proto-prev, .iteration {
+    box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
+    width: 100%;
+  }
+
+  .area-33 .proto-prev {
+    height: auto;
+  }
+
+  .area-33 .iteration {
+    height: auto;
+  }
+
+  .area-33 .container, .area-33 .cont-button, .area-33 .img-column-1, .img-column-2,.img-column-3, .img-column-4, .img-column-5, .img-column-6{
+    display: flex;
+    justify-content: center;
+  }
+
+  .area-33 .cont-button {
+    padding-top: 3rem;
+  }
+
+  .area-33 .button {
+    font-size: 1.3rem;
+    padding: 1rem 3rem;
+  }
+
+  .container-gif {
+    box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
+    display: flex;
+    justify-content: center;
+  }
+
+  .area-33 .container-klutch-ex {
+    grid-column: 1/7;
+    padding-bottom: 4.2rem;
+  }
+
+  .area-33 .img-column-1, .area-33 .img-column-4 {
+    grid-column: 1/3;
+  }
+
+  .area-33 .img-column-2, .area-33 .img-column-5 {
+    grid-column: 3/5;
+  }
+
+  .area-33 .img-column-3, .area-33 .img-column-6 {
+    grid-column: 5/7;
+  }
+
+  .area-33 .container-klutch-tools {
+    grid-column: 1/7;
+    padding-bottom: 4.2rem;
+  }
+
+  /* User Testing Heading */
+  .area-34 {
+    grid-column: 1/4;
+  }
+
+  /* Preference Tests Heading */
+  .area-35 {
+    grid-column: 1/4;
+  }
+
+
+  /* Preference Tests Content */
+
+  .area-36 .data-container-1, .area-36 .data-container-3, .area-36 .data-container-6 {
+    grid-column: 1/2;
+  }
+
+  .area-36 .data-container-2, .area-36 .data-container-4, .area-36 .data-container-7 {
+    grid-column: 2/3;
+  }
+
+  .area-36 .data-container-3, .area-36 .data-container-4, .area-36 .data-container-5 {
+    grid-row: 2/3;
+  }
+
+  .area-36 .data-container-5 {
+    grid-row: 2/3;
+    padding-top: 18rem;
+  }
+
+  .area-36 .data-container-5 {
+    grid-column: 1/3;
+  }
+
+  .area-36 .column-text {
+    grid-column: 3/4;
+  }
+
+  .area-36 .column-text-landing {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  /* .area-36 .data-container-1, .area-36 .data-container-2, .area-36 .data-container-5, .area-36 .data-container-6, .area-36 .data-container-7 {
+    padding-bottom: 2.4rem;
+  } */
+
+
+
+  .area-36 .pref-option, .area-36 .pref-option-small {
+    box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+
+  .area-36 .pref-data {
+    font-family: 'Nunito', sans-serif;
+    color: #008CFF;
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+  /* Testing w/ Prototypes Heading */
+
+  .area-37 {
+    grid-column: 1/4;
+  }
+
+
+  /* Testing w/ Prototypes Content */
+
+  .area-38 .column-1, .area-38 .column-3 {
+    grid-column: 1/2;
+  }
+
+  .area-38 .column-2, .area-38 .column-4 {
+    grid-column: 2/3;
+  }
+
+  .area-38 .column-3, .area-38 .column-4 {
+    padding-top: 3rem;
+  }
+
+  .proto-com-img {
+    box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
+    width: 100%;
+  }
+
+  .proto-com, .area-38 .cont-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .area-38 .cont-button {
+    padding-top: 2.4rem;
+  }
+
+  .area-38 .two-col-box {
+    background-color: #FFFAF8;
+  }
+
+  .area-38 .two-col-box{
+    height: 450px;
+  }
+
+
+  /* What Worked, Things Differently, and More Time Headings */
+
+  .area-40, .area-42, .area-44 {
+    grid-column: 1/4;
+  }
+
+  .area-41, .area-43, .area-45 {
+    display: grid;
+  }
+
+  .area-41 {
+    grid-area: area-41;
+  }
+
+  .area-43{
+    grid-area: area-43;
+  }
+
+  .area-45 {
+    grid-area: area-45;
+  }
+
+
+}
+
+
+
+
+/******************** MIN WIDTH 1024 PX ********************/
+
+@media (min-width: 64rem) {
   body {
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-areas:
@@ -1842,18 +3266,22 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
-  .container-nav {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20px 15px 15px 15px 20px 20px;
+  /* Navbar Homepage */
+
+  .homepage .container-nav {
     grid-column: 2/3;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 21px 21px 20px;
   }
 
   /* Navbar Klutch */
 
-  .row-navbar-menu-klutch {
-    grid-column: 1/6;
-    grid-row: 5/6;
+  .klutch .container-nav {
+    grid-column: 2/3;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 21px 21px 12px 20px 20px;
   }
+
 
   /* Hero Global */
 
@@ -1991,7 +3419,7 @@ ul .minus:before {
     grid-row-gap: 3rem;
   }
 
-  .container-klutch-ex{
+  .container-klutch-ex {
     display: grid;
     grid-column-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -2042,6 +3470,7 @@ ul .minus:before {
 
   /****************** Navbar Content Global ******************/
 
+
   .navbar-logo {
     grid-column: 1/2;
     grid-row: 2/5;
@@ -2053,19 +3482,55 @@ ul .minus:before {
     grid-row: 2/3;
   }
 
-  .row-navbar-menu {
-    grid-column: 3/7;
-    justify-content: flex-end;
-  }
-
-  .row-navbar-menu ul li {
-    font-size: 1.5rem;
-    margin-left: 4.2rem;
-  }
-
   .nav-open {
     display: none;
   }
+
+  /* Hide Side Nav */
+
+  .trigger-container {
+    display: none;
+  }
+
+
+  /***** Navbar Homepage *****/
+
+  .homepage .row-navbar-menu, .klutch .row-navbar-menu {
+    display: flex;
+    grid-column: 2/7;
+    grid-row: 2/4;
+    justify-content: flex-end;
+  }
+
+
+  /***** Navbar Homepage and Klutch *****/
+
+  .homepage .row-navbar-menu ul li, .klutch .row-navbar-menu ul li {
+    display: inline;
+    float: right;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 0;
+    margin-top: 1.3rem;
+  }
+
+
+  /***** Navbar Klutch *****/
+
+  .klutch .row-navbar-menu-klutch {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/7;
+    grid-row: 5/6;
+  }
+
+  .klutch .row-navbar-menu-klutch ul li {
+    display: inline;
+    float: left;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
 
 
   /******************* Text Styles Global ********************/
@@ -2088,7 +3553,9 @@ ul .minus:before {
     font-size: 3.6rem;
   }
 
+
   /* Headings Secondary (Case Studies Only) */
+
   .heading-secondary {
     grid-column: 1/7;
     padding-bottom: 5.4rem;
@@ -2106,7 +3573,9 @@ ul .minus:before {
   h3:after {
     margin-left: 2rem;
   }
+
   /* ------------------------------------ */
+
 
   h4 {
    font-size: 2.7rem;
@@ -2189,21 +3658,9 @@ ul .minus:before {
     display: block;
   }
 
+
+
   /************************* Klutch *************************/
-
-  /* Navbar */
-
-  .row-navbar-menu-klutch {
-    display: inline-block;
-  }
-
-  .row-navbar-menu-klutch ul li {
-    float: right;
-    display: inline;
-    margin-right: 4.2rem;
-    padding-top: .9rem;
-  }
-
 
   /* Hero */
 
@@ -2359,16 +3816,20 @@ ul .minus:before {
     grid-column: 2/6;
   }
 
+
   /* User Research Heading */
 
   .area-7 {
     grid-column: 2/3;
   }
 
+
   /* Survey 1 Heading */
+
   .area-8 {
     grid-column: 2/3;
   }
+
 
   /* Survey 1 Content */
 
@@ -2908,6 +4369,14 @@ ul .minus:before {
 
   .area-41 {
     grid-area: area-41;
+  }
+
+  .area-42 .mobile {
+    display: none;
+  }
+
+  .area-42 .desktop {
+    display: flex;
   }
 
   .area-43{
