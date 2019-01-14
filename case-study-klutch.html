@@ -19,11 +19,13 @@
   </head>
 
 
-  <body>
+  <body class="klutch">
+
 
     <!-- Navbar -->
     <nav class="navbar">
       <div class="container-nav">
+
         <!-- Logo -->
         <div class="navbar-logo">
           <a href="index.html">
@@ -33,35 +35,54 @@
         <!-- Main Menu -->
         <div class="row-navbar-menu">
           <ul>
-            <li><a href="index.html" class="nav-link">Work</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
           </ul>
         </div>
-        <!-- Mobile Open Hamburger -->
-        <div class="nav-open">
-          <img src="images/nav-open.svg">
-        </div>
-        <!-- Klutch Menu -->
+
+        <!-- Desktop Klutch Menu -->
         <div class="row-navbar-menu-klutch">
           <ul>
+            <li><a href="#overview" class="nav-link-2">Overview</a></li>
             <li><a href="#discovery" class="nav-link-2">Discovery</a></li>
             <li><a href="#strategy" class="nav-link-2">Strategy</a></li>
-            <li><a href="#information architecture" class="nav-link-2">Information Architecture</a></li>
+            <li><a href="#information-architecture" class="nav-link-2">Info. Arch.</a></li>
             <li><a href="#visual-design" class="nav-link-2">Visual Design</a></li>
             <li><a href="#user-testing" class="nav-link-2">User Testing</a></li>
             <li><a href="#reflections" class="nav-link-2">Reflections</a></li>
           </ul>
         </div>
 
+        <!-- Hamburger -->
+        <div class="trigger-container">
+          <div class="trigger">
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-2-1"></div>
+              <div class="line-3"></div>
+          </div>
+        </div>
+        <!-- Mobile and Tablet Slide In Menu -->
+          <div class="sidenav">
+            <ul>
+              <li><a href="#overview" class="nav-link-3">Overview</a></li>
+              <li><a href="#discovery" class="nav-link-3">Discovery</a></li>
+              <li><a href="#strategy" class="nav-link-3">Strategy</a></li>
+              <li><a href="#information-architecture" class="nav-link-3">Info. Arch.</a></li>
+              <li><a href="#visual-design" class="nav-link-3">Visual Design</a></li>
+              <li><a href="#user-testing" class="nav-link-3">User Testing</a></li>
+              <li><a href="#reflections" class="nav-link-3">Reflections</a></li>
+            </ul>
+          </div>
+
+
       </div>
     </nav>
 
 
-
-
     <!-- Hero -->
     <section class="hero">
+      <a name="overview"></a>
       <div class="container-hero">
 
           <div class="hero-heading">
@@ -69,6 +90,9 @@
           </div>
 
           <div class="hero-image-klutch" alt="Klutch screenshot on laptop">
+          </div>
+
+          <div class="hero-image-pattern" alt="Pattern behind laptop">
           </div>
 
           <div class="hero-copy">
@@ -180,6 +204,7 @@
 
     <!-- Large Heading - Discovery -->
     <div class="area-4">
+          <a name="discovery"></a>
           <div class="prim-head-text">
             <h1>DISCOVERY</h1>
           </div>
@@ -526,6 +551,7 @@
 
     <!-- Large Heading - Strategy -->
     <div class="area-14">
+          <a name="strategy"></a>
           <div class="prim-head-text">
             <h1>STRATEGY</h1>
           </div>
@@ -635,6 +661,7 @@
 
     <!-- Large Heading - Information Architecture -->
     <div class="area-19">
+        <a name="information-architecture"></a>
           <div class="prim-head-text">
             <h1>INFORMATION ARCHITECTURE</h1>
           </div>
@@ -966,6 +993,7 @@
 
     <!-- Large Heading - Visual Design -->
     <div class="area-29">
+          <a name="visual-design"></a>
           <div class="prim-head-text">
             <h1>VISUAL DESIGN</h1>
           </div>
@@ -1151,6 +1179,7 @@
 
     <!-- Large Heading - User Testing -->
     <div class="area-34">
+          <a name="user-testing"></a>
           <div class="prim-head-text">
             <h1>USER TESTING</h1>
           </div>
@@ -1341,6 +1370,7 @@
 
     <!-- Large Heading - Reflections -->
     <div class="area-39">
+          <a name="reflections"></a>
           <div class="prim-head-text">
             <h1>REFLECTIONS</h1>
           </div>
@@ -1370,7 +1400,8 @@
     <!-- Things I Could've Done Differently Heading-->
     <div class="area-42">
       <div class="heading-secondary">
-        <h3>THINGS I COULD'VE DONE DIFFERENTLY</h3>
+        <h3 class="desktop">THINGS I COULD'VE DONE DIFFERENTLY</h3>
+        <h3 class="mobile">THINGS I COULD'VE <br> DONE DIFFERENTLY</h3>
       </div>
     </div>
 
@@ -1410,7 +1441,7 @@
       <div class="container-footer">
 
           <div class="footer-copy">
-            <p>Like what you see? Contact me, let's chat.</p>
+            <p>Like what you see? <br> Contact me, let's chat.</p>
           </div>
           <div class="footer-icons">
             <a href="https://github.com/MonkeyTrellis">
@@ -1429,8 +1460,14 @@
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script src="scripts/donuts.js"></script>
   <script src="scripts/carousel.js"></script>
+  <script src="scripts/scroll.js"></script>
+  <script src="scripts/sidenav.js"></script>
 
 
   </body>
