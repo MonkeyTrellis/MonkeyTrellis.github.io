@@ -806,14 +806,19 @@ ul .minus:before {
     margin-left: 1.2rem;
   }
 
-  .heading-secondary {
+  .heading-secondary, .heading-secondary-2 {
     grid-column: 1/9;
-    padding-bottom: 4.2rem;
-    padding-top: 4.2rem;
+    padding-bottom: 3.6rem;
+    padding-top: 5.4rem;
+  }
+
+  .heading-secondary-2 {
+    padding-bottom: 2.4rem;
   }
 
   .heading-secondary-klutch {
     grid-column: 1/9;
+    padding-bottom: .3rem;
   }
   /* ---------------- */
 
@@ -1169,8 +1174,6 @@ ul .minus:before {
   }
 
   .about-list-2 {
-    list-style-type: disc;
-    list-style-position: inside;
     line-height: 3rem;
   }
 
@@ -1232,8 +1235,19 @@ ul .minus:before {
 
    .question-1 p, .question-2 p, .question-3 p {
      font-size: 1.8rem;
-     line-height: 3rem;
+     line-height: 3.3rem;
    }
+
+
+
+
+
+   /************************* Contact *************************/
+
+   .particles {
+     grid-column: 1/7;
+   }
+
 
 
 
@@ -1326,6 +1340,10 @@ ul .minus:before {
     padding-bottom: 3rem;
   }
 
+  .klutch .area-3 {
+    padding-bottom: 2.7rem;
+  }
+
 
   /* Overview Image */
 
@@ -1348,7 +1366,7 @@ ul .minus:before {
     z-index: 1;
   }
 
-  .two-col-copy, .copy-type-2, .pref-copy {
+  .two-col-copy, .copy-type-2, .pref-copy, .pref-copy-2 {
     font-size: 1.8rem;
     line-height: 3.3rem;
   }
@@ -1376,7 +1394,7 @@ ul .minus:before {
 
   .area-6 .column-1, .area-6 .column-2, .area-6 .column-3 {
     grid-column: 1/4;
-    padding-bottom: 3rem;
+    padding-bottom: 4.2rem;
   }
 
   .area-6 .three-col-box {
@@ -1469,6 +1487,10 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
+  .klutch .area-9 {
+    padding-bottom: 4.2rem;
+  }
+
   .res-question, .data-1, .data-2, .desc-1, .desc-2, .desc-3, .desc-4, .num-3, ol, .quote-copy, .quote-auth {
     font-family: 'Nunito', sans-serif;
     color: white;
@@ -1535,6 +1557,11 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
+  .klutch .area-11 {
+    padding-top: 4.2rem;
+  }
+
+
 
   /* Survey 2 Content*/
 
@@ -1561,6 +1588,8 @@ ul .minus:before {
 
 
   /* Survey 2 Box Padding and Display Styles */
+
+
 
   .area-12 .container {
     padding: 1.8rem;
@@ -1660,6 +1689,11 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
+  .klutch .area-13 {
+    padding-top: 4.2rem;
+    padding-top: 4.2rem;
+  }
+
   /* Strategy Heading*/
 
   .area-14 {
@@ -1680,7 +1714,7 @@ ul .minus:before {
 
   .area-16 .pers-col {
     grid-column: 2/3;
-    padding-bottom: 3rem;
+    padding-bottom: 3.6rem;
     padding-top: 3rem;
   }
 
@@ -1729,6 +1763,10 @@ ul .minus:before {
 
   .area-18 .column {
     grid-column: 2/3;
+  }
+
+  .klutch .area-18 {
+    padding-bottom: 4.2rem;
   }
 
 
@@ -1838,6 +1876,7 @@ ul .minus:before {
 
   .area-23 .takeaways {
     grid-column: 2/3;
+    padding-top: 8.4rem;
   }
 
 
@@ -1872,6 +1911,10 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
+  .klutch .area-26 {
+    padding-top: 4.2rem;
+  }
+
 
   /* Digitized Wireframes Heading */
 
@@ -1884,6 +1927,11 @@ ul .minus:before {
 
   .area-28 .row-1 {
     grid-column: 1/7;
+  }
+
+  .area-28 .takeaways {
+    padding-bottom: 4.2rem;
+    padding-top: 8.4rem;
   }
 
 
@@ -1936,26 +1984,34 @@ ul .minus:before {
   .process-pic-1 {
     background-image: url("/images/logo-sketches.jpg");
     height: 210px;
-    margin-bottom: 1.2rem;
+    margin-bottom: 2.4rem;
   }
 
   .process-pic-2 {
     background-image: url("/images/klutch-logos.svg");
     height: 84px;
-    margin-bottom: 2.1rem;
+    margin-bottom: 3rem;
   }
 
   .process-pic-3 {
     background-image: url("/images/klutch-colors.svg");
     height: 260px;
-    margin-bottom: 2.4rem;
+    margin-bottom: 3.6rem;
   }
 
   .process-pic-4 {
     background-image: url("/images/klutch-type.svg");
     height: 174px;
-    margin-bottom: 2.1rem;
+    margin-bottom: 3rem;
   }
+
+  /* Branding Spacing */
+
+  .area-31 .brand-4 {
+    padding-bottom: 4.2rem;
+  }
+
+
 
 
   /* Prototypes and Mockups Heading */
@@ -1966,6 +2022,9 @@ ul .minus:before {
 
   /* Prototypes and Mockups Content */
 
+  .klutch .area-33 {
+    padding-bottom: 4.2rem;
+  }
 
   .area-33 .column-1, .area-33 .column-2, .area-33 .column-3 {
     grid-column: 2/3;
@@ -1974,7 +2033,7 @@ ul .minus:before {
 
   .area-33 .row-2 {
     grid-column: 2/3;
-    padding-bottom: 6rem;
+    padding-bottom: 4.2rem;
     padding-top: 3rem;
   }
 
@@ -1998,9 +2057,13 @@ ul .minus:before {
     padding-bottom: 1.2rem;
   }
 
+  .area-33 .container-klutch-ex h5, .area-33 .container-klutch-tools h5 {
+    padding-bottom: 2.1rem;
+  }
+
   .area-33 .container-klutch-ex {
     grid-column: 2/3;
-    padding-bottom: 6rem;
+    padding-bottom: 4.2rem;
   }
 
   .area-33 .container-klutch-tools {
@@ -2057,16 +2120,13 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
-  .area-36 .column-text {
+  .area-36 .column-text, .area-36 .column-text-landing {
     grid-column: 2/3;
-  }
-
-  .area-36 .column-text-landing {
-    grid-column: 2/3;
+    padding-bottom: 4.2rem;
   }
 
   .area-36 .data-container-1, .area-36 .data-container-2, .area-36 .data-container-5, .area-36 .data-container-6, .area-36 .data-container-7 {
-    padding-bottom: 4.2rem;
+    /* padding-bottom: .3rem; */
   }
 
   .area-36 .pref-option, .area-36 .pref-option-small {
@@ -2084,6 +2144,11 @@ ul .minus:before {
     text-align: center;
   }
 
+  .area-36 .data-container-5 .img-s {
+    padding-top: 3rem;
+  }
+
+
 
   /* Testing w/ Prototypes Heading */
 
@@ -2098,8 +2163,17 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
+  .area-38 .column-2 {
+    padding-bottom: 3rem;
+  }
+
   .area-38 .column-3, .area-38 .column-4 {
     grid-column: 1/4;
+    padding-bottom: 3rem;
+  }
+
+  .area-38 .column-4 {
+    padding-bottom: 4.2rem;
   }
 
   .area-38 .bulleted-list {
@@ -2109,7 +2183,7 @@ ul .minus:before {
 
   .proto-com-img {
     box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
-    width: 100%;
+    height: 210px;
   }
 
   .proto-com, .area-38 .cont-button {
@@ -2699,6 +2773,15 @@ ul .minus:before {
 
   .about .column-1 .three-col-box,   .about .column-2 .three-col-box {
     margin-bottom: 3rem;
+  }
+
+
+
+
+  /************************* Contact *************************/
+
+  .particles {
+    grid-column: 1/7;
   }
 
 
@@ -3382,13 +3465,17 @@ ul .minus:before {
     margin-bottom: 1.2rem;
   }
 
-  .area-36 .pref-data {
+  .area-36 .pref-data, .area-36 .pref-data-2 {
     font-family: 'Nunito', sans-serif;
     color: #008CFF;
     font-size: 2.1rem;
     line-height: 3.3rem;
     font-weight: bold;
     text-align: center;
+  }
+
+  .area-36 .pref-data-2 {
+    padding-bottom: 3.9rem;
   }
 
 
@@ -4760,6 +4847,10 @@ ul .minus:before {
     box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
     width: 100%;
     margin-bottom: 1.2rem;
+  }
+
+  .area-36 .data-container-5 .img-s {
+    padding-top: 8.4rem;
   }
 
   .area-36 .pref-data {
