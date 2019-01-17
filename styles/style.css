@@ -115,6 +115,22 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.button {
+  /* background-position: center; */
+  transition: background 0.5s;
+}
+
+.button:hover {
+  background: #008CFF radial-gradient(circle, transparent 1%, #008CFF 1%) center/15000%;
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.button:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
 
 /******************** GLOBAL HOMEPAGE SETTINGS ********************/
 
@@ -2135,7 +2151,7 @@ ul .minus:before {
     margin-bottom: 1.2rem;
   }
 
-  .area-36 .pref-data {
+  .area-36 .pref-data, .area-36 .pref-data-2 {
     font-family: 'Nunito', sans-serif;
     color: #008CFF;
     font-size: 2.1rem;
@@ -3773,7 +3789,6 @@ ul .minus:before {
   .area-31 {
     display: grid;
     grid-template-columns: 3fr 3fr;
-    grid-template-rows: 1fr 1fr;
     grid-column-gap: 3rem;
   }
 
@@ -3813,7 +3828,6 @@ ul .minus:before {
 
   .area-38 {
     grid-template-columns: 3fr 3fr;
-    grid-template-rows: 1fr 1fr;
     grid-row-gap: 3rem;
     grid-column-gap: 3rem;
   }
@@ -4781,7 +4795,10 @@ ul .minus:before {
     box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
     display: flex;
     justify-content: center;
+    height: auto;
   }
+
+
 
   .area-33 .container-klutch-ex {
     grid-column: 1/7;
@@ -4850,7 +4867,7 @@ ul .minus:before {
   }
 
   .area-36 .data-container-5 .img-s {
-    padding-top: 8.4rem;
+    padding-top: 17%;
   }
 
   .area-36 .pref-data {
@@ -4882,7 +4899,7 @@ ul .minus:before {
 
   .proto-com-img {
     box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
-    width: 100%;
+    height: auto;
   }
 
   .proto-com, .area-38 .cont-button {
