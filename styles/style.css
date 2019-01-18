@@ -3684,7 +3684,6 @@ ul .minus:before {
   .area-1, .area-2, .area-3 {
     grid-column-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-bottom: 3rem;
     margin-top: 3rem;
   }
 
@@ -3698,6 +3697,14 @@ ul .minus:before {
 
   .area-1 .three-col-box {
     display: block;
+  }
+
+  /* About Ask Chris */
+
+  .about .area-4 {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   /***** Klutch *****/
@@ -3959,7 +3966,7 @@ ul .minus:before {
 
   .heading-secondary {
     grid-column: 1/7;
-    padding-bottom: 5.4rem;
+    padding-bottom: 4.2rem;
     padding-top: 6rem;
   }
 
@@ -4110,7 +4117,38 @@ ul .minus:before {
   }
 
 
+  /* Roles, Education, Tools */
+
+  .about .area-1 .column-1 {
+    grid-column: 2/4;
+  }
+
+  .about .area-1 .column-2 {
+    grid-column: 4/6;
+  }
+
+  .about .area-1 .column-3 {
+    grid-column: 2/6;
+  }
+
+  .about .area-1 .about-list-container, .about .area-1 .about-list-2 {
+    padding: 3rem 3.6rem;
+  }
+
+  .about .column-1 .three-col-box, .about .column-2 .three-col-box {
+    height: 300px;
+    margin-bottom: 4.2rem;
+  }
+
+  .about .column-3 .three-col-box{
+    height: 450px;
+  }
+
   /* Contact Options */
+
+  .about .area-2 {
+    margin-bottom: 0;
+  }
 
   .letstalk {
     font-size: 1.8rem;
@@ -4142,35 +4180,31 @@ ul .minus:before {
     text-align: center;
   }
 
-
-
-  /* Roles, Education, Tools */
-
-  .about .area-1 .column-1 {
-    grid-column: 1/4;
+  .about .button-row {
+    display: flex;
+    justify-content: center;
   }
 
-  .about .area-1 .column-2 {
-    grid-column: 4/7;
+  .about .button {
+    display: block;
   }
 
-  .about .area-1 .column-3 {
-    grid-column: 1/7;
+  .about .linkedin-button {
+    padding-right: 1.8rem;
   }
 
-  .about .area-1 .about-list-container, .about .area-1 .about-list-2 {
-    padding: 3rem 3.6rem;
+  .about .email-button {
+    padding-left: 1.8rem;
   }
 
-  .about .column-1 .three-col-box, .about .column-2 .three-col-box {
-    height: 270px;
+  .about .question-1, .about .question-2, .about .question-3 {
+    grid-column: 2/6;
   }
 
-  .about .column-3 .three-col-box{
-    height: 450px;
+  .question-1 p, .question-2 p, .question-3 p {
+    font-size: 2.1rem;
+    line-height: 3.3rem;
   }
-
-
 
 
   /************************* Contact *************************/
