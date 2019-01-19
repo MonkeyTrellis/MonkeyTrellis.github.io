@@ -1107,6 +1107,21 @@ ul .minus:before {
      line-height: 3.3rem;
    }
 
+   .about .arch-port {
+     text-decoration: none;
+     background-color: #FFE8E0
+   }
+
+   .arch-port:link, .arch-port:visited {
+     color: #000000;
+     text-decoration: none;
+   }
+
+   .arch-port:hover, .arch-port:active {
+     background-color: #6eb9f7;
+     color: #ffffff;
+   }
+
    /************************* Contact *************************/
    .particles, .contact h2, .thankyou h2 {
      grid-column: 1/5;
