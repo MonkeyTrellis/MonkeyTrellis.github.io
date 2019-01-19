@@ -4269,6 +4269,9 @@ ul .minus:before {
 
   .contact textarea {
   	height: 210px;
+  }
+
+  .contact .typehere {
     margin-bottom: 3rem;
   }
 
