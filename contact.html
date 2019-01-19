@@ -6,7 +6,7 @@
 
   <head>
 
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500,900" rel="stylesheet">
@@ -21,14 +21,6 @@
 
 
   <body class="contact">
-
-    <!-- Background -->
-    <div class="hero">
-      <div class="container-hero">
-        <div class="particles" id="particles-js">
-        </div>
-      </div>
-    </div>
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -50,6 +42,61 @@
       </div>
     </nav>
 
+    <!-- Hero -->
+    <div class="hero">
+      <div class="container-hero">
+        <h2>Drop me a line!</h2>
+        <div class="image">
+          <img src="images/small-me.png" class="small-me" alt="Smiling Chris">
+        </div>
+        <div class="particles" id="particles-js">
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- Form -->
+    <section class= "area-1">
+      <form action="contact.php" method="post">
+
+        <label>Name</label>
+        <input name="name" placeholder="Type Here">
+
+        <label>Email</label>
+        <input name="email" type="email" placeholder="Type Here">
+
+        <label>Message</label>
+        <textarea name="message" placeholder="Type Here"></textarea>
+
+        <input id="submit" class="button" name="submit" type="submit" value="Submit">
+
+      </form>
+    </section>
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container-footer">
+
+          <div class="footer-copy">
+            <p>Like what you see? <br> Contact me, let's chat.</p>
+          </div>
+          <div class="footer-icons">
+            <a href="https://github.com/MonkeyTrellis">
+              <img class="f-icon-1" src="images/icon-github.svg">
+            </a>
+            <a href="https://www.linkedin.com/in/christophersejinchung">
+              <img class="f-icon-2" src="images/icon-linkedin.svg">
+            </a>
+            <a href="mailto:christophersejinchung@gmail.com">
+              <img class="f-icon-3" src="images/icon-mail.svg">
+            </a>
+          </div>
+
+      </div>
+    </section>
 
 
     <script src="scripts/particles.js"></script>

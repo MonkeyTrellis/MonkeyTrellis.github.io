@@ -3687,6 +3687,10 @@ ul .minus:before {
     margin-top: 3rem;
   }
 
+  .contact .area-1 {
+    display: grid;
+  }
+
   /* Homepage Case Study Containers */
 
   .container-case-study-1, .container-case-study-2, .container-case-study-3 {
@@ -4159,6 +4163,8 @@ ul .minus:before {
   }
 
   .area-2 .button-row {
+    display: flex;
+    justify-content: center;
     padding-top: 3rem;
     grid-column: 2/6;
     grid-row: 2/3;
@@ -4166,23 +4172,11 @@ ul .minus:before {
 
   .area-2 .letstalk-desktop {
     display: block;
-  }
-
-  .area-2 .letstalk {
-    display: none;
-  }
-
-  .area-2 .letstalk-desktop {
     font-size: 1.8rem;
     line-height: 2.4rem;
     grid-column: 2/6;
     grid-row: 1/2;
     text-align: center;
-  }
-
-  .about .button-row {
-    display: flex;
-    justify-content: center;
   }
 
   .about .button {
@@ -4206,19 +4200,114 @@ ul .minus:before {
     line-height: 3.3rem;
   }
 
-
   /************************* Contact *************************/
 
-  .particles {
+  .particles, .contact h2 {
     grid-column: 1/7;
+    grid-row: 1/2;
+  }
+
+  .contact .particles {
+    height: 30vh;
+  }
+
+  .contact .hero {
+    padding-bottom: 0;
+  }
+
+  .contact .image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 3/5;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .contact .small-me {
+
+    grid-column: 1/3;
+    width: 240px;
+    height: 240px;
+    margin-top: 9.6rem;
+  }
+
+  .contact .area-1 {
+    grid-column: 1/7;
+    margin-top: 0;
+    margin-bottom: 8.4rem;
+  }
+
+  .contact label {
+    display:block;
+    margin-bottom: .3rem;
+    margin-top: 2.1rem;
+  }
+
+  /* Center the form within the page */
+  .contact form {
+    grid-column: 3/5;
+    margin:0 auto;
+    width: 100%;
+  }
+
+  /* Style the text boxes */
+  .contact input, .contact textarea {
+  	width: 100%;
+  	height: 51px;
+  	background: #FFFAF8;
+  	border: 1px solid #dedede;
+  	padding: 10px;
+  	margin-top: 3px;
+  	font-size: 0.9em;
+  	color: #818F96;
+    -moz-border-radius:9px;
+    -webkit-border-radius:9px;
+    border-radius:9px;
+  }
+
+  .contact textarea {
+  	height: 210px;
+    margin-bottom: 3rem;
+  }
+
+  .contact .button {
+    background-color: #000000;
+    box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
+    border: none;
+    border-radius: 2.4rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    outline: none;
+    padding: 1rem 4.2rem;
+    text-decoration: none;
+  }
+
+  .contact .button {
+    /* background-position: center; */
+    transition: background 0.5s;
+  }
+
+  .contact .button:hover {
+    background: #008CFF radial-gradient(circle, transparent 1%, #008CFF 1%) center/15000%;
+    transform: scaleX(1) scaleY(1);
+  }
+
+  .contact .button:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
   }
 
 
 
 
 
-  /************************* Klutch *************************/
 
+
+  /************************* Klutch *************************/
 
   /* Hero */
 
@@ -4243,7 +4332,6 @@ ul .minus:before {
   .klutch .hero-copy, .klutch .hero-button {
     grid-column: 2/6;
   }
-
 
   /* Roles, Deliverables, Tools */
 
@@ -4271,7 +4359,6 @@ ul .minus:before {
     padding: 3rem 3.6rem;
   }
 
-
   /* Problem, Solution */
 
   .area-3 .column-1 {
@@ -4281,7 +4368,6 @@ ul .minus:before {
   .area-3 .column-2 {
     grid-column: 4/7;
   }
-
 
   /* Overview Button */
 
@@ -4299,7 +4385,6 @@ ul .minus:before {
     text-align: left;
   }
 
-
   /* Overview Image*/
 
   .overview-image {
@@ -4315,7 +4400,6 @@ ul .minus:before {
     background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 90%);
     grid-column: 1/8;
   }
-
 
   /* Discovery Heading */
 
@@ -4358,13 +4442,11 @@ ul .minus:before {
     padding: 3rem 3.6rem;
   }
 
-
   /* Takeaways */
 
   .takeaways {
     grid-column: 2/6;
   }
-
 
   .takeaways {
     padding-top: 6.3rem;
@@ -4397,20 +4479,17 @@ ul .minus:before {
     grid-column: 2/6;
   }
 
-
   /* User Research Heading */
 
   .area-7 {
     grid-column: 2/3;
   }
 
-
   /* Survey 1 Heading */
 
   .area-8 {
     grid-column: 2/3;
   }
-
 
   /* Survey 1 Content */
 
@@ -4488,7 +4567,6 @@ ul .minus:before {
     padding-top: 2.1rem;
   }
 
-
   /* Survey 2 Content */
 
   .area-12 .box-1 {
@@ -4499,13 +4577,11 @@ ul .minus:before {
     grid-column: 3/7;
   }
 
-
   /* Survey 2 Box Padding and Display Styles */
 
   .area-12 .container {
     padding: 2.4rem;
   }
-
 
   /* Donut Chart Styles */
 
@@ -4539,7 +4615,6 @@ ul .minus:before {
     top: 50%;
   }
 
-
   /* Survey 2 Quotes */
 
   .area-12 .q-box-1 {
@@ -4568,13 +4643,10 @@ ul .minus:before {
     grid-column: 2/6;
   }
 
-
-
   /* Personas Heading */
   .area-15 {
     grid-column: 2/3;
   }
-
 
   /* Personas */
 
@@ -4706,7 +4778,6 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
-
   /* Sketched Wireframes Content / Carousel */
 
   .area-25 .container-carousel {
@@ -4717,7 +4788,6 @@ ul .minus:before {
       height: 750px;
   }
 
-
   /* Next / Prev Buttons */
 
   .carousel-prev,
@@ -4725,20 +4795,17 @@ ul .minus:before {
     top: 50%;
   }
 
-
   /* Sketched Wireframes Takeaways */
 
   .area-26 .takeaways {
     grid-column: 2/6;
   }
 
-
   /* Digitized Wireframes Heading */
 
   .area-27 {
     grid-column: 2/3;
   }
-
 
   /* Digitized Wireframes Content*/
 
@@ -4759,20 +4826,17 @@ ul .minus:before {
     grid-column: 2/6;
   }
 
-
   /* Branding Heading */
 
   .area-30 {
     grid-column: 2/3;
   }
 
-
   /* Branding Pics */
 
   .brand-1 .container, .brand-2 .container, .brand-3 .container, .brand-4 .container {
     padding: 0 3rem 3rem 3rem;
   }
-
 
   .process-pic-1, .process-pic-2, .process-pic-3, .process-pic-4 {
     background-size: contain;
@@ -4782,13 +4846,11 @@ ul .minus:before {
     margin-bottom: 0;
   }
 
-
   /* Prototypes and Mockups Heading */
 
   .area-32 {
     grid-column: 2/3;
   }
-
 
   /* Prototypes and Mockups Content */
 
@@ -4822,12 +4884,10 @@ ul .minus:before {
     padding-top: 0;
   }
 
-
   .proto-prev, .iteration {
     box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
     width: 100%;
   }
-
 
   .area-33 .container, .area-33 .cont-button, .area-33 .img-column-1, .img-column-2,.img-column-3, .img-column-4, .img-column-5, .img-column-6{
     display: flex;
@@ -4869,7 +4929,6 @@ ul .minus:before {
   .area-35 {
     grid-column: 2/3;
   }
-
 
   /* Preference Tests Content */
 
@@ -4917,13 +4976,11 @@ ul .minus:before {
     text-align: center;
   }
 
-
   /* Testing w/ Prototypes Heading */
 
   .area-37 {
     grid-column: 2/3;
   }
-
 
   /* Testing w/ Prototypes Content */
 
@@ -4963,7 +5020,6 @@ ul .minus:before {
   .area-38 .two-col-box{
     height: 420px;
   }
-
 
   /* What Worked, Things Differently, and More Time Headings */
 
