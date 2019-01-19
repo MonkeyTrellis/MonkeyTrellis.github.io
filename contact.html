@@ -6,7 +6,7 @@
 
   <head>
 
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500,900" rel="stylesheet">
@@ -57,19 +57,19 @@
     </div>
 
     <!-- Form -->
-    <section class= "area-1">
+    <section class="area-1">
       <form method="post" action="https://briskforms.com/go/21af7a72d76c6224dbc4cc66d09b664f">
 
-        <label>Name</label>
-        <input name="name" placeholder="Type Here">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Type Here" id="name">
 
-        <label>Email</label>
-        <input name="email" type="email" placeholder="Type Here">
+        <label for="email">Email</label>
+        <input type="text" name="email" type="email" placeholder="Type Here" id="email">
 
-        <label>Message</label>
-        <textarea name="message" placeholder="Type Here"></textarea>
+        <label for="message">Message</label>
+        <textarea name="message" placeholder="Type Here" id="message"></textarea>
 
-        <input id="submit" class="button" name="submit" type="submit" value="Submit">
+        <input class="button" name="submit" type="submit" value="Submit">
 
       </form>
     </section>
