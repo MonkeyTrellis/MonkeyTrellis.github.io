@@ -952,16 +952,16 @@ ul .minus:before {
   }
 
 
-  /***** Navbar Homepage *****/
+  /***** Navbar Homepage, About, and Contact *****/
 
-  .homepage .row-navbar-menu {
+  .homepage .row-navbar-menu, .about .row-navbar-menu, .contact .row-navbar-menu, .thankyou .row-navbar-menu {
     display: flex;
     grid-column: 2/7;
     grid-row: 2/4;
     justify-content: flex-end;
   }
 
-  .homepage .row-navbar-menu ul li {
+  .homepage .row-navbar-menu ul li, .about .row-navbar-menu ul li, .contact .row-navbar-menu ul li, .thankyou .row-navbar-menu ul li {
     display: inline;
     float: right;
     font-size: 1.5rem;
@@ -969,50 +969,9 @@ ul .minus:before {
     margin-top: .7rem;
   }
 
-  .homepage .slide-menu {
+  .homepage .slide-menu, .about .slide-menu {
     display: none;
   }
-
-
-  /***** Navbar About *****/
-
-  .about .row-navbar-menu {
-    display: flex;
-    grid-column: 2/7;
-    grid-row: 2/4;
-    justify-content: flex-end;
-  }
-
-  .about .row-navbar-menu ul li {
-    display: inline;
-    float: right;
-    font-size: 1.5rem;
-    margin-left: 2.1rem;
-    margin-top: .7rem;
-  }
-
-  .about .slide-menu {
-    display: none;
-  }
-
-
-  /***** Navbar Contact *****/
-
-  .contact .row-navbar-menu {
-    display: flex;
-    grid-column: 2/7;
-    grid-row: 2/4;
-    justify-content: flex-end;
-  }
-
-  .contact .row-navbar-menu ul li {
-    display: inline;
-    float: right;
-    font-size: 1.5rem;
-    margin-left: 2.1rem;
-    margin-top: .7rem;
-  }
-
 
   /***** Navbar Klutch *****/
 
@@ -1254,17 +1213,109 @@ ul .minus:before {
      line-height: 3.3rem;
    }
 
-
-
-
-
    /************************* Contact *************************/
 
-   .particles {
-     grid-column: 1/7;
+   .particles, .contact h2, .thankyou h2 {
+     grid-column: 1/5;
+     grid-row: 1/2;
    }
 
+   .contact .particles, .thankyou .particles {
+     height: 30vh;
+   }
 
+   .contact .hero, .thankyou .hero {
+     padding-bottom: 0;
+   }
+
+   .contact .image, .thankyou .image {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-column: 2/4;
+     grid-row: 1/2;
+     display: flex;
+     justify-content: center;
+     z-index: 2;
+   }
+
+   .contact .small-me, .thankyou .small-me {
+     grid-column: 1/3;
+     width: 120px;
+     height: 120px;
+     margin-top: 9.6rem;
+   }
+
+   .contact .area-1, .thankyou .area-1 {
+     grid-column: 1/7;
+     margin-top: 0;
+     margin-bottom: 8.4rem;
+   }
+
+   .contact label {
+     display:block;
+     margin-bottom: .3rem;
+     margin-top: 2.1rem;
+   }
+
+   .contact form {
+     grid-column: 2/3;
+     margin:0 auto;
+     width: 100%;
+   }
+
+   .contact input, .contact textarea {
+   	width: 100%;
+   	height: 42px;
+   	background: #FFFAF8;
+   	border: 1px solid #dedede;
+   	padding: 10px;
+   	margin-top: 3px;
+   	font-size: 0.9em;
+   	color: #000000;
+     -moz-border-radius:9px;
+     -webkit-border-radius:9px;
+     border-radius:9px;
+   }
+
+   .contact textarea {
+   	height: 210px;
+     margin-bottom: 3rem;
+   }
+
+   .contact .button {
+     background-color: #000000;
+     box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
+     border: none;
+     border-radius: 2.4rem;
+     color: white;
+     cursor: pointer;
+     font-size: 1.5rem;
+     outline: none;
+     padding: 1rem 4.2rem;
+     text-decoration: none;
+   }
+
+   .contact .button {
+     transition: background 0.5s;
+   }
+
+   .contact .button:hover {
+     background: #008CFF radial-gradient(circle, transparent 1%, #008CFF 1%) center/15000%;
+     transform: scaleX(1) scaleY(1);
+   }
+
+   .contact .button:active {
+     background-color: #6eb9f7;
+     background-size: 100%;
+     transition: background 0s;
+   }
+
+   /************************* Thank You *************************/
+
+   .area-1 .getback {
+     grid-column: 2/3;
+     padding-top: 3rem;
+   }
 
 
   /************************* Klutch *************************/
@@ -2767,9 +2818,7 @@ ul .minus:before {
     padding-right: 33%;
   }
 
-
   /************************* About *************************/
-
 
   /* Hero */
 
@@ -2780,7 +2829,6 @@ ul .minus:before {
   .about .hero-heading {
     display: inherit;
   }
-
 
   /* Hero Image */
 
@@ -2798,17 +2846,26 @@ ul .minus:before {
     margin-bottom: 3rem;
   }
 
-
-
-
   /************************* Contact *************************/
 
-  .particles {
-    grid-column: 1/7;
+  .contact form {
+    grid-column: 2/4;
   }
 
+  .contact input, .contact textarea {
+  	width: 100%;
+  	height: 51px;
+  }
 
+  .contact textarea {
+    height: 210px;
+  }
 
+  /************************* Thank You *************************/
+
+  .area-1 .getback {
+    grid-column: 2/4;
+  }
 
   /************************* Klutch *************************/
 
@@ -3484,7 +3541,6 @@ ul .minus:before {
     grid-row: 2/3;
   }
 
-
   .area-36 .pref-option, .area-36 .pref-option-small {
     box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
     width: 100%;
@@ -3504,13 +3560,11 @@ ul .minus:before {
     padding-bottom: 3.9rem;
   }
 
-
   /* Testing w/ Prototypes Heading */
 
   .area-37 {
     grid-column: 1/4;
   }
-
 
   /* Testing w/ Prototypes Content */
 
@@ -3548,7 +3602,6 @@ ul .minus:before {
     height: 540px;
   }
 
-
   /* What Worked, Things Differently, and More Time Headings */
 
   .area-40, .area-42, .area-44 {
@@ -3571,11 +3624,7 @@ ul .minus:before {
     grid-area: area-45;
   }
 
-
 }
-
-
-
 
 /******************** MIN WIDTH 1024 PX ********************/
 
@@ -3649,12 +3698,11 @@ ul .minus:before {
 
   /* Navbar Homepage, About, and Contact */
 
-  .homepage .container-nav, .about .container-nav, .contact .container-nav  {
+  .homepage .container-nav, .about .container-nav, .contact .container-nav, .thankyou .container-nav {
     grid-column: 2/3;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 20px 21px 21px 20px;
   }
-
 
   /* Navbar Klutch */
 
@@ -3663,7 +3711,6 @@ ul .minus:before {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 20px 21px 21px 12px 20px 20px;
   }
-
 
   /* Hero Global */
 
@@ -3718,7 +3765,6 @@ ul .minus:before {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
-
   /* Survey 1 */
 
   .area-9 {
@@ -3728,15 +3774,12 @@ ul .minus:before {
     grid-template-rows: 1fr 1fr;
   }
 
-
   /* Survey 1 Takeaways */
 
   .area-10 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-
-
 
   /* Survey 2 Content */
 
@@ -3753,7 +3796,6 @@ ul .minus:before {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
-
   /* Personas Content */
 
   .area-16 {
@@ -3761,13 +3803,11 @@ ul .minus:before {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
-
   /* User Stories Content */
 
   .area-18 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-
 
   /* User Flows Content */
 
@@ -3775,13 +3815,11 @@ ul .minus:before {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
-
   /* Sitemap Content */
 
   .area-23 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-
 
   /* Image Carousel */
 
@@ -3789,13 +3827,11 @@ ul .minus:before {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
-
   /* Sketched Wireframes Takeaways */
 
   .area-26 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-
 
   /* Digitized Wiregrames */
 
@@ -3804,7 +3840,6 @@ ul .minus:before {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
-
   /* Branding */
 
   .area-31 {
@@ -3812,7 +3847,6 @@ ul .minus:before {
     grid-template-columns: 3fr 3fr;
     grid-column-gap: 3rem;
   }
-
 
   /* Prototypes and Mockups Content */
 
@@ -3844,7 +3878,6 @@ ul .minus:before {
     grid-row-gap: 3rem;
   }
 
-
   /* Testing w/ Prototypes Content */
 
   .area-38 {
@@ -3869,9 +3902,7 @@ ul .minus:before {
     grid-column: 4/6;
   }
 
-
   /****************** Navbar Content Global ******************/
-
 
   .navbar-logo {
     grid-column: 1/2;
@@ -3894,7 +3925,6 @@ ul .minus:before {
     display: none;
   }
 
-
   /***** Navbar Homepage *****/
 
   .homepage .row-navbar-menu, .klutch .row-navbar-menu {
@@ -3903,7 +3933,6 @@ ul .minus:before {
     grid-row: 2/4;
     justify-content: flex-end;
   }
-
 
   /***** Navbar Homepage and Klutch *****/
 
@@ -3915,7 +3944,6 @@ ul .minus:before {
     margin-right: 0;
     margin-top: 1.3rem;
   }
-
 
   /***** Navbar Klutch *****/
 
@@ -3933,10 +3961,7 @@ ul .minus:before {
     margin-right: 1.5rem;
   }
 
-
-
   /******************* Text Styles Global ********************/
-
 
   /* Wide Headings (Discover, Strategy, etc.) */
 
@@ -3953,7 +3978,6 @@ ul .minus:before {
 
   /* --------------------------------------- */
 
-
   h2 {
     font-size: 4.8rem;
     line-height: 6.2rem;
@@ -3964,7 +3988,6 @@ ul .minus:before {
   h3 {
     font-size: 3.6rem;
   }
-
 
   /* Headings Secondary (Case Studies Only) */
 
@@ -4015,13 +4038,11 @@ ul .minus:before {
     padding-bottom: 4.2rem;
   }
 
-
   /* Text Link Style */
 
   .link-underline {
     font-size: 2.1rem;
   }
-
 
   /******************** Homepage ********************/
 
@@ -4045,7 +4066,6 @@ ul .minus:before {
   .homepage .hero-copy {
     grid-column: 2/6;
   }
-
 
   /* Case Studies */
 
@@ -4092,12 +4112,7 @@ ul .minus:before {
     display: block;
   }
 
-
-
-
   /************************* About *************************/
-
-
 
   /* Hero Image */
 
@@ -4119,7 +4134,6 @@ ul .minus:before {
   .about .hero-copy {
     padding-bottom: 2.4rem;
   }
-
 
   /* Roles, Education, Tools */
 
@@ -4202,113 +4216,36 @@ ul .minus:before {
 
   /************************* Contact *************************/
 
-  .particles, .contact h2 {
+  .particles, .contact h2, .thankyou h2 {
     grid-column: 1/7;
-    grid-row: 1/2;
   }
 
-  .contact .particles {
-    height: 30vh;
-  }
-
-  .contact .hero {
-    padding-bottom: 0;
-  }
-
-  .contact .image {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .contact .image, .thankyou .image {
     grid-column: 3/5;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-    z-index: 2;
   }
 
   .contact .small-me {
-
-    grid-column: 1/3;
-    width: 240px;
-    height: 240px;
-    margin-top: 9.6rem;
+    width: 150px;
+    height: 150px;
   }
 
-  .contact .area-1 {
-    grid-column: 1/7;
-    margin-top: 0;
-    margin-bottom: 8.4rem;
-  }
-
-  .contact label {
-    display:block;
-    margin-bottom: .3rem;
-    margin-top: 2.1rem;
-  }
-
-  /* Center the form within the page */
   .contact form {
     grid-column: 3/5;
-    margin:0 auto;
-    width: 100%;
   }
 
-  /* Style the text boxes */
   .contact input, .contact textarea {
-  	width: 100%;
   	height: 51px;
-  	background: #FFFAF8;
-  	border: 1px solid #dedede;
-  	padding: 10px;
-  	margin-top: 3px;
-  	font-size: 0.9em;
-  	color: #818F96;
-    -moz-border-radius:9px;
-    -webkit-border-radius:9px;
-    border-radius:9px;
   }
 
   .contact textarea {
   	height: 210px;
   }
 
-  .contact .typehere {
-    margin-bottom: 3rem;
+  /* Thank You */
+
+  .area-1 .getback {
+    grid-column: 2/6;
   }
-
-  .contact .button {
-    background-color: #000000;
-    box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
-    border: none;
-    border-radius: 2.4rem;
-    color: white;
-    cursor: pointer;
-    font-size: 1.5rem;
-    outline: none;
-    padding: 1rem 4.2rem;
-    text-decoration: none;
-  }
-
-  .contact .button {
-    /* background-position: center; */
-    transition: background 0.5s;
-  }
-
-  .contact .button:hover {
-    background: #008CFF radial-gradient(circle, transparent 1%, #008CFF 1%) center/15000%;
-    transform: scaleX(1) scaleY(1);
-  }
-
-  .contact .button:active {
-    background-color: #6eb9f7;
-    background-size: 100%;
-    transition: background 0s;
-  }
-
-
-
-
-
-
 
   /************************* Klutch *************************/
 
