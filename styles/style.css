@@ -191,6 +191,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /******************** GLOBAL KLUTCH SETTINGS ********************/
+
+
+
+
 /* Comp Analysis Content */
 .icon-bulleted-list li {
   position: relative;
@@ -1765,6 +1769,10 @@ ul .minus:before {
     text-decoration: underline;
     text-align: center;
     padding-top: 2.1rem;
+  }
+
+  .newtab:link, .newtab:visited {
+    color: #1F2429;
   }
 
   /* User Flows Content */
