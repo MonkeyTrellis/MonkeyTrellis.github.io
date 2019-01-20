@@ -3571,6 +3571,7 @@ ul .minus:before {
 
   /***** Navbar Klutch *****/
   .klutch .row-navbar-menu-klutch {
+
     display: flex;
     justify-content: center;
     grid-column: 1/7;
@@ -3582,6 +3583,7 @@ ul .minus:before {
     float: left;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    padding-top: .3rem;
   }
 
   /******************* Text Styles Global ********************/
@@ -4616,7 +4618,7 @@ ul .minus:before {
   }
 
   .photo {
-    height: 66rem;
+    height: 60vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

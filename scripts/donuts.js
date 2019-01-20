@@ -1,4 +1,12 @@
-$(document).ready(function() {
+
+$(window).scroll(function() {
+
+    var hT = $('#scroll-to').offset().top,
+       hH = $('#scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)) {
+
     var donutChart = $('.donut-chart-js');
 
     if(donutChart.length > 0) {
@@ -12,5 +20,5 @@ $(document).ready(function() {
         $(item).find('circle.donut-chart').css('stroke-dashoffset', donutChartValue);
       });
     }
-
+   }
 });
