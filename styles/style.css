@@ -124,7 +124,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /******************** GLOBAL HOMEPAGE SETTINGS ********************/
 /***** Hero *****/
-.hero-copy span {
+.hero-copy .headbold {
+  font-weight: bold;
+}
+
+.hero-copy .pink {
   background-color: #FFE8E0;
 }
 
@@ -791,7 +795,7 @@ ul .minus:before {
   .hero-copy {
     font-size: 1.9rem;
     line-height: 3.3rem;
-    padding-bottom: 2.7rem;
+    padding-bottom: 1.8rem;
     padding-top: 1.8rem;
   }
 
@@ -950,7 +954,15 @@ ul .minus:before {
     display: none;
   }
 
+  .homepage .hero {
+    padding-bottom: 3rem;
+  }
+
   /***** Case Studies *****/
+  .homepage .area-1, .homepage .area-2, .homepage .area-3 {
+    margin-bottom: 4.5rem;
+  }
+
   .container-case-study-1, .container-case-study-2, .container-case-study-3 {
     grid-column: 1/9;
   }
@@ -1005,6 +1017,37 @@ ul .minus:before {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  }
+
+  /* See Work */
+  .see-work .sw-text, .see-work .sw-icon {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .see-work {
+    grid-column: 2/4;
+    padding-top: 2.1rem;
+  }
+
+  .see-work .sw-icon {
+    padding-top: 1.5rem;
+    -webkit-animation:bounce 1s infinite;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .homepage i {
+    font-size: 2.7rem;
+    color: #ED9E9A;
+  }
+
+  @-webkit-keyframes bounce {
+  0%       { bottom:3px; }
+  25%, 75% { bottom:9px; }
+  50%      { bottom:12px; }
+  100%     {bottom:0;}
   }
 
   /************************* About *************************/
@@ -2442,6 +2485,10 @@ ul .minus:before {
 
   /******************** Homepage ********************/
   /***** Case Studies *****/
+  .homepage .area-1, .homepage .area-2, .homepage .area-3 {
+    margin-bottom: 5.4rem;
+  }
+
   .container-case-study-1 {
     height: 270px;
     background-size: cover;
@@ -3387,8 +3434,8 @@ ul .minus:before {
   /* Branding */
   .area-31 {
     display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-column-gap: 3rem;
+    grid-column-gap: 0;
+    grid-template-columns: 1fr 4fr 1fr;
   }
 
   /* Prototypes and Mockups Content */
@@ -3634,6 +3681,14 @@ ul .minus:before {
     display: block;
   }
 
+  .see-work {
+    grid-column: 2/6;
+  }
+
+  .see-work .sw-text{
+    font-size: 2.1rem;
+  }
+
   /************************* About *************************/
   /* Hero Image */
   .about .container-hero {
@@ -3692,6 +3747,10 @@ ul .minus:before {
     grid-column: 2/6;
     grid-row: 1/2;
     text-align: center;
+  }
+
+  .letstalk {
+    display: none;
   }
 
   .area-2 .button-row {
@@ -3911,14 +3970,14 @@ ul .minus:before {
   }
 
   .take-heading h4 {
-    padding-top: 2.7rem;
-    padding-left: 1.5rem;
+    padding-top: 3.9rem;
+    padding-left: 1.8rem;
   }
 
   .take-copy {
-    font-size: 1.8rem;
-    line-height: 3rem;
-    padding-bottom: 3.3rem;
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    padding-bottom: 4.2rem;
   }
 
   .area-6 .takeaways {
@@ -4159,7 +4218,7 @@ ul .minus:before {
     font-size: 2.4rem;
   }
 
-  .flow-image-1, .flow-image-2 {
+  .area-21 .flow-image-1, .area-21 .flow-image-2 {
     height: 600px;
     margin: 3rem;
   }
@@ -4251,8 +4310,16 @@ ul .minus:before {
   }
 
   /* Branding Pics */
+  .brand-1, .brand-2, .brand-3 {
+    padding-bottom: 12rem;
+  }
+
+  .brand-1, .brand-2, .brand-3, .brand-4 {
+    grid-column: 2/3;
+  }
+
   .brand-1 .container, .brand-2 .container, .brand-3 .container, .brand-4 .container {
-    padding: 0 3rem 3rem 3rem;
+    padding: 0 3rem 0 3rem;
   }
 
   .process-pic-1, .process-pic-2, .process-pic-3, .process-pic-4 {
@@ -4260,7 +4327,20 @@ ul .minus:before {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 3rem;
+  }
+
+  .process-pic-1 {
+   height: 330px;
+  }
+
+  .process-pic-2 {
+   height: 150px;
+  }
+
+
+  .process-pic-3 {
+    height: 420px;
   }
 
   /* Prototypes and Mockups Heading */
