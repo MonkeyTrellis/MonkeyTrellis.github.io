@@ -2174,6 +2174,36 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
+  /* Klutch Sitemap */
+
+  .klutch-sitemap .s-image, .klutch-sitemap .s-heading, .klutch-sitemap .link-underline {
+    grid-column: 2/4;
+  }
+
+  .klutch-sitemap .s-heading, .klutch-sitemap .link-underline {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+
+  .klutch-sitemap .s-image img {
+    width: 100%;
+  }
+
+  .s-image {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 3rem;
+  }
+
+  .photo {
+    height: 24vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: transform 1.5s ease-out;
+  }
+
 }
 
 /******************** MIN WIDTH 720 PX ********************/
@@ -3265,6 +3295,20 @@ ul .minus:before {
 
   .area-45 {
     grid-area: area-45;
+  }
+
+  /* Klutch Sitemap */
+
+  .klutch-sitemap .s-heading, .klutch-sitemap .link-underline {
+    padding-bottom: 3rem;
+  }
+
+  .s-image {
+    padding-bottom: 2.1rem;
+  }
+
+  .photo {
+    height: 33vh;
   }
 
 }
@@ -4602,27 +4646,15 @@ ul .minus:before {
   }
 
   .klutch-sitemap .s-heading, .klutch-sitemap .link-underline {
-    display: flex;
-    justify-content: center;
     padding-bottom: 3rem;
   }
 
-  .klutch-sitemap .s-image img {
-    width: 100%;
-  }
-
   .s-image {
-    width: 100%;
-    overflow: hidden;
     padding-bottom: 3rem;
   }
 
   .photo {
-    height: 60vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    transition: transform 1.5s ease-out;
+    height: 60vh;;
   }
 
 }
