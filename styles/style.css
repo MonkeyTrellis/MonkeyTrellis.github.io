@@ -882,7 +882,7 @@ ul .minus:before {
   }
 
   /***** Navbar Homepage, About, and Contact *****/
-  .homepage .row-navbar-menu, .about .row-navbar-menu, .contact .row-navbar-menu, .thankyou .row-navbar-menu, .klutch-sitemap .row-navbar-menu {
+  .homepage .row-navbar-menu, .about .row-navbar-menu, .contact .row-navbar-menu, .thankyou .row-navbar-menu, .klutch-sitemap .row-navbar-menu, .klutch-flow .row-navbar-menu {
     display: flex;
     grid-column: 2/7;
     grid-row: 2/4;
@@ -1167,7 +1167,7 @@ ul .minus:before {
    }
 
    .arch-port:hover, .arch-port:active {
-     background-color: #6eb9f7;
+     background-color: #008CFF;
      color: #ffffff;
    }
 
@@ -1771,8 +1771,12 @@ ul .minus:before {
     padding-top: 2.1rem;
   }
 
-  .newtab:link, .newtab:visited {
+  .link-underline a:link, .link-underline a:visited {
     color: #1F2429;
+  }
+
+  .link-underline a:hover, .link-underline a:active {
+    color: #008CFF;
   }
 
   /* User Flows Content */
@@ -1860,6 +1864,10 @@ ul .minus:before {
     padding-top: 8.4rem;
   }
 
+  .area-23 .deskonly {
+    display: none;
+  }
+
   /* Sketched Wireframes Heading */
   .area-24 {
     grid-column: 1/4;
@@ -1923,6 +1931,10 @@ ul .minus:before {
 
   .area-28 .takeaways {
     grid-column: 2/3;
+  }
+
+  .area-28 .deskonly {
+    display: none;
   }
 
   /* Visual Design Heading */
@@ -2174,19 +2186,19 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
-  /* Klutch Sitemap */
+  /***** Klutch Sitemap + Klutch DigiFlow Pages *****/
 
-  .klutch-sitemap .s-image, .klutch-sitemap .s-heading, .klutch-sitemap .link-underline {
+  .s-image, .s-heading, .klutch-sitemap .link-underline, .klutch-flow .link-underline {
     grid-column: 2/4;
   }
 
-  .klutch-sitemap .s-heading, .klutch-sitemap .link-underline {
+  .s-heading, .klutch-sitemap .link-underline, .klutch-flow .link-underline {
     display: flex;
     justify-content: center;
     padding-bottom: 3rem;
   }
 
-  .klutch-sitemap .s-image img {
+  .s-image img {
     width: 100%;
   }
 
@@ -3297,9 +3309,8 @@ ul .minus:before {
     grid-area: area-45;
   }
 
-  /* Klutch Sitemap */
-
-  .klutch-sitemap .s-heading, .klutch-sitemap .link-underline {
+  /***** Klutch Sitemap + Klutch DigiFlow Pages *****/
+  .s-heading, .klutch-sitemap .link-underline, .klutch-flow .link-underline {
     padding-bottom: 3rem;
   }
 
@@ -3380,8 +3391,8 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
-  /* Navbar Homepage, About, and Contact */
-  .homepage .container-nav, .about .container-nav, .contact .container-nav, .thankyou .container-nav, .klutch-sitemap .container-nav {
+  /* Navbar Homepage, About, Contact, Klutch Sitemap, and Klutch Flow */
+  .homepage .container-nav, .about .container-nav, .contact .container-nav, .thankyou .container-nav, .klutch-sitemap .container-nav, .klutch-flow .container-nav {
     grid-column: 2/3;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 20px 21px 21px 20px;
@@ -3590,8 +3601,8 @@ ul .minus:before {
     justify-content: flex-end;
   }
 
-  /***** Navbar Homepage and Klutch *****/
-  .homepage .row-navbar-menu ul li, .about .row-navbar-menu ul li, .contact .row-navbar-menu ul li, .klutch .row-navbar-menu ul li, .klutch-sitemap .row-navbar-menu ul li {
+  /***** Navbar Global *****/
+  .homepage .row-navbar-menu ul li, .about .row-navbar-menu ul li, .contact .row-navbar-menu ul li, .klutch .row-navbar-menu ul li, .klutch-sitemap .row-navbar-menu ul li, .klutch-flow .row-navbar-menu ul li {
     display: inline;
     float: right;
     font-size: 1.5rem;
@@ -4348,6 +4359,10 @@ ul .minus:before {
     grid-column: 2/6;
   }
 
+  .area-23 .deskonly {
+    display: block;
+  }
+
   /* Sketched Wireframes Heading */
   .area-24 {
     grid-column: 2/3;
@@ -4393,6 +4408,10 @@ ul .minus:before {
   /* Digitized Wireframes Takeaways */
   .area-28 .takeaways {
     grid-column: 2/6;
+  }
+
+  .area-28 .deskonly {
+    display: block;
   }
 
   /* Branding Heading */
@@ -4475,7 +4494,7 @@ ul .minus:before {
     width: 100%;
   }
 
-  .area-33 .container, .area-33 .cont-button, .area-33 .img-column-1, .img-column-2,.img-column-3, .img-column-4, .img-column-5, .img-column-6{
+  .area-33 .container, .area-33 .cont-button, .area-33 .img-column-1, .img-column-2,.img-column-3, .img-column-4, .img-column-5, .img-column-6 {
     display: flex;
     justify-content: center;
   }
@@ -4639,13 +4658,12 @@ ul .minus:before {
     line-height: 3.3rem;
   }
 
-  /* Klutch Sitemap */
-
-  .klutch-sitemap .s-image, .klutch-sitemap .s-heading, .klutch-sitemap .link-underline {
+  /***** Klutch Sitemap + Klutch DigiFlow Pages *****/
+  .s-image, .s-heading, .klutch-sitemap .link-underline, .klutch-flow .link-underline {
     grid-column: 1/7;
   }
 
-  .klutch-sitemap .s-heading, .klutch-sitemap .link-underline {
+  .s-heading, .klutch-sitemap .link-underline, .klutch-flow .link-underline {
     padding-bottom: 3rem;
   }
 
@@ -4654,7 +4672,11 @@ ul .minus:before {
   }
 
   .photo {
-    height: 60vh;;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: transform 1.5s ease-out;
   }
 
 }
