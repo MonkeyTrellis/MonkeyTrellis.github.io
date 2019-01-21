@@ -192,9 +192,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /******************** GLOBAL KLUTCH SETTINGS ********************/
 
-
-
-
 /* Comp Analysis Content */
 .icon-bulleted-list li {
   position: relative;
@@ -340,12 +337,6 @@ ul .minus:before {
 }
 
 /* Carousel */
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
 .carousel-container {
     list-style: none;
     overflow: hidden;
@@ -371,9 +362,9 @@ ul .minus:before {
     color: #fff;
     font-size: 1em;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-align: center;
@@ -382,7 +373,7 @@ ul .minus:before {
 }
 
 .carousel-prev {
-    left: 3%;
+    left: 4%;
     padding-right: 3px;
 }
 
@@ -394,7 +385,7 @@ ul .minus:before {
 }
 
 .carousel-next {
-    right: 2%;
+    right: 4%;
     padding-left: 3px;
 }
 
@@ -1878,14 +1869,25 @@ ul .minus:before {
     grid-column: 1/4;
   }
 
+  .container-carousel {
+    display: block;
+  }
+
+  .carousel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+  }
+
   .carousel-item > div {
-      height: 360px;
+      /* height: 360px; */
+      height: 50vh;
   }
 
   /* Next / Prev Buttons */
   .carousel-prev,
   .carousel-next {
-    top: 40%;
+    top: 38%;
   }
 
   /* Sketched Wireframes Takeaways */
@@ -3031,7 +3033,8 @@ ul .minus:before {
   }
 
   .carousel-item > div {
-      height: 750px;
+      /* height: 690px; */
+      height: 60vh;
   }
 
   /* Next / Prev Buttons */
@@ -3528,7 +3531,6 @@ ul .minus:before {
     display: grid;
     grid-column-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 3rem;
   }
 
   .container-klutch-ex {
@@ -4373,14 +4375,19 @@ ul .minus:before {
     grid-column: 2/6;
   }
 
+  .carousel {
+      position: relative;
+      overflow: hidden;
+  }
+
   .carousel-item > div {
-      height: 750px;
+      height: 600px;
   }
 
   /* Next / Prev Buttons */
   .carousel-prev,
   .carousel-next {
-    top: 50%;
+    top: 45%;
   }
 
   /* Sketched Wireframes Takeaways */
@@ -4460,7 +4467,7 @@ ul .minus:before {
 
   /* Prototypes and Mockups Content */
   .area-33 .column-1, .area-33 .column-2, .area-33 .column-3 {
-    padding-bottom: 5.4rem;
+    padding-bottom: 9.6rem;
   }
 
   .area-33 .column-1 {
@@ -4478,6 +4485,16 @@ ul .minus:before {
   .area-33 .row-2 {
     grid-column: 2/6;
     padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-gif {
+    margin-bottom: 2.4rem;
+  }
+
+  .container-gif img {
+    height: 60vh;
   }
 
   .area-33 .h-above-image {
@@ -4487,6 +4504,7 @@ ul .minus:before {
   .area-33 .p-below-image {
     grid-column: 2/6;
     padding-top: 0;
+    padding-bottom: 9.6rem;
   }
 
   .proto-prev, .iteration {
