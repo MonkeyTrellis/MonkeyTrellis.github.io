@@ -2010,8 +2010,8 @@ ul .minus:before {
 
   .area-33 .row-2 {
     grid-column: 2/3;
-    padding-bottom: 4.2rem;
-    padding-top: 3rem;
+    /* padding-bottom: 4.2rem;
+    padding-top: 3rem; */
   }
 
   .container-gif {
@@ -2027,6 +2027,21 @@ ul .minus:before {
 
   .area-33 .h-above-image {
     grid-column: 2/3;
+    padding-top: 3rem;
+  }
+
+  .area-33 .container-klutch-ex .h-above-image {
+    grid-column: 2/3;
+    padding-top: 6rem;
+  }
+
+  .area-33 .container-klutch-tools .h-above-image {
+    grid-column: 2/3;
+    padding-top: 6rem;
+  }
+
+  .area-33 .row-2 .h-above-image {
+    padding-top: 6rem;
   }
 
   .area-33 .p-below-image {
@@ -2040,7 +2055,7 @@ ul .minus:before {
 
   .area-33 .container-klutch-ex {
     grid-column: 2/3;
-    padding-bottom: 4.2rem;
+    /* padding-bottom: 4.2rem; */
   }
 
   .area-33 .container-klutch-tools {
