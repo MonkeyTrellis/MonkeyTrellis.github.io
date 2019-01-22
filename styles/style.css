@@ -1064,6 +1064,15 @@ ul .minus:before {
     grid-column: 2/4;
   }
 
+  .about .credit {
+    grid-column: 2/4;
+    font-style: italic;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: .9rem;
+    padding-right: .6rem;
+  }
+
   /* Roles, Education, Tools */
   .about .area-1 .about-list-container, .about .area-1 .about-list-2 {
     grid-column: 2/3;
@@ -2610,6 +2619,18 @@ ul .minus:before {
 
   .about .hero-heading {
     display: inherit;
+  }
+
+  .about .credit {
+    grid-column: 2/4;
+  }
+
+  .about .credit {
+    font-style: italic;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.2rem;
+    padding-right: .6rem;
   }
 
   /* Hero Image */
