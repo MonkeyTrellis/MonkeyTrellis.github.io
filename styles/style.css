@@ -1270,6 +1270,10 @@ ul .minus:before {
      width: 100%;
    }
 
+   .thankyou .area-1 {
+     margin-bottom: 12.6rem;
+   }
+
   /************************* Klutch *************************/
   /* Buttons */
   .hero-button, .overview-button {
