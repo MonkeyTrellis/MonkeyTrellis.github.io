@@ -3816,8 +3816,16 @@ ul .minus:before {
     grid-column: 1/7;
   }
 
-  .about .hero-heading, .about .hero-copy, .about .hero-image-me, .about .hero-copy {
+  .about .hero-heading, .about .hero-copy, .about .hero-image-me, .about .hero-copy, .about .credit {
     grid-column: 2/6;
+  }
+
+  .about .credit {
+    font-style: italic;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.2rem;
+    padding-right: .6rem;
   }
 
   .hero-image-me {
