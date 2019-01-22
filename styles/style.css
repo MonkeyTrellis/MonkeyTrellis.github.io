@@ -3218,7 +3218,12 @@ ul .minus:before {
     grid-column: 5/7;
   }
 
-  .area-33 .container-klutch-tools {
+  .area-33 .container-klutch-tools .h-above-image {
+    grid-column: 1/7;
+    padding-bottom: 0;
+  }
+
+  .area-33 .container-klutch-ex .h-above-image {
     grid-column: 1/7;
     padding-bottom: 0;
   }
@@ -4515,7 +4520,7 @@ ul .minus:before {
 
   /* Prototypes and Mockups Content */
   .area-33 .column-1, .area-33 .column-2, .area-33 .column-3 {
-    padding-bottom: 9.6rem;
+    padding-bottom: 12.6rem;
   }
 
   .area-33 .column-1 {
