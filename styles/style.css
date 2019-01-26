@@ -4751,3 +4751,10 @@ ul .minus:before {
   }
 
 }
+
+/* Fade In Animation */
+#fadeInUp.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 1s;
+}
