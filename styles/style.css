@@ -2246,6 +2246,14 @@ ul .minus:before {
     transition: transform 1.5s ease-out;
   }
 
+  /* Fade In Animation */
+  #fadeInUpMob.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: all 1s;
+  }
+
+
 }
 
 /******************** MIN WIDTH 720 PX ********************/
@@ -4754,6 +4762,12 @@ ul .minus:before {
 
 /* Fade In Animation */
 #fadeInUp.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 1s;
+}
+
+#fadeInUpMob.visible {
   opacity: 1 !important;
   transform: translateY(0) !important;
   transition: all 1s;

@@ -9,14 +9,14 @@ $(document).ready(function() {
 	});
 
 	function hideObjects() {
-		$('#fadeInUp').css({
+		$('#fadeInUpMob').css({
 			'opacity': 0,
 			'transform': 'translateY(100px)'
 		});
 	}
 
 	function checkObjectsVisibility() {
-		$('#fadeInUp').each( function(i) {
+		$('#fadeInUpMob').each( function(i) {
 			var objectTop = $(this).offset().top;
 			var windowBottom = $(window).scrollTop() + $(window).outerHeight();
 
