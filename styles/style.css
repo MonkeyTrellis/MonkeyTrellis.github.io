@@ -3128,7 +3128,7 @@ ul .minus:before {
   .area-16 .pers-col {
     grid-column: 2/3;
     padding-bottom: 5.4rem;
-    padding-top: 1.2rem;
+    padding-top: 3rem;
   }
 
   .area-16 .three-col-box {
@@ -4200,8 +4200,8 @@ ul .minus:before {
     padding-bottom: 2.1rem;
   }
 
-  .three-col-box {
-    height: 372px;
+  .area-1 .three-col-box {
+    height: 390px;
   }
 
   .area-1 .bulleted-list {
@@ -4514,10 +4514,14 @@ ul .minus:before {
     padding-bottom: 1.8rem;
   }
 
+  .area-16 .pers-col {
+    padding-top: 1.2rem;
+  }
+
   .area-16 .three-col-box {
     display: block;
     grid-row: 3/4;
-    height: 660px;
+    height: 720px;
   }
 
   .area-16 .pers-list {
@@ -5041,6 +5045,37 @@ ul .minus:before {
     margin-left: 4.8rem;
   }
 
+}
+
+/***** Long Column Responsiveness *****/
+@media (min-width: 70rem) {
+  .klutch .area-1 .three-col-box {
+    height: 360px;
+  }
+
+  .klutch .area-16 .three-col-box {
+    height: 660px;
+  }
+}
+
+@media (min-width: 74rem) {
+  .klutch .area-6 .three-col-box {
+    display: block;
+    height: 300px;
+  }
+  .klutch .area-16 .three-col-box {
+    height: 630px;
+  }
+}
+
+@media (min-width: 83rem) {
+  .klutch .area-6 .three-col-box {
+    display: block;
+    height: 270px;
+  }
+  .klutch .area-16 .three-col-box {
+    height: 510px;
+  }
 }
 
 /* Fade In Animation */
