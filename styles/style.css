@@ -548,6 +548,17 @@ ul .minus:before {
     margin-top: 1.5rem;
   }
 
+  /***** SalesHero *****/
+  .sh .area-3 .two-col-box {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+
+  .sh .area-5 {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+
   /***** Klutch *****/
   /* Roles, Deliverables, Tools */
   .area-1 .three-col-box {
@@ -2255,7 +2266,7 @@ ul .minus:before {
   }
 
   /************************* SalesHero *************************/
-  /* Hero */
+
   .hero-image-sh {
     background-image: url("/images/sh-hero.jpg");
     height: 210px;
@@ -2283,11 +2294,6 @@ ul .minus:before {
 
   .sh .area-3 .column-6 {
     grid-column: 1/4;
-  }
-
-  .sh .area-3 .two-col-box {
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
   }
 
   .sh .area-3 .column-6 p, .sh .area-3 .column-6 ul {
@@ -2318,10 +2324,58 @@ ul .minus:before {
   }
 
   .sh .area-3 .bulleted-list {
-    padding: 1.2rem 3rem 3.6rem 3rem;
+    padding: 1.2rem 3rem 3.6rem 0;
   }
 
+  .sh .area-4 {
+    padding-top: 5.7rem;
+    padding-bottom: 2.1rem;
+  }
 
+  .sh .area-5 .column-1, .sh .area-5 .column-2, .sh .area-5 .column-3, .sh .area-5 .column-4, .sh .area-5 .column-5, .sh .area-5 .column-6 {
+    grid-column: 2/3;
+  }
+
+  .sh .area-5 .column-4 {
+    grid-row: 3/4;
+  }
+
+  .sh .area-5 .column-2, .sh .area-5 .column-3, .sh .area-5 .column-6 {
+    padding-bottom: 5.4rem;
+  }
+
+  .sh .area-5 .column-1, .sh .area-5 .column-4, .sh .area-5 .column-5 {
+    padding-bottom: 3rem;
+  }
+
+  .sh .area-6 {
+    padding-top: .3rem;
+    padding-bottom: 3rem;
+  }
+
+  .sh .area-7 {
+    grid-column: 2/3;
+  }
+
+  .sh .area-7 .icon {
+    position: absolute;
+    margin-top: .6rem;
+  }
+
+  .sh .area-7 .icon img {
+    width: 2.4rem;
+  }
+
+  .sh .area-7 .row {
+    padding-bottom: 3.3rem;
+  }
+
+  .sh .area-7 .text{
+    position: relative;
+    font-size: 1.9rem;
+    line-height: 3.3rem;
+    margin-left: 4.2rem;
+  }
 }
 
 /******************** MIN WIDTH 720 PX ********************/
@@ -2389,7 +2443,11 @@ ul .minus:before {
   .container-case-study-1, .container-case-study-2, .container-case-study-3 {
     grid-column: 1/9;
   }
-
+  /***** SalesHero*****/
+  .sh .area-3 .two-col-box {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+  }
   /***** Klutch *****/
   /* Survey 1 */
   .area-9 {
@@ -3449,6 +3507,37 @@ ul .minus:before {
 
   .photo {
     height: 33vh;
+  }
+
+  /************************* SalesHero *************************/
+  .hero-image-sh {
+    height: 420px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
+  .sh .area-3 .column-1, .sh .area-3 .column-2, .sh .area-3 .column-3, .sh .area-3 .column-4, .sh .area-3 .column-5 {
+    grid-column: 2/4;
+  }
+
+  .sh .area-3 .column-6 {
+    grid-column: 1/5;
+  }
+
+  .sh .area-3 .two-col-box p, .sh .area-3 .two-col-box ul {
+    grid-column: 2/4;
+  }
+
+  .sh .vector-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sh .area-3 img, .sh .area-5 img {
+    width: 50%;
   }
 
 }
@@ -4819,7 +4908,7 @@ ul .minus:before {
   /* Footer Copy */
   .footer-copy {
     font-size: 1.8rem;
-    line-height: 3.3rem;
+    line-height: 2.7rem;
   }
 
   /***** Klutch Sitemap + Klutch DigiFlow Pages *****/
@@ -4892,16 +4981,14 @@ ul .minus:before {
     grid-column: 4/7;
   }
 
-
-
   .sh .area-3 .column-6 p {
-    padding: 3.6rem 3rem 0 3rem;
-    line-height: 3rem;
+    padding: 3.6rem 0 0 0;
+    line-height: 2.4rem;
     font-weight: bold;
   }
 
   .sh .area-3 .bulleted-list {
-    padding: 1.2rem 3rem 3.6rem 3rem;
+    padding: 1.2rem 0 3.6rem 0;
   }
 
   .sh .area-4 {
@@ -4921,6 +5008,14 @@ ul .minus:before {
 
   .sh .area-5 .column-2, .sh .area-5 .column-4, .sh .area-5 .column-6 {
     grid-column: 4/7;
+  }
+
+  .sh .area-5 .column-4 {
+    grid-row: 2/3;
+  }
+
+  .sh .area-3 img, .sh .area-5 img {
+    width: 100%;
   }
 
   .sh .area-6 {
@@ -4944,7 +5039,6 @@ ul .minus:before {
     line-height: 4.2rem;
     margin-left: 4.8rem;
   }
-
 
 }
 
