@@ -3128,7 +3128,7 @@ ul .minus:before {
   .area-16 .pers-col {
     grid-column: 2/3;
     padding-bottom: 5.4rem;
-    padding-top: 4.2rem;
+    padding-top: 1.2rem;
   }
 
   .area-16 .three-col-box {
@@ -4516,6 +4516,7 @@ ul .minus:before {
 
   .area-16 .three-col-box {
     display: block;
+    grid-row: 3/4;
     height: 660px;
   }
 
