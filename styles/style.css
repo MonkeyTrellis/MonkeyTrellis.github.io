@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-icons {
   display: flex;
   justify-content: center;
-  padding: 8% 0% 15% 0%;
+  padding: 8% 0% 13% 0%;
 }
 
 .f-icon-1 {
@@ -4076,10 +4076,10 @@ ul .minus:before {
 
   /* Case Studies */
   .homepage .area-1 {
-    height: 35vh;
+    height: 43vh;
   }
   .container-case-study-1 {
-    height: 35vh;
+    height: 43vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
