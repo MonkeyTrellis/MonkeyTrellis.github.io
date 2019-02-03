@@ -193,6 +193,12 @@ h1, h2, h3, h4, h5, h6 {
 /******************** GLOBAL KLUTCH SETTINGS ********************/
 
 /* Comp Analysis Content */
+
+.take-copy .tb {
+  font-weight: bold;
+
+}
+
 .icon-bulleted-list li {
   position: relative;
   margin-left: 3rem;
