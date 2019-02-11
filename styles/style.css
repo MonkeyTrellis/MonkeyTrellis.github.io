@@ -1953,9 +1953,13 @@ ul .minus:before {
     padding-bottom: 3rem;
   }
 
-  .area-21 h6{
+  .area-21 h6 {
     padding-bottom: 2.4rem;
     font-weight: 500;
+  }
+
+  .area-21 .bold {
+    font-weight: bold;
   }
 
   .area-21 .caption {
