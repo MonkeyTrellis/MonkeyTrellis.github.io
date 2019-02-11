@@ -409,7 +409,21 @@ ul .minus:before {
 }
 
 /* Pagination */
-.carousel-pagination {
+
+.carousel .current {
+  /* background-color: #FFE8E0;
+  color: #000; */
+}
+
+.current-index {
+  color: #ED9E9A;
+  font-size: 3.3rem;
+  font-style: italic;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+/* .carousel-pagination {
     list-style: none;
     position: relative;
     bottom: 0%;
@@ -420,9 +434,9 @@ ul .minus:before {
     margin: 0 auto;
     text-align: center;
     z-index: 1;
-}
+} */
 
-.carousel-bullet {
+/* .carousel-bullet {
     display: inline-block;
     width: 9px;
     height: 9px;
@@ -433,9 +447,9 @@ ul .minus:before {
     opacity: 0.3;
     transition-property: transform, opacity, background-color;
     transition-duration: 0.3s;
-}
+} */
 
-.carousel-bullet:hover {
+/* .carousel-bullet:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
@@ -447,7 +461,7 @@ ul .minus:before {
     transform: scale(1.3);
     background-color: #ED9E9A;
     cursor: default;
-}
+} */
 
 /******************** MEDIA QUERIES / RESPONSIVE DESIGN ********************/
 /******************** MIN WIDTH 320 PX ********************/
@@ -1990,22 +2004,22 @@ ul .minus:before {
 
   .area-21 .versions-1 .img-1 {
     background-image: url("/images/klutch-flow-1-s.jpg");
-    height: 210px;
+    height: 150px;
   }
 
   .area-21 .versions-1 .img-2 {
     background-image: url("/images/klutch-flow-1-v.jpg");
-    height: 210px;
+    height: 150px;
   }
 
   .area-21 .versions-2 .img-3 {
     background-image: url("/images/klutch-flow-2-s.jpg");
-    height: 210px;
+    height: 150px;
   }
 
   .area-21 .versions-2 .img-4 {
     background-image: url("/images/klutch-flow-2-v.jpg");
-    height: 210px;
+    height: 150px;
   }
 
   .area-21 .versions-1 .img-1, .area-21 .versions-1 .img-2, .area-21 .versions-2 .img-3, .area-21 .versions-2 .img-4 {

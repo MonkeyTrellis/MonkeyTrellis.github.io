@@ -7,6 +7,7 @@ var bullets = [].slice.call(carousel.querySelectorAll('.carousel-bullet'));
 var totalItems = container.querySelectorAll('.carousel-item').length;
 var percent = (100 / totalItems);
 var currentIndex = 0;
+var countNum = document.querySelector('.current-index');
 
 function next() {
     slideTo(currentIndex + 1);
@@ -22,6 +23,7 @@ function slideTo(index) {
     bullets[currentIndex].classList.remove('active-bullet');
     bullets[index].classList.add('active-bullet');
     currentIndex = index;
+    countNum.innerHTML = currentIndex + 1 + " of 28";
 }
 
 bullets[currentIndex].classList.add('active-bullet');

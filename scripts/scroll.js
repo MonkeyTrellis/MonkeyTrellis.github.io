@@ -9,7 +9,7 @@ var homePage = {
 				if (target.length) {
 					$('html, body').animate({
 						scrollTop: target.offset().top - 100
-					}, 500, 'easeInOutExpo');
+					}, 750, 'easeInOutExpo');
 					return false;
 				}
 			}
