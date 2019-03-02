@@ -569,25 +569,39 @@ ul .minus:before {
   }
   /***** Homepage *****/
 
+  .homepage .area-4 {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
 
-  .container-case-study-1 {
+  .container-case-study-1, .container-case-study-2 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 
-  /***** SalesHero *****/
+  /***** SalesHero and HUB AR *****/
   .sh .area-3 .two-col-box {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
 
-  .sh .area-5 {
+  .sh .area-5, .har .area-5, .har .area-8 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
-
-  /***** Klutch *****/
+  /***** HUB AR ONLY *****/
+  .har .area-10 .col-1, .har .area-10 .col-3, .har .area-10 .col-2, .har .area-10 .col-4 {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-12 .data-group {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  /***** Klutch and HUB AR *****/
   /* Roles, Deliverables, Tools */
   .area-1 .three-col-box {
     display: grid;
@@ -601,7 +615,7 @@ ul .minus:before {
     grid-template-columns: 1fr 6fr 1fr;
   }
 
-  .area-6 .three-col-box {
+  .area-6 .three-col-box, .har .area-10 .three-col-box {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
@@ -622,11 +636,14 @@ ul .minus:before {
   }
 
   /* Survey 2 Content */
-  .area-12 {
+  .area-12  {
     display: grid;
     grid-area: area-12;
     grid-row-gap: 3rem;
     grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-12 {
+    grid-row-gap: 0;
   }
 
   /* Survey 2 Takeaways */
@@ -637,13 +654,13 @@ ul .minus:before {
   }
 
   /* Personas Content */
-  .area-16 {
+  .area-16, .har .area-15 {
     display: grid;
     grid-area: area-16;
     grid-template-columns: 1fr 6fr 1fr;
   }
 
-  .area-16 .three-col-box {
+  .area-16 .three-col-box, .har .area-15 .three-col-box {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
@@ -931,14 +948,14 @@ ul .minus:before {
   }
 
   /***** Navbar Homepage, About, and Contact *****/
-  .homepage .row-navbar-menu, .about .row-navbar-menu, .contact .row-navbar-menu, .thankyou .row-navbar-menu, .klutch-sitemap .row-navbar-menu, .klutch-flow .row-navbar-menu, .sh .row-navbar-menu {
+  .homepage .row-navbar-menu, .about .row-navbar-menu, .contact .row-navbar-menu, .thankyou .row-navbar-menu, .klutch-sitemap .row-navbar-menu, .klutch-flow .row-navbar-menu, .sh .row-navbar-menu, .har .row-navbar-menu {
     display: flex;
     grid-column: 2/7;
     grid-row: 2/4;
     justify-content: flex-end;
   }
 
-  .homepage .row-navbar-menu ul li, .about .row-navbar-menu ul li, .contact .row-navbar-menu ul li, .thankyou .row-navbar-menu ul li, .klutch-sitemap .row-navbar-menu ul li, .sh .row-navbar-menu ul li{
+  .homepage .row-navbar-menu ul li, .about .row-navbar-menu ul li, .contact .row-navbar-menu ul li, .thankyou .row-navbar-menu ul li, .klutch-sitemap .row-navbar-menu ul li, .sh .row-navbar-menu ul li, .har .row-navbar-menu ul li {
     display: inline;
     float: right;
     font-size: 1.5rem;
@@ -962,14 +979,14 @@ ul .minus:before {
     justify-content: flex-end;
   }
 
-  .klutch .row-navbar-menu, .sh .row-navbar-menu {
+  .klutch .row-navbar-menu, .sh .row-navbar-menu, .har .row-navbar-menu {
     display: flex;
     grid-column: 2/6;
     grid-row: 3/4;
     justify-content: center;
   }
 
-  .klutch .row-navbar-menu ul li, .sh .row-navbar-menu ul li {
+  .klutch .row-navbar-menu ul li, .sh .row-navbar-menu ul li, .har .row-navbar-menu ul li {
     display: inline;
     float: right;
     font-size: 1.5rem;
@@ -978,7 +995,7 @@ ul .minus:before {
   }
 
   /* Slide Menu */
-  .klutch .sidenav, .sh .sidenav {
+  .klutch .sidenav, .sh .sidenav, .har .sidenav {
     display: none;
     opacity: .9;
     height: 100%;
@@ -992,11 +1009,11 @@ ul .minus:before {
     padding-top: 3rem;
   }
 
-  .klutch .sidenav ul, .sh .sidenav ul {
+  .klutch .sidenav ul, .sh .sidenav ul, .har .sidenav ul {
     padding: 3rem 1rem 0 3rem;
   }
 
-  .klutch .sidenav li, .sh .sidenav li {
+  .klutch .sidenav li, .sh .sidenav li, .har .sidenav li {
     color: #ffffff;
     opacity: 1;
     padding-bottom: 3rem;
@@ -1015,12 +1032,8 @@ ul .minus:before {
 
   /***** Case Studies *****/
 
-  .homepage .area-1, .homepage .area-2, .homepage .area-3 {
+  .homepage .area-1, .homepage .area-2, .homepage .area-3, .homepage .area-4 {
     margin-bottom: 4.5rem;
-  }
-
-  .container-case-study-1, .container-case-study-2, .container-case-study-3 {
-    grid-column: 1/9;
   }
 
   .case-study-desc {
@@ -1028,40 +1041,52 @@ ul .minus:before {
     padding-bottom: 3.3rem;
   }
 
-  .container-case-study-1, .container-case-study-2, .container-case-study-3 {
-    height: 270px;
+  .container-case-study-1, .container-case-study-2 {
+    display: grid;
+    grid-column: 1/4;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   .container-case-study-1 {
-    display: grid;
+    height: 270px;
+  }
+
+  .container-case-study-2 {
+    height: 210px;
+  }
+
+  .homepage .area-3 {
+    padding-top: 12rem;
+  }
+
+  .homepage .area-4 {
+    padding-bottom: 6rem;
   }
 
   .overlay, .cs-details {
     display: none;
   }
 
-  .container-case-study-1 .pattern-img {
-    grid-column: 2/3;
+  .homepage .area-1 .pattern-img, .homepage .area-3 .pattern-img {
+    grid-column: 1/4;
     grid-row: 1/3;
     padding-top: 1.5rem;
   }
 
-  .container-case-study-1 .laptop-img{
+  .homepage .area-1 .laptop-img, .homepage .area-3 .laptop-img{
     grid-column: 2/3;
     grid-row: 2/3;
     z-index: 1;
   }
 
-  .container-case-study-1 img{
+  .container-case-study-1 img, .container-case-study-2 img{
     width: 100%;
   }
 
   .overlay-mobile {
     grid-column: 2/3;
-
   }
 
   .cs-details-mobile h4, .cs-details-mobile p {
@@ -1073,32 +1098,10 @@ ul .minus:before {
     justify-content: center;
   }
 
-  /* .overlay-mobile {
-    background: rgba(255,232,224,0.9);
-    position: absolute;
-    height: 80%;
-    width: 100%;
-    top: 10%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  } */
-
-  /* .cs-details-mobile {
-    position: absolute;
-    text-align: center;
-    padding-left: 12.5%;
-    padding-right: 12.5%;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  } */
-  .area-2 h2 {
+  .area-2 h2, .area-4 h2 {
     padding-top: 0;
   }
+
   /* See Work */
   .see-work .sw-text, .see-work .sw-icon {
     font-size: 1.5rem;
@@ -1379,6 +1382,12 @@ ul .minus:before {
   }
 
   /* Hero */
+  .hero-heading {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+
   .hero-image-klutch {
     background-image: url("/images/klutch-hero-laptop.svg");
     height: 160px;
@@ -1446,6 +1455,10 @@ ul .minus:before {
     padding-bottom: 3rem;
   }
 
+  .area-3 h4 {
+    text-align: center;
+  }
+
   .klutch .area-3 {
     padding-bottom: 2.7rem;
   }
@@ -1470,7 +1483,7 @@ ul .minus:before {
     z-index: 1;
   }
 
-  .two-col-copy, .copy-type-2, .pref-copy, .pref-copy-2 {
+  .two-col-copy, .copy-type-2, .pref-copy, .pref-copy-2, .one-col-copy {
     font-size: 1.8rem;
     line-height: 3.3rem;
   }
@@ -1784,38 +1797,37 @@ ul .minus:before {
   }
 
   .area-16 .column-1, .area-16 .column-2, .area-16 .column-3 {
-    grid-column: 1/7;
+    grid-column: 1/4;
     padding-bottom: 7.2rem;
   }
 
-  .area-16 .pers-col {
+  .area-16 .pers-col, .har .area-15 .pers-col {
     grid-column: 2/3;
     padding-bottom: 5.7rem;
     padding-top: 4.2rem;
   }
 
-  .area-16 h4 {
+  .area-16 h4, .har .area-15 h4 {
     text-align: center;
     padding-bottom: 1.5rem;
   }
 
-  .area-16 .pers-desc {
+  .area-16 .pers-desc, .har .area-15 .pers-desc {
     color: #ED9E9A;
     font-style: italic;
     font-weight: 500;
   }
 
-  .area-16 .three-col-box {
+  .area-16 .three-col-box, .har .area-15 .three-col-box {
     height: auto;
-    padding-bottom:
   }
 
-  .area-16 .pers-image {
+  .area-16 .pers-image, .har .area-15 .pers-image {
     display: flex;
     justify-content: center;
   }
 
-  .area-16 .details span {
+  .area-16 .details span, .har .area-15 .details span {
     font-weight: bold;
   }
 
@@ -1825,15 +1837,15 @@ ul .minus:before {
     padding-bottom: 1.5rem;
   }
 
-  .area-16 li span {
+  .area-16 li span, .har .area-15 li span {
     font-weight: bold;
   }
 
-  .area-16 li {
+  .area-16 li, .har .area-15 li {
     line-height: 3rem;
   }
 
-  .area-16 .quote {
+  .area-16 .quote, .area-15 .quote {
     font-size: 2.1rem;
     font-style: italic;
     line-height: 3.3rem;
@@ -1841,25 +1853,25 @@ ul .minus:before {
     padding: 4.2rem 0 2.1rem 0;
   }
 
-  .area-16 .details-head {
+  .area-16 .details-head, .area-15 .details-head  {
     font-weight: bold;
     text-align: center;
     padding-top: 3.3rem;
   }
 
-  .area-16 .details-cont {
+  .area-16 .details-cont, .area-15 .details-cont {
     padding-top: .3rem;
     font-size: 1.8rem;
   }
 
-  .area-16 .details-cont li:before{
+  .area-16 .details-cont li:before, .area-15 .details-cont li:before {
     content: "•";
     font-size: 2.1rem;
     left: -1.5rem;
     position: absolute;
   }
 
-  .area-16 .details-cont li{
+  .area-16 .details-cont li, .area-15 .details-cont li{
     margin-left: 1.5rem;
     padding-bottom: 1.2rem;
     position: relative;
@@ -2584,8 +2596,260 @@ ul .minus:before {
     line-height: 3.3rem;
     margin-left: 4.2rem;
   }
-}
+  /******************** HUB-AR ********************/
+  /* Hero */
+  .hero-image-har {
+    background-image: url("/images/har-hero-image.png");
+    height: 240px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    z-index: 1;
+  }
+  .hero-image-pattern-har {
+    background-image: url("/images/home-har-flowy.png");
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/7;
+    grid-row: 2/3;
+    z-index: -1;
+  }
+  /* Overview Image */
+  .har .overview-image {
+    background-image: url("/images/har-overview-image.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    height: 300px;
+    opacity: .9;
+    padding: 0 2rem 0 2rem;
+  }
+  /* Bold Spans */
+  .har .bold {
+    font-weight: bold;
+  }
+  /* Overview Content */
+  .har .col-1, .har .col-2, .har .overview-image {
+    grid-column: 2/3;
+    padding-bottom: 3rem;
+  }
+  /* Design Process Content */
+  .har .area-5 .process {
+    background-image: url("/images/har-process.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    height: 360px;
+  }
+  .har .area-5 .takeaways {
+    grid-column: 2/3;
+  }
+  .har .area-6 .wide-box {
+    grid-column: 1/4;
+  }
+  /* Why Dolores Park */
+  .har .area-8 .one-col-heading, .har .area-8 .one-col-copy {
+    grid-column: 1/4;
+  }
+  .har h4 {
+    text-align: center;
+  }
+  .har .area-8 .one-col-copy {
+    padding-bottom: 6rem;
+  }
+  .har .dolo-img {
+    grid-column: 1/4;
+  }
+  .har .dolo-img img {
+    width: 100%;
+  }
+  .har .dolo-cap {
+    grid-column: 1/4;
+    text-align: left;
+    padding-top: .9rem;
+    padding-bottom: 3rem;
+  }
+  /* Competitive Analysis */
+  .har .area-10 .col-1, .har .area-10 .col-3, .har .area-10 .col-2, .har .area-10 .col-4 {
+    grid-column: 1/4;
+    padding-bottom: 6rem;
+  }
+  .har .area-10 .icon {
+    display: flex;
+    grid-column: 2/3;
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+  .har .area-10 .three-col-heading {
+    grid-column: 2/3;
+  }
+  .har .area-10 .three-col-box {
+    grid-column: 1/4;
+  }
+  .har .area-10 .three-col-box .icon-bulleted-list {
+    grid-column: 2/3;
+    padding: 2.4rem 0 2.4rem 0;
+  }
+  .har .area-10 .col-1 .app-img, .har .area-10 .col-2 .app-img, .har .area-10 .col-3 .app-img, .har .area-10 .col-4 .app-img {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    height: 240px;
+    margin-bottom: 3rem;
+    margin-top: 1.8rem;
+  }
+  .har .area-10 .col-1 .app-img {
+    background-image: url("/images/har-ca-1.png");
+  }
+  .har .area-10 .col-2 .app-img {
+    background-image: url("/images/har-ca-2.png");
+  }
+  .har .area-10 .col-3 .app-img {
+    background-image: url("/images/har-ca-3.png");
+  }
+  .har .area-10 .col-4 .app-img {
+    background-image: url("/images/har-ca-4.png");
+  }
+  .har .area-10 .icon img {
+    filter: drop-shadow(0px 3px 9px #B3C1C7);
+    height: 120px;
+  }
+  .har .area-10 .desc {
+    font-size: 1.8rem;
+    grid-column: 2/3;
+    line-height: 3.3rem;
+  }
+  .har .area-10 .app-img {
+    display: flex;
+    grid-column: 2/3;
+    justify-content: center;
+    padding-bottom: 5.4rem;
+    padding-top: 4.2rem;
+  }
+  .har .area-10 .app-img img{
+    height: 390px;
+  }
+  /* Competitive Analysis Takeaways */
+  .har .area-10 .sum-img {
+    background-image: url("/images/har-ca-sum.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 3.6rem;
+    margin-top: 1.5rem;
+  }
+  ul .n-1:before, ul .n-2:before, ul .n-3:before, ul .n-4:before, ul .n-5:before {
+    position: absolute;
+    left: -4.2rem;
+  }
+  ul .n-1:before {
+    content: url("/images/num-1.svg");
+  }
+  ul .n-2:before {
+    content: url("/images/num-2.svg");
+  }
+  ul .n-3:before {
+    content: url("/images/num-3.svg");
+  }
+  ul .n-4:before {
+    content: url("/images/num-4.svg");
+  }
+  ul .n-5:before {
+    content: url("/images/num-5.svg");
+  }
+  .har .take-list li {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.3rem;
+    padding-bottom: 1.2rem;
+    position: relative;
+    margin-left: 4.2rem;
+    text-align: left;
+  }
+  .har .area-11 {
+    grid-column: 1/4;
+  }
+  /* User Research */
+  .har .area-12 .survey-heading {
+    grid-column: 2/3;
+    text-align: center;
+  }
+  .har .area-12 .survey-goal-exp {
+    grid-column: 2/3;
+    font-size: 1.8rem;
+    line-height: 3.3rem;
+    padding-bottom: 4.2rem;
+  }
+  /* Charts */
+  .har .data-head, .har .chart-box {
+    grid-column: 2/3;
+  }
+  .har .area-12 .takeaways {
+    grid-column: 2/3;
+  }
+  .har .chart-box {
+    background-color: #F0F8FF;
+    border-radius: 6px;
+    margin-bottom: 3rem;
+  }
+  .har .data-head {
+    padding-bottom: 1.2rem;
+    padding-top: 2.1rem;
+  }
+  .har .chart-container {
+    padding: 2.1rem 3rem 2.1rem 3rem;
+  }
+  .har .chart-head, .har .chart-text {
+    font-family: 'Nunito', sans-serif;
+    color: #008CFF;
+  }
+  .har .chart-head {
+    font-size: 2.1rem;
+    font-weight: 800;
+    line-height: 2.7rem;
+    padding-bottom: 3rem;
+  }
+  .har .percentage {
+    display: inline-block;
+    font-size: 3.6rem;
+    font-weight: 600;
+  }
+  .har .desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: .9rem;
+  }
+  .har svg {
+    margin-bottom: 2.4rem;
+    margin-top: .3rem;
+  }
+  .har .dark {
+    color: #0070CB;
+  }
+  .har .area-13 .wide-box {
+    grid-column: 1/4;
+  }
+  /* Personas */
+  .har .area-15 .row-1, .har .area-15 .row-2, .har .area-15 .row-3, .har .area-15 .row-4, .har .area-15 .row-5, .har .area-15 .row-6 {
+    display: none;
+  }
 
+  .har .area-15 .column-1, .har .area-15 .column-2, .har .area-15 .column-3 {
+    grid-column: 1/4;
+    padding-bottom: 7.2rem;
+  }
+
+
+}
 /******************** MIN WIDTH 720 PX ********************/
 @media (min-width: 45rem) {
   body {
@@ -2602,10 +2866,10 @@ ul .minus:before {
     ".  area-7  ."
     ".  area-8  ."
     ".  area-9  ."
-    ".  area-10  ."
+    "area-10  area-10  area-10"
     ".  area-11  ."
     ".  area-12  ."
-    ".  area-13  ."
+    "area-13  area-13  area-13"
     "area-14  area-14  area-14"
     ".  area-15  ."
     ".  area-16  ."
@@ -2648,6 +2912,10 @@ ul .minus:before {
   }
 
   /* Homepage Containers */
+  .homepage .area-4 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+  }
   .container-case-study-1, .container-case-study-2, .container-case-study-3 {
     grid-column: 1/9;
   }
@@ -2656,6 +2924,7 @@ ul .minus:before {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 1fr;
   }
+
   /***** Klutch *****/
   /* Survey 1 */
   .area-9 {
@@ -2668,7 +2937,7 @@ ul .minus:before {
   /* Survey 1 Takeaways */
   .area-10 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
   }
 
   /* Survey 2 Content */
@@ -2681,7 +2950,7 @@ ul .minus:before {
 
   /* Survey 2 Takeaways */
   .area-13 {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
   }
 
   /* User Stories Content */
@@ -2755,6 +3024,12 @@ ul .minus:before {
   .container-footer {
     grid-column: 4/6;
   }
+  /***** HUB-AR OZNLY*****/
+  /* Comp Analysis Heading */
+  .har .area-9 {
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr;
+  }
 
   /****************** Navbar Content Global ******************/
   .navbar-logo {
@@ -2783,7 +3058,7 @@ ul .minus:before {
   }
 
   /***** Navbar Klutch and SalesHero *****/
-  .klutch .row-navbar-menu-klutch, .sh .row-navbar-menu-klutch {
+  .klutch .row-navbar-menu-klutch, .sh .row-navbar-menu-klutch, .har .row-navbar-menu-klutch {
     display: none;
   }
 
@@ -2795,19 +3070,19 @@ ul .minus:before {
   }
 
   /* Slide Menu */
-  .klutch .sidenav, .sh .sidenav {
+  .klutch .sidenav, .sh .sidenav, .har .sidenav {
     width: 33%;
   }
 
   /* Navbar Klutch */
-  .klutch .row-navbar-menu, .sh .row-navbar-menu {
+  .klutch .row-navbar-menu, .sh .row-navbar-menu, .har.row-navbar-menu {
     display: flex;
     grid-column: 2/6;
     grid-row: 3/4;
     justify-content: center;
   }
 
-  .klutch .row-navbar-menu ul li, .sh .row-navbar-menu ul li {
+  .klutch .row-navbar-menu ul li, .sh .row-navbar-menu ul li, .har.row-navbar-menu ul li {
     display: inline;
     float: right;
     font-size: 1.5rem;
@@ -2909,15 +3184,27 @@ ul .minus:before {
 
   /******************** Homepage ********************/
   /***** Case Studies *****/
+
   .homepage .area-1, .homepage .area-2, .homepage .area-3 {
     margin-bottom: 5.4rem;
   }
 
-  .container-case-study-1 {
-    height: 510px;
+  .container-case-study-1, .container-case-study-2 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .container-case-study-1 {
+    height: 540px;
+  }
+
+  .container-case-study-2 {
+    height: 400px;
+  }
+
+  .homepage .area-3 img {
+    width: 100%;
   }
 
   .cs-details {
@@ -3045,12 +3332,12 @@ ul .minus:before {
   /* Problem, Solution */
   .area-3 .column-1 {
     grid-column: 2/3;
-    padding-right: 1.5rem;
+    padding: 0 1.5rem 3rem 3rem;
   }
 
   .area-3 .column-2 {
     grid-column: 3/4;
-    padding-left: 1.5rem;
+    padding: 0 3rem 3rem 1.5rem;
   }
 
   /* Overview Button */
@@ -3059,7 +3346,7 @@ ul .minus:before {
     padding-top: 2.1rem;
   }
 
-  .two-col-copy, .copy-type-2, .pref-copy {
+  .two-col-copy, .copy-type-2, .pref-copy, .one-col-copy {
     font-size: 1.8rem;
     line-height: 3.3rem;
   }
@@ -3211,7 +3498,7 @@ ul .minus:before {
   }
 
   .area-10 .takeaways {
-    grid-column: 1/7;
+    grid-column: 2/3;
   }
 
   .desc-3 {
@@ -3281,7 +3568,7 @@ ul .minus:before {
 
   /* Survey 2 Takeaways */
   .area-13 .takeaways {
-    grid-column: 1/7;
+    grid-column: 2/3;
   }
 
   /* Personas Heading */
@@ -3766,6 +4053,31 @@ ul .minus:before {
   .sh .area-3 img, .sh .area-5 img {
     width: 50%;
   }
+  /************************* HUB-AR *************************/
+  .har .overview-image {
+    grid-column: 2/4;
+  }
+  .har .area-5 .process {
+    height: 660px;
+  }
+  .har .area-9 {
+    grid-column: 1/4;
+  }
+  .area-10 .col-1, .area-10 .col-2, .area-10 .col-3, .area-10 .col-4 {
+    grid-column: 1/9;
+    padding-bottom: 4.8rem;
+  }
+  .har .area-10 .col-1 .app-img, .har .area-10 .col-2 .app-img, .har .area-10 .col-3 .app-img, .har .area-10 .col-4 .app-img {
+    height: 480px;
+  }
+  .har .area-10 .sum-img {
+    height: 510px;
+  }
+  /* User Research */
+  .har .area-12 .survey-heading, .har .area-12 .survey-goal-exp, .har .data-head, .har .chart-box, .har .area-12 .takeaways  {
+    grid-column: 1/7;
+  }
+
 
 }
 
@@ -3824,6 +4136,42 @@ ul .minus:before {
     "footer  footer  footer";
   }
 
+  .homepage {
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-areas:
+    "navbar  navbar  navbar"
+    ".  hero  ."
+    "area-1  area-1  area-1"
+    "area-2  area-2  area-2"
+    "area-3  area-3  area-3"
+    "area-4  area-4  area-4"
+    "footer  footer  footer";
+  }
+
+  .har {
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-areas:
+    "navbar  navbar  navbar"
+    "hero  hero  hero"
+    ".  area-1  ."
+    ".  area-2  ."
+    ".  area-3  ."
+    "area-4  area-4  area-4"
+    ".  area-5  ."
+    "area-6  area-6  area-6"
+    ".  area-7  ."
+    ".  area-8  ."
+    ".  area-9  ."
+    ".  area-10  ."
+    ".  area-11  ."
+    ".  area-12  ."
+    "area-13  area-13  area-13"
+    ".  area-14  ."
+    ".  area-15  ."
+    "footer  footer  footer";
+  }
+
+
   /***************** Grid Templates Secondary *****************/
   /* Navbar Global */
   .navbar {
@@ -3844,7 +4192,7 @@ ul .minus:before {
   }
 
   /* Navbar Klutch and SalesHero*/
-  .klutch .container-nav, .sh .container-nav {
+  .klutch .container-nav, .sh .container-nav, .har .container-nav {
     grid-column: 2/3;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 20px 21px 21px 12px 20px 20px;
@@ -3864,12 +4212,13 @@ ul .minus:before {
   }
 
   /* First Three Areas Global */
-  .area-1, .area-2, .area-3 {
+  .area-1, .area-2, .area-3, .area-4 {
     grid-column-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 3rem;
   }
 
+  /* Contact */
   .contact .area-1 {
     display: grid;
     grid-column: 2/3;
@@ -3877,12 +4226,26 @@ ul .minus:before {
   }
 
   /* Homepage Case Study Containers */
-  .container-case-study-1, .container-case-study-2, .container-case-study-3 {
-    grid-column: 1/7;
+  .homepage .area-2, .homepage .area-3, .homepage .area-4 {
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 6fr 1fr;
+    margin-top: 3rem;
+  }
+
+  .homepage .area-1 {
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 3rem;
   }
 
   .container-case-study-1 {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1/9;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .container-case-study-2 {
+    grid-column: 1/4;
+    grid-template-columns: 1fr 6fr 1fr;
   }
 
   /* Pink Three-Col Boxes */
@@ -3917,7 +4280,7 @@ ul .minus:before {
   }
 
   /* Survey 1 */
-  .area-9 {
+  .klutch .area-9 {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -4050,6 +4413,48 @@ ul .minus:before {
   .container-footer {
     grid-column: 4/6;
   }
+ /***** HUB AR *****/
+  .har .hero {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .container-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .har .area-5, .har .area-10, .har .area-12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .har .area-6, .har .area-14 {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-8 {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+  .har .area-9 {
+    grid-template-rows: 1fr;
+  }
+  .har .area-10 {
+    grid-column-gap: 3rem;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 7.2rem;
+  }
+  .har .area-12 {
+    grid-row-gap: 0rem;
+  }
+  .har .area-13 {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-15 {
+    display: grid;
+    grid-area: area-15;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+
 
   /****************** Navbar Content Global ******************/
   .navbar-logo {
@@ -4073,7 +4478,7 @@ ul .minus:before {
   }
 
   /***** Navbar Homepage *****/
-  .homepage .row-navbar-menu, .klutch .row-navbar-menu, .sh .row-navbar-menu {
+  .homepage .row-navbar-menu, .klutch .row-navbar-menu, .sh .row-navbar-menu, .har .row-navbar-menu {
     display: flex;
     grid-column: 2/7;
     grid-row: 2/4;
@@ -4081,7 +4486,7 @@ ul .minus:before {
   }
 
   /***** Navbar Global *****/
-  .homepage .row-navbar-menu ul li, .about .row-navbar-menu ul li, .contact .row-navbar-menu ul li, .klutch .row-navbar-menu ul li, .klutch-sitemap .row-navbar-menu ul li, .klutch-flow .row-navbar-menu ul li, .sh .row-navbar-menu ul li {
+  .homepage .row-navbar-menu ul li, .about .row-navbar-menu ul li, .contact .row-navbar-menu ul li, .klutch .row-navbar-menu ul li, .klutch-sitemap .row-navbar-menu ul li, .klutch-flow .row-navbar-menu ul li, .sh .row-navbar-menu ul li, .har .row-navbar-menu ul li {
     display: inline;
     float: right;
     font-size: 1.5rem;
@@ -4104,14 +4509,14 @@ ul .minus:before {
   }
 
   /***** Navbar Klutch *****/
-  .klutch .row-navbar-menu-klutch, .sh .row-navbar-menu-klutch {
+  .klutch .row-navbar-menu-klutch, .sh .row-navbar-menu-klutch, .har .row-navbar-menu-klutch {
     display: flex;
     justify-content: center;
     grid-column: 1/7;
     grid-row: 5/6;
   }
 
-  .klutch .row-navbar-menu-klutch ul li, .sh .row-navbar-menu-klutch ul li {
+  .klutch .row-navbar-menu-klutch ul li, .sh .row-navbar-menu-klutch ul li, .har .row-navbar-menu-klutch ul li {
     display: inline;
     float: left;
     margin-left: 1.5rem;
@@ -4200,13 +4605,17 @@ ul .minus:before {
   }
 
   /******************** Homepage ********************/
-  /* Background Fun */
-  .hero .background {
-    grid-column: 1/7;
-    grid-row: 1/2;
-  }
 
   /* Hero */
+
+  .homepage .hero-heading-mobile {
+    display: none;
+  }
+
+  .homepage .hero-heading {
+    display: inherit;
+  }
+
   .homepage .hero-heading, .homepage .hero-copy {
     grid-column: 2/6;
   }
@@ -4220,26 +4629,55 @@ ul .minus:before {
   }
 
   /* Case Studies */
+  .homepage .area-3 {
+    padding-top: 24rem;
+  }
+
+  .homepage .area-4 {
+    display: grid;
+    padding-bottom: 12rem;
+  }
+
   .container-case-study-1 {
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 570px;
   }
 
-  .container-case-study-1 .pattern-img {
-    grid-column: 1/7;
+  .container-case-study-2 {
+    height: 540px;
+  }
+
+  .homepage .area-1 .pattern-img {
+    grid-column: 1/9;
     grid-row: 1/3;
-    padding-top: 1.5rem;
+    padding-top: 2.1rem;
   }
 
-  .container-case-study-1 .pattern-img img {
+  .homepage .area-3 .pattern-img {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    padding-top: 2.1rem;
+  }
+
+  .homepage .pattern-img img {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 
-  .container-case-study-1 .laptop-img{
-    grid-column: 2/6;
+  .homepage .area-1 .laptop-img {
+    grid-column: 3/7;
+  }
+
+  .homepage .area-3 .laptop-img {
+    grid-column: 2/3;
+  }
+
+  .homepage .area-3 .laptop-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .homepage .area-3 img {
+    width: 100%;
   }
 
   .cs-details {
@@ -4253,12 +4691,12 @@ ul .minus:before {
     padding-bottom: 3.6rem;
   }
 
-  /* .overlay-mobile, .cs-details-mobile {
-    display: none;
-  } */
+  .homepage .area-2 .overlay-mobile {
+    grid-column: 2/3;
+  }
 
-  .overlay-mobile {
-    grid-column: 2/6;
+  .homepage .area-4 .overlay-mobile {
+    grid-column: 2/3;
   }
 
   .overlay {
@@ -4477,14 +4915,13 @@ ul .minus:before {
   }
 
   /* Problem, Solution */
-  .area-3 .column-1 {
-    grid-column: 1/4;
+  .klutch .area-3 .column-1, .klutch .area-3 .column-2 {
+    grid-column: 2/6;
     padding-bottom: 6rem;
   }
 
-  .area-3 .column-2 {
-    grid-column: 4/7;
-    padding-bottom: 6rem;
+  .klutch .area-3 .column-1 .two-col-heading, .klutch .area-3 .column-2 .two-col-heading {
+    text-align: center;
   }
 
   /* Overview Button */
@@ -4493,7 +4930,7 @@ ul .minus:before {
     padding-top: 2.1rem;
   }
 
-  .two-col-copy, .copy-type-2, .pref-copy {
+  .two-col-copy, .copy-type-2, .pref-copy, .one-col-copy {
     font-size: 2.1rem;
     line-height: 3.3rem;
   }
@@ -5357,6 +5794,213 @@ ul .minus:before {
     margin-left: 4.8rem;
   }
 
+  /************************* HUB-AR *************************/
+  /* Hero */
+  .har .hero-heading {
+    grid-column: 3/7;
+  }
+
+  .hero-image-har {
+    height: 600px;
+    width: 100%;
+    grid-column: 3/7;
+  }
+
+  .hero-image-pattern-har {
+    grid-column: 1/9;
+  }
+
+  .har .hero-copy, .har .hero-button {
+    grid-column: 3/7;
+  }
+  /* Overview */
+  .har .one-col-heading {
+    text-align: center;
+  }
+  .har .area-3 .column-1, .har .area-3 .column-2 {
+    grid-column: 2/6;
+    padding-bottom: 6rem;
+    padding: 0;
+  }
+  /* Overview Image */
+  .har .overview-image {
+    height: 390px;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    grid-column: 1/8;
+    margin-bottom: 4.8rem;
+    margin-top: 4.8rem;
+  }
+  /* Design Process Heading */
+  .har .area-4 {
+    grid-column: 2/3;
+  }
+  /* Design Process Heading */
+  .har .area-4 {
+    grid-column: 2/3;
+  }
+  /* Design Process Content */
+  .har .area-5 .process {
+    grid-column: 1/7;
+    height: 1200px;
+  }
+  .har .area-5 .takeaways {
+    grid-column: 2/6;
+  }
+  /* Discovery Heading */
+  .har .area-6 .wide-box {
+    grid-column: 1/4;
+  }
+  /* Why Dolores Park */
+  .har .area-8 .one-col-heading, .har .area-8 .one-col-copy {
+    grid-column: 2/3;
+  }
+
+  .har .area-8 .one-col-copy {
+    padding-bottom: 9.6rem;
+  }
+
+  .har .dolo-img {
+    grid-column: 2/3;
+  }
+
+  .har .dolo-cap {
+    grid-column: 2/3;
+    padding-top: .9rem;
+    padding-bottom: 4.2rem;
+  }
+  /* Competitive Analysis */
+  .har .area-10 .col-1, .har .area-10 .col-3 {
+    grid-column: 1/4;
+  }
+  .har .area-10 .col-2, .har .area-10 .col-4 {
+    grid-column: 4/7;
+  }
+  .har .area-10 .icon {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+  .har .area-10 .col-1 .app-img, .har .area-10 .col-2 .app-img, .har .area-10 .col-3 .app-img, .har .area-10 .col-4 .app-img {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 390px;
+    margin-bottom: 5.4rem;
+    margin-top: 4.2rem;
+  }
+
+  .har .area-10 .icon img {
+    filter: drop-shadow(0px 3px 9px #B3C1C7);
+    height: 120px;
+  }
+  .har .area-10 .desc {
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+  }
+  .har .area-10 .two-col-box {
+    background-color: #FFFAF8;
+    height: 420px;
+  }
+  .har .area-10 .app-img {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5.4rem;
+    padding-top: 4.2rem;
+  }
+  .har .area-10 .app-img img{
+    height: 390px;
+  }
+  /* Competitive Analysis Takeaways */
+  .har .area-10 .sum-img {
+    background-image: url("/images/har-ca-sum.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 560px;
+    margin-bottom: 3.6rem;
+    margin-top: 1.5rem;
+  }
+
+  .har .take-list li {
+    font-size: 2.1rem;
+  }
+  /* User Research */
+  .har .area-12 .survey-heading {
+    grid-column: 2/6;
+    text-align: center;
+  }
+  .har .area-12 .survey-goal-exp{
+    grid-column: 2/6;
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+  }
+  /* Charts */
+  .har .data-head, .har .chart-box {
+    grid-column: 2/6;
+  }
+
+  .har .data-head {
+    padding-bottom: 1.2rem;
+    padding-top: 2.1rem;
+  }
+
+  .har .chart-box {
+    background-color: #F0F8FF;
+    border-radius: 6px;
+    margin-bottom: 3rem;
+  }
+
+  .har .chart-container {
+    padding: 2.1rem 3rem 2.1rem 3rem;
+  }
+
+  .har .chart-head, .har .chart-text {
+    font-family: 'Nunito', sans-serif;
+    color: #008CFF;
+  }
+
+  .har .chart-head {
+    font-size: 2.1rem;
+    font-weight: 800;
+    line-height: 2.7rem;
+    padding-bottom: 3rem;
+  }
+
+  .har .percentage {
+    display: inline-block;
+    font-size: 4.8rem;
+    font-weight: 600;
+  }
+
+  .har .desc {
+    display: inline-block;
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin-left: 1.8rem;
+  }
+
+  .har svg {
+    margin-bottom: 2.4rem;
+  }
+
+  .har .dark {
+    color: #0070CB;
+  }
+
+  /* Strategy Heading */
+  .har .area-13 .wide-box {
+    grid-column: 1/4;
+  }
+  /* Personas Heading */
+  .har .area-14 .heading-secondary {
+    grid-column: 2/3;
+  }
+
+
+
+
 }
 
 /***** Long Column Responsiveness *****/
@@ -5367,8 +6011,8 @@ ul .minus:before {
 }
 
 @media (min-width: 74rem) {
-  body {
-    grid-template-columns: 13% 6fr 13%;
+  body, .homepage, .har {
+    grid-template-columns: 15% 6fr 15%;
   }
   /***** Klutch *****/
   .klutch .area-6 .three-col-box {
@@ -5376,13 +6020,12 @@ ul .minus:before {
     height: 300px;
   }
   .klutch .area-16 {
-    grid-template-rows: 42rem 18rem 39rem 63rem 60rem 48rem;
+    grid-template-rows: auto;
     padding-bottom: 6.3rem;
   }
   .area-16 .column-1, .area-16 .column-2, .area-16 .column-3 {
     display: none
   }
-
   .area-16 .row-1, .area-16 .row-2, .area-16 .row-3, .area-16 .row-4, .area-16 .row-5, .area-16 .row-6 {
     display: grid;
     grid-column: 1/7;
@@ -5396,32 +6039,66 @@ ul .minus:before {
   .area-16 .pers-list {
     padding: 0;
   }
-
   .area-16 .quote {
     padding: 0;
   }
-
   .area-16 .col-1 {
     grid-column: 1/2;
     background-color: #FFFAF8;
-    padding: 0 3rem 0 3rem;
+    padding: 0 3rem 3rem 3rem;
   }
-
   .area-16 .col-2 {
     grid-column: 2/3;
     background-color: #FFFAF8;
-    padding: 0 3rem 0 3rem;
+    padding: 0 3rem 3rem 3rem;
   }
-
   .area-16 .col-3 {
     grid-column: 3/4;
     background-color: #FFFAF8;
-    padding: 0 3rem 0 3rem;
+    padding: 0 3rem 4.4rem 3rem;
   }
-
-
   .area-33 .iteration {
     height: 240px;
+  }
+  /***** HUB-AR *****/
+  /* Personas Content */
+  .har .area-15 {
+    grid-template-rows: auto;
+    padding-bottom: 6.3rem;
+  }
+  .har .area-15 .column-1, .har .area-15 .column-2, .har .area-15 .column-3 {
+    display: none
+  }
+  .har .area-15 .row-1, .har .area-15 .row-2, .har .area-15 .row-3, .har .area-15 .row-4, .har .area-15 .row-5, .har .area-15 .row-6 {
+    display: grid;
+    grid-column: 1/7;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-column-gap: 4.2rem;
+  }
+  .har .area-15 .row-1 img {
+    padding-top: 4.2rem;
+    width: auto;
+  }
+  .har .area-15 .pers-list {
+    padding: 0;
+  }
+  .har .area-15 .quote {
+    padding: 0;
+  }
+  .har .area-15 .col-1 {
+    grid-column: 1/2;
+    background-color: #FFFAF8;
+    padding: 0 3rem 3rem 3rem;
+  }
+  .har .area-15 .col-2 {
+    grid-column: 2/3;
+    background-color: #FFFAF8;
+    padding: 0 3rem 3rem 3rem;
+  }
+  .har .area-15 .col-3 {
+    grid-column: 3/4;
+    background-color: #FFFAF8;
+    padding: 0 3rem 4.4rem 3rem;
   }
 }
 
@@ -5430,38 +6107,44 @@ ul .minus:before {
     display: block;
     height: 270px;
   }
-  .klutch .area-16 {
-    grid-template-rows: 42rem 15rem 33rem 54rem 51rem 42rem;
-  }
   .area-33 .iteration {
     height: 270px;
   }
 }
 
 @media (min-width: 100rem) {
-  body {
-    grid-template-columns: 20% 6fr 20%;
+  body, .homepage, .har {
+    grid-template-columns: 23% 6fr 23%;
   }
   .container-case-study-1 {
-    height: 720px;
+    height: 800px;
+  }
+  .container-case-study-2 {
+    height: 700px;
   }
 }
 
 @media (min-width: 140rem) {
-  body {
-    grid-template-columns: 25% 6fr 25%;
+  body, .homepage, .har {
+    grid-template-columns: 26% 6fr 26%;
   }
   .container-case-study-1 {
-    height: 780px;
+    height: 1000px;
+  }
+  .container-case-study-2 {
+    height: 900px;
   }
 }
 
 @media (min-width: 190rem) {
-  body {
-    grid-template-columns: 30% 6fr 30%;
+  body, .homepage, .har {
+    grid-template-columns: 31% 6fr 31%;
   }
   .container-case-study-1 {
-    height: 860px;
+    height: 1200px;
+  }
+  .container-case-study-2 {
+    height: 1100px;
   }
 }
 
