@@ -594,12 +594,25 @@ ul .minus:before {
   }
   /***** HUB AR ONLY *****/
   .har .area-10 .col-1, .har .area-10 .col-3, .har .area-10 .col-2, .har .area-10 .col-4 {
+    grid-column: 2/3;
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
   .har .area-12 .data-group {
     display: grid;
     grid-template-columns: auto 1fr;
+  }
+  .har .area-17 .versions-1, .har .area-17 .versions-2 {
+    grid-column: 1/4;
+  }
+  .har .area-17 .versions-1, .har .area-17 .versions-2 {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-17 .container {
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 6fr 1fr;
   }
   /***** Klutch and HUB AR *****/
   /* Roles, Deliverables, Tools */
@@ -654,17 +667,21 @@ ul .minus:before {
   }
 
   /* Personas Content */
-  .area-16, .har .area-15 {
+  .area-16 {
     display: grid;
     grid-area: area-16;
     grid-template-columns: 1fr 6fr 1fr;
   }
 
-  .area-16 .three-col-box, .har .area-15 .three-col-box {
+  .har .area-15 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
 
+  .area-16 .three-col-box, .har .area-15 .three-col-box, .har .area-17 {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
   /* User Stories Content */
   .area-18 {
     display: grid;
@@ -689,12 +706,7 @@ ul .minus:before {
     grid-template-columns: 1fr 6fr 1fr;
   }
 
-  .area-21 .versions-1 {
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-  }
-
-  .area-21 .versions-2 {
+  .area-21 .versions-1, .area-21 .versions-2 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
@@ -1961,25 +1973,25 @@ ul .minus:before {
     grid-column: 1/4;
   }
 
-  .area-21 .one-col-heading{
+  .area-21 .one-col-heading, .har .area-17 .one-col-heading {
     grid-column: 2/3;
   }
 
-  .area-21 .us-list {
+  .area-21 .us-list, .har .area-17 .us-list {
     font-style: italic;
     line-height: 3.3rem;
   }
 
-  .area-21 .highlight {
+  .area-21 .highlight, .har .area-17 .highlight {
     background-color: #FFE8E0;
   }
 
-  .area-21 .one-col-heading {
+  .area-21 .one-col-heading, .har .one-col-heading {
     text-align: center;
     padding-bottom: 3rem;
   }
 
-  .area-21 h6 {
+  .area-21 h6, .har .area-17 h6 {
     padding-bottom: 2.4rem;
     font-weight: 500;
   }
@@ -1988,28 +2000,28 @@ ul .minus:before {
     font-weight: bold;
   }
 
-  .area-21 .caption {
+  .area-21 .caption, .har .area-17 .caption {
     grid-column: 2/3;
     line-height: 2.1rem;
     padding-bottom: 2.1rem;
   }
 
-  .area-21 .caption-1 {
+  .area-21 .caption-1, .har .area-17 .caption-1 {
     line-height: 2.1rem;
     padding-bottom: 2.1rem;
   }
 
-  .area-21 .container {
+  .area-21 .container, .har .area-17 .container {
     background-color: #FFFAF8;
     margin-bottom: 6rem;
   }
 
-  .area-21 .col-1, .area-21 .col-2 {
+  .area-21 .col-1, .area-21 .col-2, .har .area-17 .col-1, .har .area-17 .col-2 {
     background-color: #FAFBFB;
     grid-column: 2/3;
   }
 
-  .area-21 .versions-1, .area-21 .versions-2 {
+  .area-21 .versions-1, .area-21 .versions-2, .area-17 .versions-1, .area-17 .versions-2 {
     background-color: #FAFBFB;
     margin-bottom: 3rem;
   }
@@ -2842,12 +2854,51 @@ ul .minus:before {
   .har .area-15 .row-1, .har .area-15 .row-2, .har .area-15 .row-3, .har .area-15 .row-4, .har .area-15 .row-5, .har .area-15 .row-6 {
     display: none;
   }
-
   .har .area-15 .column-1, .har .area-15 .column-2, .har .area-15 .column-3 {
     grid-column: 1/4;
     padding-bottom: 7.2rem;
   }
-
+  /* User Stories and Flows */
+  .har .area-16 {
+    grid-column: 1/4;
+  }
+  .har .area-17 .user-story, .har .area-17 .results {
+    grid-column: 2/3;
+    font-style: italic;
+  }
+  .har .versions-1 .img-1 {
+    background-image: url("/images/har-uf-sketch-1.png");
+    height: 150px;
+    width: 100%;
+  }
+  .har .versions-1 .img-2 {
+    background-image: url("/images/har-uf-1.svg");
+    height: 150px;
+    width: 100%;
+  }
+  .area-17 .versions-1 .img-1, .area-17 .versions-1 .img-2, .area-17 .versions-2 .img-3, .area-17 .versions-2 .img-4 {
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-color: #FAFBFB;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2.4rem 0 2.4rem 0;
+  }
+  .har .area-17 .flow-image-1, .har .area-17 .flow-image-2 {
+    grid-column: 2/3;
+    padding: 3.3rem 0 3.3rem 0;
+  }
+  .har .area-17 .container img {
+    width: 100%;
+  }
+  .har .results-1 {
+    background-image: url("/images/har-app-flow-1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    height: 420px;
+  }
 
 }
 /******************** MIN WIDTH 720 PX ********************/
@@ -4077,6 +4128,10 @@ ul .minus:before {
   .har .area-12 .survey-heading, .har .area-12 .survey-goal-exp, .har .data-head, .har .chart-box, .har .area-12 .takeaways  {
     grid-column: 1/7;
   }
+  /* User Stories adn Flows */
+  .har .results-1 {
+    height: 600px;
+  }
 
 
 }
@@ -4168,6 +4223,8 @@ ul .minus:before {
     "area-13  area-13  area-13"
     ".  area-14  ."
     ".  area-15  ."
+    ".  area-16  ."
+    ".  area-17  ."
     "footer  footer  footer";
   }
 
@@ -4321,13 +4378,7 @@ ul .minus:before {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
-  .area-21 .versions-1 {
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-column-gap: 3rem;
-  }
-
-  .area-21 .versions-2 {
+  .area-21 .versions-1, .area-21 .versions-2 {
     display: grid;
     grid-template-columns: 3fr 3fr;
     grid-column-gap: 3rem;
@@ -4453,6 +4504,21 @@ ul .minus:before {
     display: grid;
     grid-area: area-15;
     grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-16 {
+    display: grid;
+    grid-area: area-16;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-17 {
+    display: grid;
+    grid-area: area-17;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .har .versions-1, .har .versions-2 {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-column-gap: 3rem;
   }
 
 
@@ -5228,7 +5294,6 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
-
   /* User Stories Content */
   .area-18 .column {
     grid-column: 2/6;
@@ -5284,7 +5349,6 @@ ul .minus:before {
   .area-21 .versions-1 .img-1, .area-21 .versions-1 .img-2, .area-21 .versions-2 .img-3, .area-21 .versions-2 .img-4 {
     height: 300px;
   }
-
 
   .area-21 .versions-1 .img-1, .area-21 .versions-1 .img-2, .area-21 .versions-2 .img-3, .area-21 .versions-2 .img-4 {
     background-size: contain;
@@ -5997,6 +6061,55 @@ ul .minus:before {
   .har .area-14 .heading-secondary {
     grid-column: 2/3;
   }
+  /* User Stories + Flows */
+  .har .area-17 .user-story {
+    grid-column: 2/6;
+  }
+  .har .area-17 .versions-1, .har .area-17 .container, .har .area-17 .results {
+    grid-column: 1/7;
+  }
+  .area-17 .versions-1 .img-1, .area-17 .versions-1 .img-2, .area-17 .versions-2 .img-3, .area-17 .versions-2 .img-4 {
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-color: #FAFBFB;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    margin: 3rem;
+  }
+  .har .area-17 .caption-1 p {
+    padding: 0 0 0 3rem;
+  }
+  .har .area-17 .caption p {
+    padding: 0 0 0 3rem;
+  }
+  .har .area-17 .container {
+    background-color: #FFFAF8;
+    margin-bottom: 4.2rem;
+  }
+  .har .flow-image-1, .har .flow-image-2 {
+    margin: 0;
+    padding: 4.8rem;
+  }
+  .har .versions-1, .har .versions-2 {
+    background-color: #FFF;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+  }
+  .har .area-17 .col-1 {
+    background-color: #FAFBFB;
+    grid-column: 1/2;
+  }
+  .har .area-17 .col-2 {
+    background-color: #FAFBFB;
+    grid-column: 2/3;
+  }
+  .har .results-1 {
+    grid-column: 1/7;
+    height: 720px;
+  }
+
+
 
 
 
