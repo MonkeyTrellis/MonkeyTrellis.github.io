@@ -1991,6 +1991,11 @@ ul .minus:before {
     padding-bottom: 3rem;
   }
 
+  .har .one-col-heading {
+    text-align: center;
+    padding-bottom: .6rem;
+  }
+
   .area-21 h6, .har .area-17 h6 {
     padding-bottom: 2.4rem;
     font-weight: 500;
