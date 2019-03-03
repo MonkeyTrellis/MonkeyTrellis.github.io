@@ -1846,7 +1846,7 @@ ul .minus:before {
   .pers-image img {
     width: 180px;
     height: 180px;
-    padding-bottom: 1.5rem;
+    margin-bottom: 2.1rem;
   }
 
   .area-16 li span, .har .area-15 li span {
@@ -3683,7 +3683,7 @@ ul .minus:before {
   .pers-image img {
     width: 240px;
     height: 240px;
-    padding-bottom: 1.8rem;
+    margin-bottom: 2.1rem;
   }
 
   .area-16 .pers-col {
@@ -4771,11 +4771,6 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
-  .homepage .area-3 .laptop-img {
-    display: flex;
-    justify-content: center;
-  }
-
   .homepage .area-3 img {
     width: 100%;
   }
@@ -5308,7 +5303,7 @@ ul .minus:before {
   .pers-image img {
     width: 240px;
     height: 240px;
-    padding-bottom: 1.8rem;
+    margin-bottom: 2.1rem;
   }
 
   .area-16 .pers-col {
@@ -6248,7 +6243,7 @@ ul .minus:before {
     grid-column-gap: 4.2rem;
   }
   .har .area-15 .row-1 img {
-    padding-top: 4.2rem;
+    margin-top: 4.2rem;
     width: auto;
   }
   .har .area-15 .pers-list {
