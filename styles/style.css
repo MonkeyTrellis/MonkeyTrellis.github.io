@@ -548,8 +548,7 @@ ul .minus:before {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
-
-  .sh .area-5, .har .area-5, .har .area-8, .har .area-24, .har .area-h, .har .area-27, .har .area-32 {
+  .sh .area-5, .har .area-5, .har .area-8, .har .area-24, .har .area-h, .har .area-27, .har .area-31, .har .area-32, .har .area-35 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
@@ -559,15 +558,21 @@ ul .minus:before {
   .har .area-27 {
     grid-area: area-27;
   }
+  .har .area-29 {
+    display: grid;
+    grid-area: area-29;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
   .har .area-30 {
     display: grid;
     grid-area: area-30;
     grid-template-columns: 1fr 6fr 1fr;
   }
-  .har .area-29 {
-    display: grid;
-    grid-area: area-29;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  .har .area-31 {
+    grid-area: area-31;
+  }
+  .har .area-32 {
+    grid-area: area-32;
   }
   .har .area-29 h4, .har .area-29 .row-1, .har .area-29 .row-2, .har .area-29 .row-3, .har .area-29 .row-4, .har .area-29 .row-5 {
     grid-column: 1/7;
@@ -581,7 +586,10 @@ ul .minus:before {
     grid-column-gap: 1.5rem;
     grid-template-columns: 3fr 3fr;
   }
-  /***** HUB AR ONLY *****/
+  .har .area-35 {
+    display: grid;
+    grid-area: area-35;
+  }
   .har .area-10 .col-1, .har .area-10 .col-3, .har .area-10 .col-2, .har .area-10 .col-4 {
     grid-column: 2/3;
     display: grid;
@@ -2659,8 +2667,6 @@ ul .minus:before {
     grid-column: 1/4;
     grid-row: 2/3;
     height: 180px;
-    opacity: .9;
-    padding: 0 2rem 0 2rem;
   }
   /* Bold Spans */
   .har .bold {
@@ -2777,8 +2783,6 @@ ul .minus:before {
     display: flex;
     grid-column: 2/3;
     justify-content: center;
-    padding-bottom: 5.4rem;
-    padding-top: 4.2rem;
   }
   .har .area-10 .app-img img{
     height: 390px;
@@ -2950,7 +2954,19 @@ ul .minus:before {
     background-position: center;
     background-repeat: no-repeat;
     grid-column: 2/3;
-    height: 210px;
+    height: 180px;
+    margin-bottom: 4.4rem;
+  }
+  .har .dia-3 {
+    margin-bottom: 0;
+  }
+  .har .d-img {
+    background-image: url("/images/har-d-img.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    height: 200px;
     margin-bottom: 4.4rem;
   }
   .har .dia-4 {
@@ -2958,8 +2974,8 @@ ul .minus:before {
     background-position: center;
     background-repeat: no-repeat;
     grid-column: 2/3;
-    height: 210px;
-    margin-bottom: 0;
+    height: 180px;
+    margin-bottom: 4.4rem;
   }
   .har .dia-5, .har .dia-6, .har .dia-7 {
     background-size: contain;
@@ -2998,24 +3014,32 @@ ul .minus:before {
   .har .area-17 .takeaways {
     grid-column: 2/3;
   }
-  .har .area-17 .sum-img {
-    background-image: url("/images/har-app-ex-take.png");
+  .har .area-17 .m-1, .har .area-17 .m-2 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 300px;
-    margin-bottom: 3.6rem;
+    height: 180px;
+    margin-bottom: 5.4rem;
     margin-top: 1.5rem;
   }
-  .har .area-17 .sum-img-2 {
-    background-image: url("/images/har-app-ex-take-2.png");
+  .har .area-17 .m-3 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 300px;
-    margin-bottom: 3.6rem;
-    margin-top: 1.5rem;
+    height: 380px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
+  .har .area-17 .m-1 {
+    background-image: url("/images/har-ar-take-1.png");
+  }
+  .har .area-17 .m-2 {
+    background-image: url("/images/har-ar-take-2.png");
+  }
+  .har .area-17 .m-3 {
+    background-image: url("/images/har-ar-take-3.png");
+  }
+
   /* Info Arch Large Heading */
   .har .area-18 .wide-box {
     grid-column: 1/4;
@@ -3065,7 +3089,7 @@ ul .minus:before {
     background-repeat: no-repeat;
     grid-column: 2/3;
     height: 266px;
-    margin-bottom: 8.4rem;
+    margin-bottom: 0;
   }
   .har .versions-2 .img-1 {
     background-image: url("/images/har-uf-sketch-2.png");
@@ -3100,9 +3124,6 @@ ul .minus:before {
     height: 210px;
     margin: 3.6rem 3.6rem;
   }
-  /* .har .area-24 .sitemap {
-    height: 180px;
-  } */
   .har .area-24 h4, .har .area-24 .sketches, .har .area-24 .wireframes {
     grid-column: 2/3;
   }
@@ -3350,6 +3371,12 @@ ul .minus:before {
   .har .area-30 .wide-box {
     grid-column: 1/4;
   }
+  .har .area-31 {
+    grid-column: 1/4;
+  }
+  .har .area-32 {
+    grid-column: 1/4;
+  }
   .har .area-32 .row-1, .har .area-32 .row-2 {
     grid-column: 2/3;
     padding-bottom: 6.3rem;
@@ -3394,7 +3421,6 @@ ul .minus:before {
     height: 280px;
     margin-bottom: 3rem;
   }
-
   .har .area-32 .row-1 .col-1, .har .area-32 .row-1 .col-2 {
     grid-column: 1/3;
   }
@@ -3406,6 +3432,9 @@ ul .minus:before {
   }
   .har .area-32 .text-col {
     grid-column: 1/3;
+  }
+  .har .area-35, .har .area-35 .wide-box {
+    grid-column: 1/4;
   }
 
 
@@ -3898,14 +3927,17 @@ ul .minus:before {
   }
 
   /* Problem, Solution */
+  .klutch .area-3 h4 {
+    text-align: left;
+  }
   .area-3 .column-1 {
     grid-column: 2/3;
-    padding: 0 1.5rem 3rem 3rem;
+    padding: 0 1.5rem 3rem 0;
   }
 
   .area-3 .column-2 {
     grid-column: 3/4;
-    padding: 0 3rem 3rem 1.5rem;
+    padding: 0 0 3rem 1.5rem;
   }
 
   /* Overview Button */
@@ -4628,6 +4660,12 @@ ul .minus:before {
   .har .overview-image {
     grid-column: 2/4;
   }
+  .har .area-3 h4 {
+    text-align: left;
+  }
+  .har .overview-image {
+    height: 330px;
+  }
   .har .area-5 .process {
     height: 660px;
   }
@@ -4651,12 +4689,43 @@ ul .minus:before {
   .har .area-12 .takeaways  {
     grid-column: 1/7;
   }
-  /* User Stories adn Flows */
+  /* User Stories and Flows */
   .har .results-1 {
     height: 510px;
   }
   .har .results-2 {
     height: 690px;
+  }
+  /* AR Methods */
+  .har .area-17 .one-col-copy {
+    padding-bottom: 8.4rem;
+  }
+  .har .area-17 .one-col-copy li {
+    padding-bottom: 0;
+  }
+  .har .d-img {
+    height: 400px;
+    margin-bottom: 3.6rem;
+  }
+  .har .dia-1, .har .dia-3, .har .dia-4 {
+    height: 300px;
+    margin-bottom: 3.6rem;
+  }
+  .har .dia-3 {
+    margin-bottom: 0;
+  }
+  .har .dia-5 {
+    height: 340px;
+  }
+  .har .area-17 .m-1, .har .area-17 .m-2 {
+    height: 380px;
+    margin-bottom: 5.4rem;
+    margin-top: 3rem;
+  }
+  .har .area-17 .m-3 {
+    height: 860px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
   .har .area-24 .wireframes {
     grid-column: 2/3;
@@ -6538,7 +6607,7 @@ ul .minus:before {
   }
   /* Overview Image */
   .har .overview-image {
-    height: 390px;
+    height: 480px;
     width: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -6594,20 +6663,30 @@ ul .minus:before {
   .har .area-10 .col-2, .har .area-10 .col-4 {
     grid-column: 4/7;
   }
+  .har .area-10 .col-1 .three-col-box, .har .area-10 .col-2 .three-col-box {
+    height: 490px;
+  }
+  .har .area-10 .col-3 .three-col-box, .har .area-10 .col-4 .three-col-box {
+    height: 477px;
+  }
   .har .area-10 .icon {
     display: flex;
+    grid-column: 1/4;
     justify-content: center;
     padding-bottom: 3rem;
   }
+  .har .area-10 .three-col-heading, .har .area-10 .desc {
+    grid-column: 1/4;
+  }
   .har .area-10 .col-1 .app-img, .har .area-10 .col-2 .app-img, .har .area-10 .col-3 .app-img, .har .area-10 .col-4 .app-img {
+    grid-column: 1/4;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 390px;
+    height: 420px;
     margin-bottom: 5.4rem;
     margin-top: 4.2rem;
   }
-
   .har .area-10 .icon img {
     filter: drop-shadow(0px 3px 9px #B3C1C7);
     height: 120px;
@@ -6623,11 +6702,6 @@ ul .minus:before {
   .har .area-10 .app-img {
     display: flex;
     justify-content: center;
-    padding-bottom: 5.4rem;
-    padding-top: 4.2rem;
-  }
-  .har .area-10 .app-img img{
-    height: 390px;
   }
   /* Competitive Analysis Takeaways */
   .har .area-10 .sum-img {
@@ -6727,6 +6801,9 @@ ul .minus:before {
   }
   .har .area-17 .one-col-heading, .har .area-17 .one-col-copy {
     grid-column: 2/3;
+  }
+  .har .results-1 {
+    margin-bottom: 8.4rem;
   }
   /* Info Arch Large Heading */
   .har .area-18 .wide-box {
@@ -6937,7 +7014,6 @@ ul .minus:before {
     padding-bottom: 3rem;
   }
   .har .area-29 .row-5 .one-col-copy {
-    margin-right: 4.2rem;
   }
   .har .area-30 .wide-box {
     grid-column: 1/4;

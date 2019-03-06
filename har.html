@@ -352,6 +352,7 @@
     </div>
 
     <section class="area-10">
+
       <div class="col-1">
         <div class="icon">
           <img src="images/poke-icon.png">
@@ -1345,16 +1346,16 @@
             <div class="dia-1">
             </div>
           </li>
-          <li class="n-b-2"><span class="bold">Model what is existing (pre-map the environment)</span>. Existing static things at Dolores Park:
-            <div class="dia-2">
-            </div>
-          </li>
-          <li class="n-b-3"><span class="bold">Establish where virtual objects cannot exist</span>. If all we need is a marker above an area, then we can establish a volume of area that a marker may never go below. Shown here is 8 feet above any surface people are normally on top of:
-            <div class="dia-3">
-            </div>
-          </li>
-          <li class="n-b-4"><span class="bold">The pre-mapped environment must be detectable by the user’s camera and GPS location</span>. This is so that the marker knows which of these pre-mapped volumes it should be behind or in front of.
+          <li class="n-b-2"><span class="bold">Model what is existing (pre-map the environment)</span>. The pre-mapped environment must be detectable by the user’s camera and GPS location. This is so that the marker does not end up in front or behind any of these objects:
             <div class="dia-4">
+            </div>
+          </li>
+          <li class="n-b-3"><span class="bold">The marker only exists where there’s sky in the user’s view</span>. Pre-mapping the environment means being able to  have markers exist in this model too.  Using the user’s GPS location, the marker can be set to different heights for maximum visibiility.
+            <div class="d-img">
+            </div>
+          </li>
+          <li class="n-b-4"><span class="bold">Establish where virtual objects cannot exist</span>. If all we need is a marker above an area, then we can establish a volume of area that a marker may never go below. Shown here is 8 feet above any surface people are normally on top of:
+            <div class="dia-3">
             </div>
           </li>
         </ul>
@@ -1374,7 +1375,7 @@
 
       <div class="one-col-copy">
         <ul>
-          <li class="n-b-1"><span class="bold">Set a static size for the marker</span>. With 3D model testing, I determined a marker about the size of 20 feet tall can be viewable from all locations. A static size allows for a more authentic experience.
+          <li class="n-b-1"><span class="bold">Set a static size for the marker</span>. With 3D model testing, I determined a marker about the size of 20 feet tall can be viewable from all locations. Assumption that needs testing: A static sized marker allows for a more authentic experience.
             <div class="dia-5">
             </div>
           </li>
@@ -1396,21 +1397,24 @@
           <img src="images/take-icon.svg" class="take-icon" alt="Icon with smiley face">
           <h4>Takeaways</h4>
         </div>
-        <div class="sum-img">
-        </div>
-        <div class="take-copy">
-          <p>It seems plausible to pre-map a large environment to eliminate static objects, but fast moving objects like people will require additional technology (like machine-learning).</p>
-        </div>
-        <div class="sum-img-2">
-        </div>
-        <div class="take-copy">
-          <p>It seems plausible to pre-map a large environment to eliminate static objects, but fast moving objects like people will require additional technology (like machine-learning).</p>
-        </div>
         <div class="take-copy">
           <ul class="take-list">
-            <li class="n-1"><span class="bold">A way for people to find each other</span></li>
-            <li class="n-2"><span class="bold">A way for people to know restroom line lengths</span></li>
-            <li class="n-3"><span class="bold">A way for people to know where the moving vendors are</span></li>
+            <li class="n-1"><span class="bold">Large-environment pre-mapping: theoretically possible</span>. It seems plausible to pre-map a large environment for the model to communicate with the user’s location to determine where to show markers on the user’s screen. But I wonder what kind of processing power this will take.
+              <div class="m-1">
+              </div>
+            </li>
+
+            <li class="n-2"><span class="bold">Occlusion of non-static objects, still an issue</span>. Image C shows an 8 foot volume on top of surfaces where people can stand. The purpose of this, as mentioned before, was to have markers exist above this volume. But, as for non-static objects (like people, shown in image D), the issue of occlusion, again, becomes an issue.
+              <div class="m-2">
+              </div>
+            </li>
+
+            <li class="n-3"><span class="bold">How will users ultimately see the marker?</span>. Theoretically, if the environment is pre-mapped, wouldn’t the app be able to detect what is NOT part of the model? I wonder how fast is this detection and with what accuracy is possible with current technology.
+              <div class="m-3">
+              </div>
+            <span class="bold">Additionally, would users prefer to see: image F or image G?</span>. The marker at image G is above the obstruction, where as in image F, the marker remains in front of the obstruction. Would the depth visualizer be enough? With the marker in front of the object, does this confuse things less than image G, where the marker looks like it’s above the obstruction?
+            </li>
+
           </ul>
         </div>
         <div class="take-line-bottom">
@@ -1597,7 +1601,7 @@
         <h4>Moodboard</h4>
       </div>
       <div class="one-col-copy">
-        <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+        <p>My inspiration came from tropical images. Tropical, here, has a set of deep and saturated colors, light and muted colors, and high-chroma brights. The textures are organic and the feeling is festive.</p>
       </div>
 
       <div class="brand-img">
@@ -1608,7 +1612,7 @@
         <h4>Colors</h4>
       </div>
       <div class="one-col-copy">
-        <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+        <p>From the moodboard images, I derived a color palette that gave off a similar vibe.</p>
       </div>
 
       <div class="brand-img">
@@ -1622,7 +1626,7 @@
         <h4>Layering In Nature</h4>
       </div>
       <div class="one-col-copy">
-        <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+        <p>AR is about the layering of information, so I sought a way to convey a sense of layering with the UI. Inspired by natural elements, I experimented with some linework which was later incorporated as buttons and panels.</p>
       </div>
 
       <div class="brand-img" id="brand-box">
@@ -1639,7 +1643,7 @@
         <h4>Logo</h4>
       </div>
       <div class="one-col-copy">
-        <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+        <p>By "hard identity," I mean that H.AR should have a permanent logo that's simple and on the conservative side, while the "soft identity" can change through time as tastes change.</p>
       </div>
 
       <div class="brand-img" id="brand-box">
@@ -1652,7 +1656,7 @@
         <h4>Typography</h4>
       </div>
       <div class="one-col-copy">
-        <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+        <p>For the font, I chose one very screen-legible font, Inter. I chose one font in anticipation of complex UI elements. With more types, the look may become more cluttered.</p>
       </div>
 
     </section>
@@ -1674,7 +1678,7 @@
         <div class="web-2">
         </div>
         <div class="one-col-copy">
-          <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+          <p>HUB-AR, the app, is also a company and needed a website. Above shows two different schemes that were preference tested.</p>
         </div>
 
       </div>
@@ -1689,7 +1693,7 @@
         </div>
         <div class="text-col">
           <h4 class="app-sub">HUBS</h4>
-          <p class="one-col-copy">The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+          <p class="one-col-copy">The homepage for HUB-AR is where users can access all of their hubs. It can be Dolores Park (HUB-Dolo) or whichever hubs on the list (HUB-AR's clients).</p>
           <div class="app-cta">
             <a class="button" href="https://invis.io/JYQS29R8RD3" target="_blank">See Prototype</a>
           </div>
@@ -1700,7 +1704,7 @@
       <div class="row-3">
         <div class="text-col">
           <h4 class="app-sub">THE AR IS FOR</h4>
-          <p class="one-col-copy">The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+          <p class="one-col-copy">Setting virtual markers and having people be able to find it. The UI, shown at the right, still needs to be tested.</p>
           <a class="button" href="https://invis.io/JYQS29R8RD3" target="_blank">See Prototype</a>
         </div>
         <div class="hi-3">
@@ -1715,7 +1719,7 @@
         </div>
         <div class="text-col">
           <h4 class="app-sub">AID FROM MAPS</h4>
-          <p class="one-col-copy">The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+          <p class="one-col-copy">Orienting people will need more than just AR. I believe that clear, well-crafted, interactive 2D maps with icons will be necessary.</p>
           <a class="button" href="https://invis.io/JYQS29R8RD3" target="_blank">See Prototype</a>
         </div>
       </div>
@@ -1724,7 +1728,7 @@
       <div class="row-5">
         <div class="text-col">
           <h4 class="app-sub">FEATURES</h4>
-          <p class="one-col-copy">The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+          <p class="one-col-copy">For the MVP, HUB-Dolo, has three distinct features: 1) <span class="bold">Events</span>, 2) <span class="bold">Restrooms</span>, and 3) <span class="bold">Vendors</span>. Through "Events" users can find their friends (who've previously put down a marker) and create their own event to have friends find them.</p>
           <a class="button" href="https://invis.io/JYQS29R8RD3" target="_blank">See Prototype</a>
         </div>
         <div class="sub-three">
@@ -1774,7 +1778,7 @@
         </div>
         <div class="text-col">
           <h4 class="pref-head">Web Landing</h4>
-          <p class="one-col-copy">The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+          <p class="one-col-copy">Users generally liked the details shown in the darker version.</p>
         </div>
       </div>
 
