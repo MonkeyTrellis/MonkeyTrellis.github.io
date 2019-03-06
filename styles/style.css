@@ -423,46 +423,6 @@ ul .minus:before {
   padding-top: 3rem;
 }
 
-/* .carousel-pagination {
-    list-style: none;
-    position: relative;
-    bottom: 0%;
-    left: 0;
-    right: 0;
-    width: 50%;
-    padding-top: 1%;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 1;
-} */
-
-/* .carousel-bullet {
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    background-color: #ED9E9A;
-    cursor: pointer;
-    margin: .6rem;
-    border-radius: 50%;
-    opacity: 0.3;
-    transition-property: transform, opacity, background-color;
-    transition-duration: 0.3s;
-} */
-
-/* .carousel-bullet:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-.carousel-bullet.active-bullet,
-.carousel-bullet.active-bullet:hover {
-    opacity: 1;
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-    background-color: #ED9E9A;
-    cursor: default;
-} */
-
 /******************** MEDIA QUERIES / RESPONSIVE DESIGN ********************/
 /******************** MIN WIDTH 320 PX ********************/
 @media (min-width: 3.2rem) {
@@ -496,6 +456,7 @@ ul .minus:before {
     "area-23   area-23  area-23"
     "area-24   area-24  area-24"
     "area-25   area-25  area-25"
+    "area-h  area-h  area-h"
     "area-26   area-26  area-26"
     "area-27   area-27  area-27"
     "area-28   area-28  area-28"
@@ -588,9 +549,37 @@ ul .minus:before {
     grid-template-columns: 1fr 6fr 1fr;
   }
 
-  .sh .area-5, .har .area-5, .har .area-8 {
+  .sh .area-5, .har .area-5, .har .area-8, .har .area-24, .har .area-h, .har .area-27, .har .area-32 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-h {
+    grid-area: area-h;
+  }
+  .har .area-27 {
+    grid-area: area-27;
+  }
+  .har .area-30 {
+    display: grid;
+    grid-area: area-30;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-29 {
+    display: grid;
+    grid-area: area-29;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .har .area-29 h4, .har .area-29 .row-1, .har .area-29 .row-2, .har .area-29 .row-3, .har .area-29 .row-4, .har .area-29 .row-5 {
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2.1rem;
+  }
+  .har .area-32 .row-1, .har .area-32 .row-2 {
+    display: grid;
+    grid-column: 1/4;
+    grid-column-gap: 1.5rem;
+    grid-template-columns: 3fr 3fr;
   }
   /***** HUB AR ONLY *****/
   .har .area-10 .col-1, .har .area-10 .col-3, .har .area-10 .col-2, .har .area-10 .col-4 {
@@ -598,22 +587,38 @@ ul .minus:before {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
+  .har .area-h {
+    display: grid;
+    grid-area: area-h;
+  }
   .har .area-12 .data-group {
     display: grid;
     grid-template-columns: auto 1fr;
   }
-  .har .area-17 .versions-1, .har .area-17 .versions-2 {
+  .har .area-20 .versions-1, .har .area-20 .versions-2 {
     grid-column: 1/4;
   }
-  .har .area-17 .versions-1, .har .area-17 .versions-2 {
+  .har .area-20 .versions-1, .har .area-20 .versions-2 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
-  .har .area-17 .container {
+  .har .area-20 .container {
     display: grid;
     grid-column: 1/4;
     grid-template-columns: 1fr 6fr 1fr;
   }
+  .har .area-24 .container {
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-29 .row-5 .sub-three {
+    display: grid;
+    grid-column: 1/7;
+    grid-column-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   /***** Klutch and HUB AR *****/
   /* Roles, Deliverables, Tools */
   .area-1 .three-col-box {
@@ -678,10 +683,11 @@ ul .minus:before {
     grid-template-columns: 1fr 6fr 1fr;
   }
 
-  .area-16 .three-col-box, .har .area-15 .three-col-box, .har .area-17 {
+  .area-16 .three-col-box, .har .area-15 .three-col-box, .har .area-17, .har .area-20, .har .area-22 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
+
   /* User Stories Content */
   .area-18 {
     display: grid;
@@ -711,7 +717,7 @@ ul .minus:before {
     grid-template-columns: 1fr 6fr 1fr;
   }
 
-  .area-21 .container {
+  .area-21 .container, .har .area-22 .container {
     display: grid;
     grid-column: 1/4;
     grid-template-columns: 1fr 6fr 1fr;
@@ -737,7 +743,7 @@ ul .minus:before {
   }
 
   /* Sketched Wireframes Takeaways */
-  .area-26 {
+  .area-26, .har .area-26 {
     display: grid;
     grid-area: area-26;
     grid-template-columns: 1fr 6fr 1fr;
@@ -1562,7 +1568,7 @@ ul .minus:before {
   }
 
   .take-heading h4 {
-    padding-top: 2.7rem;
+    padding-top: 3.6rem;
     padding-left: 1.5rem;
   }
 
@@ -1973,17 +1979,21 @@ ul .minus:before {
     grid-column: 1/4;
   }
 
-  .area-21 .one-col-heading, .har .area-17 .one-col-heading {
+  .area-21 .one-col-heading, .har .area-20 .one-col-heading {
     grid-column: 2/3;
   }
 
-  .area-21 .us-list, .har .area-17 .us-list {
+  .area-21 .us-list {
     font-style: italic;
     line-height: 3.3rem;
   }
 
-  .area-21 .highlight, .har .area-17 .highlight {
+  .area-21 .highlight, .har .area-20 .highlight {
     background-color: #FFE8E0;
+  }
+
+  .har .area-20 .highlight {
+    font-weight: 600;
   }
 
   .area-21 .one-col-heading, .har .one-col-heading {
@@ -1996,7 +2006,7 @@ ul .minus:before {
     padding-bottom: .6rem;
   }
 
-  .area-21 h6, .har .area-17 h6 {
+  .area-21 h6, .har .area-20 h6 {
     padding-bottom: 2.4rem;
     font-weight: 500;
   }
@@ -2005,35 +2015,36 @@ ul .minus:before {
     font-weight: bold;
   }
 
-  .area-21 .caption, .har .area-17 .caption {
+  .area-21 .caption, .har .area-20 .caption {
     grid-column: 2/3;
     line-height: 2.1rem;
     padding-bottom: 2.1rem;
   }
 
-  .area-21 .caption-1, .har .area-17 .caption-1 {
+  .area-21 .caption-1, .har .area-20 .caption-1 {
     line-height: 2.1rem;
     padding-bottom: 2.1rem;
   }
 
-  .har .area-17 .caption-1 {
+  .har .area-20 .caption-1 {
     line-height: 2.1rem;
     padding-bottom: 0;
   }
 
-  .area-21 .container, .har .area-17 .container {
+  .area-21 .container, .har .area-20 .container {
     background-color: #FFFAF8;
     margin-bottom: 6rem;
   }
 
-  .area-21 .col-1, .area-21 .col-2, .har .area-17 .col-1, .har .area-17 .col-2 {
+  .area-21 .col-1, .area-21 .col-2, .har .area-20 .col-1, .har .area-20 .col-2 {
     background-color: #FAFBFB;
     grid-column: 2/3;
   }
 
-  .area-21 .versions-1, .area-21 .versions-2, .area-17 .versions-1, .area-17 .versions-2 {
+  .area-21 .versions-1, .area-21 .versions-2, .area-20 .versions-1, .area-20 .versions-2 {
     background-color: #FAFBFB;
     margin-bottom: 3rem;
+    margin-top: .9rem;
   }
 
   .area-21 .versions-1 .img-1 {
@@ -2255,6 +2266,9 @@ ul .minus:before {
   .area-31 .brand-4 {
     padding-bottom: 4.2rem;
   }
+  .klutch .area-31 h4{
+    text-align: center;
+  }
 
   /* Prototypes and Mockups Heading */
   .area-32 {
@@ -2384,7 +2398,7 @@ ul .minus:before {
     margin-bottom: 1.2rem;
   }
 
-  .area-36 .pref-data, .area-36 .pref-data-2 {
+  .area-36 .pref-data, .area-36 .pref-data-2, .har .area-32 .data {
     font-family: 'Nunito', sans-serif;
     color: #008CFF;
     font-size: 2.1rem;
@@ -2392,10 +2406,6 @@ ul .minus:before {
     font-weight: bold;
     text-align: center;
   }
-
-  /* .area-36 .data-container-5 .img-s {
-    padding-top: 3rem;
-  } */
 
   /* Testing w/ Prototypes Heading */
   .area-37 {
@@ -2648,7 +2658,7 @@ ul .minus:before {
     background-repeat: no-repeat;
     grid-column: 1/4;
     grid-row: 2/3;
-    height: 300px;
+    height: 180px;
     opacity: .9;
     padding: 0 2rem 0 2rem;
   }
@@ -2660,6 +2670,9 @@ ul .minus:before {
   .har .col-1, .har .col-2, .har .overview-image {
     grid-column: 2/3;
     padding-bottom: 2.1rem;
+  }
+  .har .overview-image {
+    margin-bottom: 3rem;
   }
   /* Design Process Content */
   .har .area-5 .process {
@@ -2683,7 +2696,18 @@ ul .minus:before {
   .har h4 {
     text-align: center;
   }
-  .har .area-8 .one-col-copy {
+  .har .area-20 h4 {
+    font-weight: 300;
+    text-align: left;
+    line-height: 3.3rem;
+  }
+  .har .area-20 h5 {
+    padding-bottom: 2.4rem;
+  }
+  .har .area-20 .us-list {
+    font-weight: 300;
+  }
+  .har .area-8 .one-col-copy, .har .area-27 .one-col-copy {
     padding-bottom: 6rem;
   }
   .har .dolo-img {
@@ -2769,7 +2793,7 @@ ul .minus:before {
     margin-bottom: 3.6rem;
     margin-top: 1.5rem;
   }
-  ul .n-1:before, ul .n-2:before, ul .n-3:before, ul .n-4:before, ul .n-5:before {
+  ul .n-1:before, ul .n-2:before, ul .n-3:before, ul .n-4:before, ul .n-5:before, ul .n-6:before {
     position: absolute;
     left: -4.2rem;
   }
@@ -2787,6 +2811,9 @@ ul .minus:before {
   }
   ul .n-5:before {
     content: url("/images/num-5.svg");
+  }
+  ul .n-6:before {
+    content: url("/images/num-6.svg");
   }
   .har .take-list li {
     font-size: 1.8rem;
@@ -2868,13 +2895,142 @@ ul .minus:before {
     grid-column: 1/4;
     padding-bottom: 7.2rem;
   }
-  /* User Stories and Flows */
+  .har .area-15 .takeaways-2 {
+    display: block;
+    grid-column: 2/3;
+    padding-top: 0rem;
+  }
+  /* AR Methods Heading */
   .har .area-16 {
     grid-column: 1/4;
   }
-  .har .area-17 .user-story, .har .area-17 .results {
+  /* AR Methods Content */
+  .har .area-17 .ar-example, .har .area-17 .one-col-heading, .har .area-17 .one-col-copy {
     grid-column: 2/3;
-    font-style: italic;
+  }
+  .har .area-17 .ar-img {
+    background-image: url("/images/ar-ex-1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    height: 420px;
+    margin-bottom: 4.2rem;
+  }
+  .har .area-17 .one-col-copy {
+    padding-bottom: 7.2rem;
+  }
+  ul .n-b-1:before, ul .n-b-2:before, ul .n-b-3:before, ul .n-b-4:before {
+    position: absolute;
+    left: -4.2rem;
+  }
+  ul .n-b-1:before {
+    content: url("/images/n-b-1.svg");
+  }
+  ul .n-b-2:before {
+    content: url("/images/n-b-2.svg");
+  }
+  ul .n-b-3:before {
+    content: url("/images/n-b-3.svg");
+  }
+  ul .n-b-4:before {
+    content: url("/images/n-b-4.svg");
+  }
+  .har .one-col-copy li {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.3rem;
+    padding-bottom: 1.2rem;
+    position: relative;
+    margin-left: 4.2rem;
+    text-align: left;
+  }
+  .har .dia-1, .har .dia-2, .har .dia-3 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    height: 210px;
+    margin-bottom: 4.4rem;
+  }
+  .har .dia-4 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    height: 210px;
+    margin-bottom: 0;
+  }
+  .har .dia-5, .har .dia-6, .har .dia-7 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    margin: 2.1rem 0 2.1rem 0;
+  }
+  .har .dia-5 {
+    height: 240px;
+  }
+  .har .dia-6, .har .dia-7 {
+    height: 560px;
+  }
+  .har .dia-1 {
+    background-image: url("/images/har-dia-1.png");
+  }
+  .har .dia-2 {
+    background-image: url("/images/har-dia-2.png");
+  }
+  .har .dia-3 {
+    background-image: url("/images/har-dia-3.png");
+  }
+  .har .dia-4 {
+    background-image: url("/images/har-dia-4.png");
+  }
+  .har .dia-5 {
+    background-image: url("/images/har-dia-5.png");
+  }
+  .har .dia-6 {
+    background-image: url("/images/har-app-ex-1.png");
+  }
+  .har .dia-7 {
+    background-image: url("/images/har-app-ex-2.png");
+  }
+  .har .area-17 .takeaways {
+    grid-column: 2/3;
+  }
+  .har .area-17 .sum-img {
+    background-image: url("/images/har-app-ex-take.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 3.6rem;
+    margin-top: 1.5rem;
+  }
+  .har .area-17 .sum-img-2 {
+    background-image: url("/images/har-app-ex-take-2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 3.6rem;
+    margin-top: 1.5rem;
+  }
+  /* Info Arch Large Heading */
+  .har .area-18 .wide-box {
+    grid-column: 1/4;
+  }
+  .har .area-20 .triangle {
+    display: flex;
+    justify-content: center;
+    padding: 4.2rem 0 5.4rem 0;
+    opacity: .35;
+  }
+  .har .area-20 .user-story .take-line-top {
+    margin: 8.4rem 0 8.4rem 0;
+  }
+  .har .area-20 .user-story, .har .area-20 .results {
+    grid-column: 2/3;
   }
   .har .versions-1 .img-1 {
     background-image: url("/images/har-uf-sketch-1.png");
@@ -2886,7 +3042,7 @@ ul .minus:before {
     height: 150px;
     width: 100%;
   }
-  .area-17 .versions-1 .img-1, .area-17 .versions-1 .img-2, .area-17 .versions-2 .img-1, .area-17 .versions-2 .img-2 {
+  .area-20 .versions-1 .img-1, .area-20 .versions-1 .img-2, .area-20 .versions-2 .img-1, .area-20 .versions-2 .img-2 {
     background-size: contain;
     background-blend-mode: multiply;
     background-color: #FAFBFB;
@@ -2894,21 +3050,22 @@ ul .minus:before {
     background-position: center;
     margin: 2.4rem 0 2.4rem 0;
   }
-  .har .area-17 .flow-image-1, .har .area-17 .flow-image-2 {
+  .har .area-20 .flow-image-1, .har .area-20 .flow-image-2 {
     grid-column: 2/3;
     padding: 3.3rem 0 3.3rem 0;
   }
-  .har .area-17 .container img {
+  .har .area-20 .container img {
     width: 100%;
   }
+
   .har .results-1 {
     background-image: url("/images/har-app-flow-1.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     grid-column: 2/3;
-    height: 240px;
-    margin-bottom: 6rem;
+    height: 266px;
+    margin-bottom: 8.4rem;
   }
   .har .versions-2 .img-1 {
     background-image: url("/images/har-uf-sketch-2.png");
@@ -2926,8 +3083,337 @@ ul .minus:before {
     background-position: center;
     background-repeat: no-repeat;
     grid-column: 2/3;
-    height: 240px;
+    height: 381px;
   }
+  .har .area-22 .container {
+    background-color: #FFFAF8;
+  }
+  .har .area-22 .container, .har .area-20 .link-underline, .har .area-24 .container {
+    grid-column: 1/4;
+  }
+  .har .area-22 .sitemap {
+    background-image: url("/images/har-sitemap.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/4;
+    height: 210px;
+    margin: 3.6rem 3.6rem;
+  }
+  /* .har .area-24 .sitemap {
+    height: 180px;
+  } */
+  .har .area-24 h4, .har .area-24 .sketches, .har .area-24 .wireframes {
+    grid-column: 2/3;
+  }
+  .har .area-24 .sketches {
+    background-image: url("/images/har-sketches.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 240px;
+    margin-bottom: 4.2rem;
+  }
+  .har .area-24 .img {
+    background-image: url("/images/har-wf.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1100px;
+    margin-bottom: 4.2rem;
+  }
+  .har .area-24 .link-underline {
+    grid-column: 2/3;
+  }
+  .har .area-h {
+    grid-area: area-h;
+  }
+  .har .area-h .wide-box {
+    grid-column: 1/4;
+  }
+  .har .area-26 {
+    grid-column: 1/4;
+  }
+  .har .area-27 {
+    grid-column: 1/4;
+  }
+  .har .area-27 .brand-img, .har .area-27 .one-col-heading, .har .area-27 .one-col-copy {
+    grid-column: 2/3;
+  }
+  .har .area-27 .b-1 {
+    background-image: url("/images/har-moodboard.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 210px;
+    margin-bottom: 4.2rem;
+  }
+  .har .area-27 .b-2 {
+    background-image: url("/images/har-colors.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 180px;
+    margin-bottom: 4.2rem;
+  }
+  .har .area-27 .b-3 {
+    background-image: url("/images/har-nature.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 180px;
+    margin-bottom: 1.5rem;
+  }
+  .har .area-27 #brand-box {
+    background-color: #FFFAF8;
+    padding: 1.5rem;
+    margin-bottom: 4.2rem;
+  }
+  .har .area-27 .b-3-2 {
+    background-image: url("/images/har-stripes.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 160px;
+  }
+  .har .area-27 .b-4-1 {
+    background-image: url("/images/har-hard.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40px;
+    margin-bottom: 2.1rem;
+  }
+  .har .area-27 .b-4-2 {
+    background-image: url("/images/har-soft.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 105px;
+  }
+  .har .area-27 .box-head {
+    padding-bottom: 1.2rem;
+  }
+  .har .area-27 .b-5 {
+    background-image: url("/images/har-type.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 210px;
+  }
+  .har .area-29 {
+    grid-column: 2/3;
+  }
+  .har .area-29 h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .har .area-29 .web-1 {
+    background-image: url("/images/har-web-mock-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    grid-column: 1/4;
+    height: 160px;
+    margin-bottom: 3rem;
+  }
+  .har .area-29 .web-2 {
+    background-image: url("/images/har-web-mock-2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #CCD3DA);
+    grid-column: 4/7;
+    height: 160px;
+    margin-bottom: 3rem;
+  }
+  .har .area-29 .one-col-copy {
+    grid-column: 1/7;
+    padding-bottom: 6rem;
+  }
+  .har .area-29 .row-1 .one-col-copy {
+    padding-bottom: 7.2rem;
+  }
+  .har .area-29 .text-col {
+    grid-column: 1/7;
+  }
+  .har .area-29 .button {
+    width: 180px;
+  }
+  .har .area-29 .app-cta {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7.2rem;
+  }
+  .har .area-29 .row-3 .button, .har .area-29 .row-4 .button,.har .area-29 .row-5 .button {
+    display: none;
+  }
+  .har .area-29 h4 {
+    padding-bottom: 2.7rem;
+  }
+  .har .area-29 .hi-1 {
+    background-image: url("/images/har-hi-1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    grid-column: 1/4;
+    height: 280px;
+    margin-bottom: 3rem;
+  }
+  .har .area-29 .hi-2 {
+    background-image: url("/images/har-hi-2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    grid-column: 4/7;
+    height: 280px;
+    margin-bottom: 3rem;
+  }
+  .har .area-29 .hi-3 {
+    background-image: url("/images/har-hi-3.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    grid-column: 1/4;
+    grid-row: 7/8;
+    height: 280px;
+    margin-bottom: 3rem;
+  }
+  .har .area-29 .row-3 .text-col {
+    grid-row: 8/9;
+  }
+  .har .area-29 .row-5 .text-col {
+    grid-row: 12/13;
+  }
+  .har .area-29 .sub-three {
+    grid-row: 11/12;
+  }
+  .har .area-29 .hi-4 {
+    background-image: url("/images/har-hi-4.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    grid-column: 4/7;
+    grid-row: 7/8;
+    height: 280px;
+    margin-bottom: 3rem;
+  }
+  .har .area-29 .hi-5 {
+    background-image: url("/images/har-hi-5.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    grid-column: 1/7;
+    height: 150px;
+    margin-bottom: 3rem;
+  }
+  .har .area-29 .hi-6 {
+    background-image: url("/images/har-hi-6.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    grid-column: 1/2;
+    height: 150px;
+    margin-bottom: 3rem;
+  }
+  .har .area-29 .hi-7 {
+    background-image: url("/images/har-hi-7.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    grid-column: 2/3;
+    height: 150px;
+    margin-bottom: 3rem;
+  }
+  .har .area-29 .hi-8 {
+    background-image: url("/images/har-hi-8.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    grid-column: 3/4;
+    height: 150px;
+    margin-bottom: 3rem;
+  }
+  .har .area-29 .app-sub {
+    padding-bottom: 1.2rem;
+    font-weight: 300;
+  }
+  .har .area-30 .wide-box {
+    grid-column: 1/4;
+  }
+  .har .area-32 .row-1, .har .area-32 .row-2 {
+    grid-column: 2/3;
+    padding-bottom: 6.3rem;
+    padding-top: 5.4rem;
+  }
+  .har .area-32 .row-2 {
+    padding-top: 0;
+  }
+  .har .area-32 .pref-1 {
+    background-image: url("/images/pref-test-1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    height: 210px;
+    margin-bottom: 3rem;
+  }
+  .har .area-32 .pref-2 {
+    background-image: url("/images/pref-test-2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    height: 210px;
+    margin-bottom: 3rem;
+  }
+  .har .area-32 .pref-3 {
+    background-image: url("/images/pref-test-3.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    height: 280px;
+    margin-bottom: 3rem;
+  }
+  .har .area-32 .pref-4 {
+    background-image: url("/images/pref-test-4.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    height: 280px;
+    margin-bottom: 3rem;
+  }
+
+  .har .area-32 .row-1 .col-1, .har .area-32 .row-1 .col-2 {
+    grid-column: 1/3;
+  }
+  .har .area-32 .row-2 .col-1 {
+    grid-column: 1/2;
+  }
+  .har .area-32 .row-2 .col-2 {
+    grid-column: 2/3;
+  }
+  .har .area-32 .text-col {
+    grid-column: 1/3;
+  }
+
+
+
+
+
+
+
 
 }
 /******************** MIN WIDTH 720 PX ********************/
@@ -2954,13 +3440,14 @@ ul .minus:before {
     ".  area-15  ."
     ".  area-16  ."
     ".  area-17  ."
-    ".  area-18  ."
+    "area-18  area-18  area-18"
     "area-19  area-19  area-19"
     ".  area-20  ."
     "area-21  area-21  area-21"
     ".  area-22  ."
     "area-23  area-23  area-23"
     ".  area-24  ."
+    "area-h  area-h  area-h"
     ".  area-25  ."
     ".  area-26  ."
     ".  area-27  ."
@@ -3035,7 +3522,7 @@ ul .minus:before {
 
   /* User Stories Content */
   .area-18 {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
   }
 
   /* Image Carousel */
@@ -3110,6 +3597,7 @@ ul .minus:before {
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 1fr;
   }
+
 
   /****************** Navbar Content Global ******************/
   .navbar-logo {
@@ -3712,11 +4200,11 @@ ul .minus:before {
 
   /* User Stories Content */
   .area-18 .column {
-    grid-column: 1/7;
+    grid-column: 2/3;
   }
 
   .area-18 .link-underline {
-    grid-column: 1/7;
+    grid-column: 2/3;
   }
 
 
@@ -4012,7 +4500,7 @@ ul .minus:before {
     margin-bottom: 1.2rem;
   }
 
-  .area-36 .pref-data, .area-36 .pref-data-2 {
+  .area-36 .pref-data, .area-36 .pref-data-2, .area-32 .data {
     font-family: 'Nunito', sans-serif;
     color: #008CFF;
     font-size: 2.1rem;
@@ -4134,6 +4622,9 @@ ul .minus:before {
     width: 50%;
   }
   /************************* HUB-AR *************************/
+  .hero-image-har {
+    height: 420px;
+  }
   .har .overview-image {
     grid-column: 2/4;
   }
@@ -4154,13 +4645,104 @@ ul .minus:before {
     height: 510px;
   }
   /* User Research */
-  .har .area-12 .survey-heading, .har .area-12 .survey-goal-exp, .har .data-head, .har .chart-box, .har .area-12 .takeaways  {
+  .har .area-12 .survey-heading, .har .area-12 .survey-goal-exp, .har .data-head, .har .chart-box {
+    grid-column: 1/7;
+  }
+  .har .area-12 .takeaways  {
     grid-column: 1/7;
   }
   /* User Stories adn Flows */
-  .har .results-1, .har .results-2 {
-    height: 600px;
+  .har .results-1 {
+    height: 510px;
   }
+  .har .results-2 {
+    height: 690px;
+  }
+  .har .area-24 .wireframes {
+    grid-column: 2/3;
+  }
+  .har .area-24 .img {
+    height: 2100px;
+    margin-bottom: 4.2rem;
+  }
+  .har .area-h {
+    grid-column: 1/4;
+  }
+  .har .area-26 {
+    grid-column: 1/4;
+  }
+  .har .area-27 #brand-box {
+    padding: 7.2rem;
+  }
+  .har .area-27 .b-1 {
+    height: 420px;
+  }
+  .har .area-27 .b-2 {
+    height: 340px;
+  }
+  .har .area-27 .b-3 {
+    height: 440px;
+  }
+  .har .area-27 .b-3-2 {
+    height: 360px;
+  }
+  .har .area-27 .b-4-1 {
+    height: 72px;
+  }
+  .har .area-27 .b-4-2 {
+    height: 210px;
+  }
+  .har .area-27 .b-5 {
+    height: 450px;
+  }
+  .har .area-29 .web-1, .har .area-29 .web-2 {
+    height: 400px;
+  }
+  .har .area-29 .hi-1, .har .area-29 .hi-2, .har .area-29 .hi-3, .har .area-29 .hi-4 {
+    height: 540px;
+  }
+  .har .area-29 .hi-5 {
+    height: 290px;
+  }
+  .har .area-29 .hi-6, .har .area-29 .hi-7, .har .area-29 .hi-8 {
+    height: 360px;
+  }
+  .har .area-30 {
+    grid-column: 1/4;
+  }
+  .har .area-32 {
+    grid-column: 2/3;
+  }
+  .har .area-32 .row-1, .har .area-32 .row-2 {
+    display: grid;
+    grid-column: 1/4;
+    grid-column-gap: 2.1rem;
+    grid-template-columns: 3fr 3fr;
+  }
+  .har .area-32 .row-1 .col-1 {
+    grid-column: 1/2;
+  }
+  .har .area-32 .row-1 .col-2 {
+    grid-column: 2/3;
+  }
+  .har .area-32 .row-2 .col-1 {
+    grid-column: 1/2;
+  }
+  .har .area-32 .row-2 .col-2 {
+    grid-column: 2/3;
+  }
+  .har .area-32 .text-col {
+    grid-column: 1/3;
+  }
+  .har .area-32 .pref-1, .har .area-32 .pref-2  {
+    height: 210px;
+    margin-bottom: 1.8rem;
+  }
+  .har .area-32 .pref-3, .har .area-32 .pref-4 {
+    height: 540px;
+    margin-bottom: 1.8rem;
+  }
+
 
 
 }
@@ -4254,6 +4836,25 @@ ul .minus:before {
     ".  area-15  ."
     ".  area-16  ."
     ".  area-17  ."
+    "area-18  area-18  area-18"
+    ".  area-19  ."
+    ".  area-20  ."
+    ".  area-21  ."
+    ".  area-22  ."
+    ".  area-23  ."
+    ".  area-24  ."
+    "area-h  area-h  area-h"
+    ".  area-26  ."
+    ".  area-27  ."
+    ".  area-28  ."
+    ".  area-29  ."
+    "area-30  area-30  area-30"
+    ".  area-31  ."
+    ".  area-32  ."
+    ".  area-33  ."
+    ".  area-34  ."
+    "area-35  area-35  area-35"
+    ".  area-36  ."
     "footer  footer  footer";
   }
 
@@ -4494,23 +5095,29 @@ ul .minus:before {
     grid-column: 4/6;
   }
  /***** HUB AR *****/
-  .har .hero {
+  .har .area-6, .har .area-13, .har .area-18, .har .area-31, .har .area-32, .har-area-33, .har .area-35 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
-  .har .container-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  .har .area-5, .har .area-10, .har .area-12 {
+  .har .area-5, .har .area-10, .har .area-12, .har .area-14, .har .area-15, .har .area-20, .har .area-20 .container, .har .area-22, .har .area-24, .har .area-24 .container, .har .area-27, .har .area-28, .har .area-29 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-  .har .area-6, .har .area-14 {
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+  .har .area-h {
+    grid-area: area-h;
+    grid-column: 1/4;
   }
-  .har .area-8 {
+  .har .hero {
+    display: grid;
+    grid-column: 1/4;
+    grid-area: hero;
+  }
+  .har .container-hero {
+    display: grid;
+    grid-column: 1/7;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .har .area-8, .har .area-17 {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
   }
@@ -4525,37 +5132,46 @@ ul .minus:before {
   .har .area-12 {
     grid-row-gap: 0rem;
   }
-  .har .area-13 {
+
+  .har .area-29 .row-1, .har .area-29 .row-2, .har .area-29 .row-3, .har .area-29 .row-4, .har .area-29 .row-5 {
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-  }
-  .har .area-15 {
-    display: grid;
-    grid-area: area-15;
-    grid-template-columns: 1fr 6fr 1fr;
-  }
-  .har .area-16 {
-    display: grid;
-    grid-area: area-16;
-    grid-template-columns: 1fr 6fr 1fr;
-  }
-  .har .area-17 {
-    display: grid;
-    grid-area: area-17;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-  .har .area-17 .versions-1, .har .area-17 .versions-2 {
+  .har .area-29 .row-2, .har .area-29 .row-3, .har .area-29 .row-4, .har .area-29 .row-5 {
+    grid-column-gap: 1.2rem;
+  }
+  .har .area-29 .row-5 {
+    grid-column-gap: 6rem;
+  }
+  .har .area-20 .versions-1, .har .area-20 .versions-2 {
     display: grid;
     grid-column: 1/7;
     grid-template-columns: 3fr 3fr;
     grid-column-gap: 3rem;
   }
-  .har .area-17 .container {
+  .har .area-29 .sub-three {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .har .area-30 {
+    grid-column: 1/4;
+    grid-area: area-30;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-30 .wide-box {
+    grid-column: 1/4;
+  }
+  .har .area-32 {
+    grid-column: 1/4;
+    grid-area: area-32;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-32 .row-1, .har .area-32 .row-2 {
+    display: grid;
+    grid-column: 1/4;
+    grid-column-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-
-
   /****************** Navbar Content Global ******************/
   .navbar-logo {
     grid-column: 1/2;
@@ -4961,6 +5577,7 @@ ul .minus:before {
   }
 
   /************************* Klutch *************************/
+
   /* Hero */
   .klutch .hero-heading {
     grid-column: 2/6;
@@ -5091,12 +5708,10 @@ ul .minus:before {
   .takeaways {
     grid-column: 2/6;
   }
-
   .takeaways {
     padding-top: 6.3rem;
     padding-bottom: 6.3rem;
   }
-
   .take-line-top, .take-line-bottom {
     background-color: #ED9E9A;
     display: flex;
@@ -5123,11 +5738,17 @@ ul .minus:before {
     line-height: 3.3rem;
     padding: 0 5.7rem 4.2rem 5.7rem;
   }
-
   .area-6 .takeaways {
     grid-column: 2/6;
   }
-
+  .har .area-15 .takeaways-2 {
+    display: block;
+    grid-column: 2/3;
+    padding-top: 12.3rem;
+  }
+  .har .area-15 .takeaways-2 .take-copy {
+    grid-column: 1/4;
+  }
   /* User Research Heading */
   .area-7 {
     grid-column: 2/3;
@@ -5301,8 +5922,8 @@ ul .minus:before {
   }
 
   .pers-image img {
-    width: 240px;
-    height: 240px;
+    height: 210px;
+    width: 210px;
     margin-bottom: 2.1rem;
   }
 
@@ -5330,7 +5951,10 @@ ul .minus:before {
 
   .area-18 .user-stories {
     padding-top: 5.4rem;
+  }
 
+  .area-18 .link-underline {
+    grid-column: 2/6;
   }
 
   /* User Flows Heading */
@@ -5629,17 +6253,14 @@ ul .minus:before {
   .area-34 {
     grid-column: 1/4;
   }
-
   /* Preference Tests Heading */
   .area-35 {
     grid-column: 2/3;
   }
-
   /* Preference Tests Content */
   .area-36 .data-container-1, .area-36 .data-container-3, .area-36 .data-container-6 {
     grid-column: 1/2;
   }
-
   .area-36 .data-container-2, .area-36 .data-container-4, .area-36 .data-container-7 {
     grid-column: 2/3;
   }
@@ -5890,21 +6511,21 @@ ul .minus:before {
   /************************* HUB-AR *************************/
   /* Hero */
   .har .hero-heading {
-    grid-column: 3/7;
+    grid-column: 1/7;
   }
 
   .hero-image-har {
-    height: 600px;
+    height: 480px;
     width: 100%;
-    grid-column: 3/7;
+    grid-column: 2/6;
   }
 
   .hero-image-pattern-har {
-    grid-column: 1/9;
+    grid-column: 1/7;
   }
 
   .har .hero-copy, .har .hero-button {
-    grid-column: 3/7;
+    grid-column: 2/6;
   }
   /* Overview */
   .har .one-col-heading {
@@ -5964,6 +6585,9 @@ ul .minus:before {
     padding-bottom: 4.2rem;
   }
   /* Competitive Analysis */
+  .har .area-9 {
+    grid-column: 2/3;
+  }
   .har .area-10 .col-1, .har .area-10 .col-3 {
     grid-column: 1/4;
   }
@@ -6015,11 +6639,13 @@ ul .minus:before {
     margin-bottom: 3.6rem;
     margin-top: 1.5rem;
   }
-
   .har .take-list li {
     font-size: 2.1rem;
   }
   /* User Research */
+  .har .area-11 {
+    grid-column: 2/3;
+  }
   .har .area-12 .survey-heading {
     grid-column: 2/6;
     text-align: center;
@@ -6033,74 +6659,93 @@ ul .minus:before {
   .har .data-head, .har .chart-box {
     grid-column: 2/6;
   }
-
   .har .data-head {
     padding-bottom: 1.2rem;
     padding-top: 2.1rem;
   }
-
   .har .chart-box {
     background-color: #F0F8FF;
     border-radius: 6px;
     margin-bottom: 3rem;
   }
-
   .har .chart-container {
     padding: 2.1rem 3rem 2.1rem 3rem;
   }
-
   .har .chart-head, .har .chart-text {
     font-family: 'Nunito', sans-serif;
     color: #008CFF;
   }
-
   .har .chart-head {
     font-size: 2.1rem;
     font-weight: 800;
     line-height: 2.7rem;
     padding-bottom: 3rem;
   }
-
   .har .percentage {
     display: inline-block;
     font-size: 4.8rem;
     font-weight: 600;
   }
-
   .har .desc {
     display: inline-block;
     font-size: 2.1rem;
     font-weight: 400;
     margin-left: 1.8rem;
   }
-
   .har svg {
     margin-bottom: 2.4rem;
   }
-
   .har .dark {
     color: #0070CB;
   }
-
+  .har .area-12 .takeaways {
+    grid-column: 2/6;
+  }
   /* Strategy Heading */
   .har .area-13 .wide-box {
     grid-column: 1/4;
   }
   /* Personas Heading */
-  .har .area-14 .heading-secondary {
+  .har .area-14 {
+    grid-column: 2/3;
+  }
+  /* Personas */
+  .har .area-15 .column-1, .har .area-15 .column-2, .har .area-15 .column-3, .har .area-15 .takeaways-2 {
+    grid-column: 2/6;
+  }
+  .har .area-15 .column-3 {
+    padding-bottom: 0;
+  }
+  .har .area-15 .takeaways-2 {
+    padding-bottom: 6.3rem;
+  }
+  .har .area-15 .row-1, .har .area-15 .row-2, .har .area-15 .row-3, .har .area-15 .row-4, .har .area-15 .row-5, .har .area-15 .row-6 {
+    display: none;
+  }
+  .har .area-16 {
+    grid-column: 2/3;
+  }
+  .har .area-17 .one-col-heading, .har .area-17 .one-col-copy {
+    grid-column: 2/3;
+  }
+  /* Info Arch Large Heading */
+  .har .area-18 .wide-box {
+    grid-column: 1/4;
+  }
+  .har .area-19 {
     grid-column: 2/3;
   }
   /* User Stories + Flows */
-  .area-17 .container {
+  .area-20 .container {
     display: block;
   }
-  .har .area-17 .user-story {
+  .har .area-20 .user-story {
     grid-column: 2/6;
   }
-  .har .area-17 .versions-1, .har .area-17 .container, .har .area-17 .results {
+  .har .area-20 .versions-1, .har .area-20 .container, .har .area-20 .results {
     grid-column: 1/7;
   }
-  .har .area-17 .versions-1 .img-1, .har .area-17 .versions-1 .img-2, .har .area-17 .versions-2 .img-1, .har .area-17 .versions-2 .img-2 {
+  .har .area-20 .versions-1 .img-1, .har .area-20 .versions-1 .img-2, .har .area-20 .versions-2 .img-1, .har .area-20 .versions-2 .img-2 {
     background-size: contain;
     background-blend-mode: multiply;
     background-color: #FAFBFB;
@@ -6108,50 +6753,45 @@ ul .minus:before {
     background-position: center;
     height: 240px;
   }
-  .har .area-17 .col-1 {
+  .har .area-20 .col-1 {
     background-color: #FAFBFB;
     grid-column: 1/2;
     padding: 3rem;
   }
-  .har .area-17 .col-2 {
+  .har .area-20 .col-2 {
     background-color: #FAFBFB;
     grid-column: 2/3;
     padding: 3rem;
   }
-  .har .area-17 .caption {
+  .har .area-20 .caption {
     grid-column: 1/7;
     padding-bottom: 3rem;
   }
-  .har .area-17 .caption-1 {
+  .har .area-20 .caption-1 {
     padding-bottom: 0;
   }
-  .har .area-17 .caption-1 p {
+  .har .area-20 .caption-1 p {
     padding: 0;
   }
-  .har .area-17 .caption p {
+  .har .area-20 .caption p {
     padding: 0 0 0 3rem;
   }
-  .har .area-17 .container {
+  .har .area-20 .container {
     background-color: #FFFAF8;
-    margin-bottom: 4.2rem;
+    margin-bottom: 7.2rem;
   }
-  .har .area-17 .flow-image-1, .har .area-17 .flow-image-2 {
+  .har .area-20 .flow-image-1, .har .area-20 .flow-image-2 {
     grid-column: 1/7;
     margin: 0;
     padding: 4.8rem;
+  }
+  .har .area-20 #bottom-link {
+    padding-bottom: 6.3rem;
   }
   .har .versions-1, .har .versions-2 {
     background-color: #FFF;
     margin-bottom: 0;
     padding-bottom: 3rem;
-  }
-  .har .area-17 .col-1 {
-    background-color: #FAFBFB;
-    grid-column: 1/2;
-  }
-  .har .area-17 .col-2 {
-    background-color: #FAFBFB;
-    grid-column: 2/3;
   }
   .har .results-1 {
     grid-column: 1/7;
@@ -6160,11 +6800,178 @@ ul .minus:before {
   }
   .har .results-2 {
     grid-column: 1/7;
-    height: 720px;
+    height: 1000px;
+    margin-bottom: 1.8rem;
+  }
+  .har .link-underline, .har .area-24 .link-underline {
+    grid-column: 2/6;
+  }
+  .har .area-22 .container, .har .area-20 .link-underline{
+    grid-column: 1/7;
+  }
+  .har .area-20 .link-underline {
+    padding-top: 4.2rem;
+  }
+  .har .area-22 .sitemap {
+    grid-column: 1/7;
+    height: 350px;
+    margin-bottom: 3.6rem;
+    margin-top: 3.6rem;
+  }
+  .har .area-24 h4 {
+    grid-column: 2/6;
+  }
+  .har .area-24 .container {
+    grid-column: 1/7;
+  }
+  .har .area-24 .sketches {
+    grid-column: 2/6;
+    height: 420px;
+    margin-bottom: 4.2rem;
+  }
+  .har .area-24 .img {
+    height: 1800px;
+    margin: 4.2rem;
+  }
+  .har .area-24 .wireframes {
+    background-color: #FFFAF8;
+    grid-column: 2/6;
   }
 
-
-
+  .har .area-26, .har .area-27 {
+    grid-column: 2/3;
+  }
+  .har .area-27 .one-col-copy {
+    padding-bottom: 12rem;
+  }
+  .har .area-27 .brand-img, .har .area-27 .one-col-heading, .har .area-27 .one-col-copy {
+    grid-column: 2/6;
+  }
+  .har .area-29 h4, .har .area-29 .row-1, .har .area-29 .row-2, .har .area-29 .row-3, .har .area-29 .row-4, .har .area-29 .row-5 {
+    grid-column: 1/7;
+  }
+  .area-29 .web-1 {
+    grid-column: 1/4;
+  }
+  .area-29 .web-2 {
+    grid-column: 4/7;
+  }
+  .har .area-29 .one-col-copy {
+    grid-column: 2/6;
+  }
+  .har .area-29 .row-1 .one-col-copy {
+    padding-bottom: 14rem;
+  }
+  .har .area-29 .app-cta {
+    display: block;
+  }
+  .har .area-29 .row-2, .har .area-29 .row-3, .har .area-29 .row-4, .har .area-29 .row-5 {
+    padding-bottom: 12rem;
+  }
+  .har .area-29 h4 {
+    padding-bottom: 4.4rem;
+  }
+  .har .area-29 .row-2 .text-col {
+    margin-left: 4.2rem;
+  }
+  .har .area-29 .row-3 .text-col {
+    margin-right: 4.2rem;
+  }
+  .har .area-29 .row-4 .text-col {
+    margin-left: 4.2rem;
+  }
+  .har .area-29 .row-5 .hi-6 {
+  }
+  .har .area-29 .hi-1, .area-29 .row-3 .text-col {
+    grid-column: 1/3;
+  }
+  .har .area-29 .text-col .app-sub {
+    justify-content: flex-start;
+    padding-top: 2.1rem;
+  }
+  .har .area-29 .hi-2, .har .area-29 .hi-3 {
+    grid-column: 3/5;
+  }
+  .har .area-29 .row-2 .text-col, .har .area-29 .hi-4, .har .area-29 .row-4 .text-col {
+    grid-column: 5/7;
+  }
+  .har .area-29 .hi-5 {
+    grid-column: 1/5;
+  }
+  .har .area-29 .row-5 .sub-three {
+    grid-column: 3/7;
+  }
+  .har .area-29 .web-1, .har .area-29 .web-2 {
+    height: 630px;
+  }
+  .har .area-29 .hi-1, .har .area-29 .hi-2, .har .area-29 .hi-3, .har .area-29 .hi-4 {
+    height: 610px;
+    margin-bottom: 0;
+  }
+  .har .area-29 .hi-5 {
+    height: 315px;
+  }
+  .har .area-29 .row-5 .hi-6 {
+    grid-column: 1/2;
+  }
+  .har .area-29 .row-5 .hi-7 {
+    grid-column: 2/3;
+  }
+  .har .area-29 .row-5 .hi-8 {
+    grid-column: 3/4;
+  }
+  .har .area-29 .row-5 .hi-6, .har .area-29 .row-5 .hi-7, .har .area-29 .row-5 .hi-8 {
+    height: 360px;
+  }
+  .har .area-29 .row-3 .text-col {
+    grid-row: 7/8;
+  }
+  .har .area-29 .row-5 .text-col {
+    grid-row: 11/12;
+    grid-column: 1/3;
+  }
+  .har .area-29 .row-3 .button, .har .area-29 .row-4 .button,.har .area-29 .row-5 .button {
+    display: block;
+  }
+  .har .area-29 .row-3 .one-col-copy, .har .area-29 .row-4 .one-col-copy, .har .area-29 .row-5 .one-col-copy {
+    padding-bottom: 3rem;
+  }
+  .har .area-29 .row-5 .one-col-copy {
+    margin-right: 4.2rem;
+  }
+  .har .area-30 .wide-box {
+    grid-column: 1/4;
+  }
+  .har .area-31 {
+    grid-column: 2/3;
+  }
+  .har .area-30 .wide-box {
+    grid-column: 1/4;
+  }
+  .har .area-32 .row-1 {
+    padding-bottom: 6rem;
+  }
+  .har .area-32 .col-1 {
+    grid-column: 1/3;
+  }
+  .har .area-32 .col-2 {
+    grid-column: 3/5;
+  }
+  .har .area-32 .text-col {
+    grid-column: 5/7;
+  }
+  .har .area-35, .har .area-35 .wide-box {
+    grid-column: 1/4;
+  }
+  .har .area-32 .pref-1, .har .area-32 .pref-2 {
+    height: 240px;
+  }
+  .har .area-32 .pref-3, .har .area-32 .pref-4 {
+    height: 700px;
+  }
+  .har .area-32 h4 {
+    text-align: left;
+  }
 
 
 

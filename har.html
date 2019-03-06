@@ -422,11 +422,7 @@
       </div>
 
       <div class="col-4">
-        <div
-
-
-
-         class="icon">
+        <div class="icon">
           <img src="images/iscape-icon.png">
         </div>
         <div class="three-col-heading">
@@ -1274,19 +1270,182 @@
 
           </div>
 
+          <div class="takeaways-2">
+            <div class="take-line-top">
+            </div>
+            <div class="take-heading">
+              <img src="images/take-icon.svg" class="take-icon" alt="Icon with smiley face">
+              <h4>Takeaways</h4>
+            </div>
+            <div class="take-copy">
+              <p>The survey and user interviews allowed me to prioritize these user types:</p>
+              <br>
+              <ul class="take-list">
+                <li class="n-1"><span class="bold">Finder</span></li>
+                <li class="n-2"><span class="bold">Gatherer</span></li>
+                <li class="n-3"><span class="bold">Restroom Seeker</span></li>
+                <li class="n-4"><span class="bold">Restroom Reporter</span></li>
+                <li class="n-5"><span class="bold">Vendor Seeker</span></li>
+                <li class="n-6"><span class="bold">Vendor Reporter</span></li>
+              </ul>
+              <br>
+              <p>With more time, it would've been great to include a feature to connect outdoor communal activities (like frisbee and yoga) and a way for singles to connect.</p>
+            </div>
+            <div class="take-line-bottom">
+            </div>
+          </div>
+
     </section>
 
-    <!-- User Stories and Flows -->
+    <!-- AR Methods Heading -->
     <div class="area-16">
+      <div class="heading-secondary">
+        <h3>AR METHODS</h3>
+      </div>
+    </div>
+    <!-- AR Methods Content -->
+    <section class="area-17">
+
+      <div class="ar-example">
+        <div class="ar-img">
+        </div>
+        <div class="caption">
+        </div>
+      </div>
+
+      <div class="one-col-heading">
+        <h4>Occlusion Is The Next Breakthrough</h4>
+      </div>
+
+      <div class="one-col-copy">
+        <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+        <br>
+        <p>That is, current apps in the market cannot detect the depth of new and fast-moving objects (like a hand), then render a masked version of the virtual objects to the user’s screen.</p>
+        <br>
+        <p>The two companies that I’ve seen actively tackling occlusion right now (Feb. 2019) are: Niantic and Placenote (though I’m sure there are other companies).</p>
+      </div>
+
+      <div class="one-col-heading">
+        <h4>But, Occlusion Is Still Difficult</h4>
+      </div>
+
+      <div class="one-col-copy">
+        <p>Current available apps’ inability to occlude AR objects, was particularly worrisome because finding someone through AR requires pointers/markers. Additionally, if the whole point is to navigate through large crowds (lots of fast, moving objects), how do we handle the issue of occlusion?</p>
+        <br>
+        <p>The answer was in some site analysis and in this article by Placenote and hinges on a pre-mapped environment.</p>
+      </div>
+
+      <div class="one-col-heading">
+        <h4>Hacking Around the Occlusion Issue</h4>
+      </div>
+
+      <div class="one-col-copy">
+        <ul>
+          <li class="n-b-1"><span class="bold">Establish a perimeter</span>. User must be inside perimeter for app to work.
+            <div class="dia-1">
+            </div>
+          </li>
+          <li class="n-b-2"><span class="bold">Model what is existing (pre-map the environment)</span>. Existing static things at Dolores Park:
+            <div class="dia-2">
+            </div>
+          </li>
+          <li class="n-b-3"><span class="bold">Establish where virtual objects cannot exist</span>. If all we need is a marker above an area, then we can establish a volume of area that a marker may never go below. Shown here is 8 feet above any surface people are normally on top of:
+            <div class="dia-3">
+            </div>
+          </li>
+          <li class="n-b-4"><span class="bold">The pre-mapped environment must be detectable by the user’s camera and GPS location</span>. This is so that the marker knows which of these pre-mapped volumes it should be behind or in front of.
+            <div class="dia-4">
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="one-col-heading">
+        <h4>GPS Accuracy</h4>
+      </div>
+
+      <div class="one-col-copy">
+        <p>GPS accuracy has come a long way in smartphones and will only get better. According to MIT Technology Review and the IEEE, Broadcom chips allowing 30cm (slightly less than a foot) accuracy will begin rolling out. In fact, the Xiaomi Mi 8 include this chip and rolled out May 2018. </p>
+      </div>
+
+      <div class="one-col-heading">
+        <h4>Marker Strategy</h4>
+      </div>
+
+      <div class="one-col-copy">
+        <ul>
+          <li class="n-b-1"><span class="bold">Set a static size for the marker</span>. With 3D model testing, I determined a marker about the size of 20 feet tall can be viewable from all locations. A static size allows for a more authentic experience.
+            <div class="dia-5">
+            </div>
+          </li>
+          <li class="n-b-2"><span class="bold">Pre-mark static locations (like restrooms)</span>.
+            <div class="dia-6">
+            </div>
+          </li>
+          <li class="n-b-3"><span class="bold">Moving locations (like people) use GPS and user input to create</span>. Users can “drop” markers and set it for others too see.
+            <div class="dia-7">
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="takeaways">
+        <div class="take-line-top">
+        </div>
+        <div class="take-heading">
+          <img src="images/take-icon.svg" class="take-icon" alt="Icon with smiley face">
+          <h4>Takeaways</h4>
+        </div>
+        <div class="sum-img">
+        </div>
+        <div class="take-copy">
+          <p>It seems plausible to pre-map a large environment to eliminate static objects, but fast moving objects like people will require additional technology (like machine-learning).</p>
+        </div>
+        <div class="sum-img-2">
+        </div>
+        <div class="take-copy">
+          <p>It seems plausible to pre-map a large environment to eliminate static objects, but fast moving objects like people will require additional technology (like machine-learning).</p>
+        </div>
+        <div class="take-copy">
+          <ul class="take-list">
+            <li class="n-1"><span class="bold">A way for people to find each other</span></li>
+            <li class="n-2"><span class="bold">A way for people to know restroom line lengths</span></li>
+            <li class="n-3"><span class="bold">A way for people to know where the moving vendors are</span></li>
+          </ul>
+        </div>
+        <div class="take-line-bottom">
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <!-- Large Heading - Information Architecture -->
+    <div class="area-18">
+          <div class="wide-box">
+            <a name="information-architecture"></a>
+            <div class="prim-head-text">
+              <h1>INFORMATION ARCHITECTURE</h1>
+            </div>
+          </div>
+    </div>
+    <!-- User Stories and Flows -->
+    <div class="area-19">
       <div class="heading-secondary">
         <h3>USER STORIES + FLOWS</h3>
       </div>
     </div>
     <!-- User Stories and Flows Content -->
-    <section class="area-17">
+    <section class="area-20">
 
       <div class="user-story">
-          <h5 class="us-list">As a <span class="highlight">finder</span> I want to <span class="highlight">find my friend(s) as soon as possible</span> so I can <span class="highlight">join the person or group.</span></h5>
+          <h5>User Story #1:</h5>
+          <h4 class="us-list">As a <span class="highlight">finder</span> I want to <span class="highlight">find my friend(s) as soon as possible</span> so I can <span class="highlight">join the person or group.</span></h4>
+          <div class="triangle">
+            <img src="images/pink-tri.svg">
+          </div>
+          <h5>User Flow:</h5>
       </div>
 
       <div class="versions-1">
@@ -1316,14 +1475,21 @@
       </div>
 
       <div class="user-story">
-          <h5 class="us-list">Final Results:</h5>
+          <h5 class="us-list">Final Results Preview:</h5>
       </div>
 
       <div class="results-1">
       </div>
 
       <div class="user-story">
-          <h5 class="us-list">As a <span class="highlight">gatherer</span> I want to <span class="highlight">invite my friends</span> so I can <span class="highlight">send them to my location to find me</span></h5>
+        <div class="take-line-top">
+        </div>
+        <h5>User Story #2:</h5>
+        <h4 class="us-list">As a <span class="highlight">gatherer</span> I want to <span class="highlight">invite my friends</span> so I can <span class="highlight">send them to my location to find me</span></h4>
+        <div class="triangle">
+          <img src="images/pink-tri.svg">
+        </div>
+        <h5>User Flow:</h5>
       </div>
 
       <div class="versions-2">
@@ -1353,13 +1519,302 @@
       </div>
 
       <div class="user-story">
-          <h5 class="us-list">Final Results:</h5>
+          <h5 class="us-list">Final Results Preview:</h5>
       </div>
 
       <div class="results-2">
       </div>
 
+      <div class="link-underline">
+        <p><a href="https://docs.google.com/spreadsheets/d/1hFQ1Wkeh2_fOo1UL1t47Ra6wr3Tu9_P40clY75PkvoY/edit?usp=sharing" target="_blank">See All User Stories in Google Sheets</a></p>
+      </div>
+      <div class="link-underline" id="bottom-link">
+        <p><a href="https://drive.google.com/file/d/1aX4rF-gCy8-mYeGb2s5tlFSAQaSOe-FH/view?usp=sharing" target="_blank">See All User Flows as PDF</a></p>
+      </div>
+
     </section>
+
+    <!-- Sitemap -->
+    <div class="area-21">
+      <div class="heading-secondary">
+        <h3>SITEMAP</h3>
+      </div>
+    </div>
+
+    <section class="area-22">
+      <div class="container">
+          <div class="sitemap">
+          </div>
+      </div>
+    </section>
+
+    <!-- Wireframes -->
+    <div class="area-23">
+      <div class="heading-secondary">
+        <h3>WIREFRAMES</h3>
+      </div>
+    </div>
+
+    <section class="area-24">
+      <div class="container">
+          <h4>Sketches</h4>
+          <div class="sketches">
+          </div>
+          <h4>Vectorized Lo-Fi</h4>
+          <div class="wireframes">
+            <div class="img">
+            </div>
+          </div>
+      </div>
+      <div class="link-underline" id="bottom-link">
+        <p><a href="https://drive.google.com/file/d/1EJLzLRANy64_-L_RUId8tQ7JgDqZX_Uk/view?usp=sharing" target="_blank">See Vectorized Wireframes as PDF</a></p>
+      </div>
+    </section>
+
+    <!-- Large Heading - Information Architecture -->
+    <div class="area-h">
+          <div class="wide-box">
+            <a name="visual-design"></a>
+            <div class="prim-head-text">
+              <h1>VISUAL DESIGN</h1>
+            </div>
+          </div>
+    </div>
+    <!-- Branding -->
+    <div class="area-26">
+      <div class="heading-secondary">
+        <h3>BRANDING</h3>
+      </div>
+    </div>
+
+    <section class="area-27">
+
+      <div class="brand-img">
+        <div class="b-1">
+        </div>
+      </div>
+      <div class="one-col-heading">
+        <h4>Moodboard</h4>
+      </div>
+      <div class="one-col-copy">
+        <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+      </div>
+
+      <div class="brand-img">
+        <div class="b-2">
+        </div>
+      </div>
+      <div class="one-col-heading">
+        <h4>Colors</h4>
+      </div>
+      <div class="one-col-copy">
+        <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+      </div>
+
+      <div class="brand-img">
+        <div class="stripes-container" id="brand-box">
+        <div class="b-3">
+        </div>
+        <div class="b-3-2">
+        </div>
+      </div>
+      <div class="one-col-heading">
+        <h4>Layering In Nature</h4>
+      </div>
+      <div class="one-col-copy">
+        <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+      </div>
+
+      <div class="brand-img" id="brand-box">
+        <div class="container">
+          <p class="box-head">Hard Identity</p>
+          <div class="b-4-1">
+          </div>
+          <p class="box-head">Soft Identity</p>
+          <div class="b-4-2">
+          </div>
+        </div>
+      </div>
+      <div class="one-col-heading">
+        <h4>Logo</h4>
+      </div>
+      <div class="one-col-copy">
+        <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+      </div>
+
+      <div class="brand-img" id="brand-box">
+        <div class="container">
+          <div class="b-5">
+          </div>
+        </div>
+      </div>
+      <div class="one-col-heading">
+        <h4>Typography</h4>
+      </div>
+      <div class="one-col-copy">
+        <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+      </div>
+
+    </section>
+
+    <div class="area-28">
+      <div class="heading-secondary">
+        <h3>HI-FI MOCKUPS</h3>
+      </div>
+    </div>
+
+    <section class="area-29">
+
+      <h4>Company Website</h4>
+
+      <div class="row-1">
+
+        <div class="web-1">
+        </div>
+        <div class="web-2">
+        </div>
+        <div class="one-col-copy">
+          <p>The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+        </div>
+
+      </div>
+
+
+      <h4>Mobile App</h4>
+
+      <div class="row-2">
+        <div class="hi-1">
+        </div>
+        <div class="hi-2">
+        </div>
+        <div class="text-col">
+          <h4 class="app-sub">HUBS</h4>
+          <p class="one-col-copy">The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+          <div class="app-cta">
+            <a class="button" href="https://invis.io/JYQS29R8RD3" target="_blank">See Prototype</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row-3">
+        <div class="text-col">
+          <h4 class="app-sub">THE AR IS FOR</h4>
+          <p class="one-col-copy">The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+          <a class="button" href="https://invis.io/JYQS29R8RD3" target="_blank">See Prototype</a>
+        </div>
+        <div class="hi-3">
+        </div>
+        <div class="hi-4">
+        </div>
+      </div>
+
+
+      <div class="row-4">
+        <div class="hi-5">
+        </div>
+        <div class="text-col">
+          <h4 class="app-sub">AID FROM MAPS</h4>
+          <p class="one-col-copy">The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+          <a class="button" href="https://invis.io/JYQS29R8RD3" target="_blank">See Prototype</a>
+        </div>
+      </div>
+
+
+      <div class="row-5">
+        <div class="text-col">
+          <h4 class="app-sub">FEATURES</h4>
+          <p class="one-col-copy">The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+          <a class="button" href="https://invis.io/JYQS29R8RD3" target="_blank">See Prototype</a>
+        </div>
+        <div class="sub-three">
+          <div class="hi-6">
+          </div>
+          <div class="hi-7">
+          </div>
+          <div class="hi-8">
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- User Testing -->
+    <div class="area-30">
+          <div class="wide-box">
+            <a name="user-testing"></a>
+            <div class="prim-head-text">
+              <h1>USER TESTING</h1>
+            </div>
+          </div>
+    </div>
+
+    <div class="area-31">
+      <div class="heading-secondary">
+        <h3>PREFERENCE TESTS</h3>
+      </div>
+    </div>
+
+    <section class="area-32">
+      <div class="row-1">
+        <div class="col-1">
+          <div class="pref-1">
+          </div>
+          <div class="data">
+            <p>65%</p>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="pref-2">
+          </div>
+          <div class="data">
+            <p>35%</p>
+          </div>
+        </div>
+        <div class="text-col">
+          <h4 class="pref-head">Web Landing</h4>
+          <p class="one-col-copy">The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+        </div>
+      </div>
+
+      <div class="row-2">
+        <div class="col-1">
+          <div class="pref-3">
+          </div>
+          <div class="data">
+            <p>33%</p>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="pref-4">
+          </div>
+          <div class="data">
+            <p>67%</p>
+          </div>
+        </div>
+        <div class="text-col">
+          <h4 class="pref-head">App Colors</h4>
+          <p class="one-col-copy">The issue I mentioned in Competitive Analysis, the problem with overlay when new and moving real-life objects are introduced to virtual objects, is an issue of occlusion.</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Reflections -->
+    <div class="area-35">
+          <div class="wide-box">
+            <a name="reflections"></a>
+            <div class="prim-head-text">
+              <h1>REFLECTIONS</h1>
+            </div>
+          </div>
+    </div>
+
+    <section class="area-36">
+    </section>
+
 
 
     <!-- Footer -->

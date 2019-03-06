@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="627" height="240" viewBox="0 0 627 240">
+  <defs>
+    <linearGradient id="har-soft-c" x1="162.358%" x2="-8.985%" y1="30.388%" y2="78.25%">
+      <stop offset="0%" stop-color="#C9E301"/>
+      <stop offset="70.67%" stop-color="#FB4C46"/>
+      <stop offset="100%" stop-color="#035571"/>
+    </linearGradient>
+    <polygon id="har-soft-b" points=".955 213.036 106.978 62.658 211.09 213.036"/>
+    <filter id="har-soft-a" width="119.5%" height="127.3%" x="-9.8%" y="-12.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="6.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.178430944 0"/>
+    </filter>
+    <linearGradient id="har-soft-f" x1="6.405%" x2="121.363%" y1="98.645%" y2="-17.234%">
+      <stop offset="0%" stop-color="#C9E301"/>
+      <stop offset="49.154%" stop-color="#FB4C46"/>
+      <stop offset="100%" stop-color="#035571"/>
+    </linearGradient>
+    <rect id="har-soft-e" width="213" height="214"/>
+    <filter id="har-soft-d" width="119.2%" height="119.2%" x="-9.6%" y="-8.6%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="6.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+    <linearGradient id="har-soft-g" x1="107.791%" x2="-38.495%" y1="67.525%" y2="50%">
+      <stop offset="0%" stop-color="#C9E301"/>
+      <stop offset="30.435%" stop-color="#FB4C46"/>
+      <stop offset="100%" stop-color="#035571"/>
+    </linearGradient>
+    <linearGradient id="har-soft-j" x1="177.206%" x2=".909%" y1="-107.827%" y2="111.047%">
+      <stop offset="0%" stop-color="#C9E301"/>
+      <stop offset="37.766%" stop-color="#FB4C46"/>
+      <stop offset="100%" stop-color="#035571"/>
+    </linearGradient>
+    <path id="har-soft-i" d="M167.152466,49.3063063 L167.152466,164.693694 C167.152466,166.902833 165.361605,168.693694 163.152466,168.693694 L130.399739,168.693694 C128.1906,168.693694 126.399739,166.902833 126.399739,164.693694 L126.399739,129.564244 C126.399739,128.459674 125.504309,127.564244 124.399739,127.564244 L87.646058,127.564244 C86.5414885,127.564244 85.646058,128.459674 85.646058,129.564244 L85.646058,164.693694 C85.646058,166.902833 83.855197,168.693694 81.646058,168.693694 L48.8923767,168.693694 C46.6832377,168.693694 44.8923767,166.902833 44.8923767,164.693694 L44.8923767,49.3063063 C44.8923767,47.0971673 46.6832377,45.3063063 48.8923767,45.3063063 L81.646058,45.3063063 C83.855197,45.3063063 85.646058,47.0971673 85.646058,49.3063063 L85.646058,84.4347935 C85.646058,85.539363 86.5414885,86.4347935 87.646058,86.4347935 L124.399739,86.4347935 C125.504309,86.4347935 126.399739,85.539363 126.399739,84.4347935 L126.399739,49.3063063 C126.399739,47.0971673 128.1906,45.3063063 130.399739,45.3063063 L163.152466,45.3063063 C165.361605,45.3063063 167.152466,47.0971673 167.152466,49.3063063 Z"/>
+    <filter id="har-soft-h" width="133.5%" height="133.2%" x="-16.8%" y="-15%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="6.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.178430944 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 11)">
+    <g transform="translate(401)">
+      <g opacity=".505">
+        <use fill="#000" filter="url(#har-soft-a)" xlink:href="#har-soft-b"/>
+        <use fill="url(#har-soft-c)" xlink:href="#har-soft-b"/>
+      </g>
+      <g opacity=".084">
+        <use fill="#000" filter="url(#har-soft-d)" xlink:href="#har-soft-e"/>
+        <use fill="url(#har-soft-f)" xlink:href="#har-soft-e"/>
+      </g>
+      <path fill="url(#har-soft-g)" d="M0,129.103956 L96.9939404,65.5733068 C102.641686,61.8740554 109.943254,61.8674715 115.597662,65.5565315 L213,129.103956 L213,213.036036 L0,213.036036 L0,129.103956 Z" opacity=".5"/>
+      <g opacity=".705">
+        <use fill="#000" filter="url(#har-soft-h)" xlink:href="#har-soft-i"/>
+        <use fill="url(#har-soft-j)" xlink:href="#har-soft-i"/>
+      </g>
+    </g>
+    <g fill-rule="nonzero">
+      <polygon fill="#E9EEF4" points="0 214 0 0 52.884 0 52.884 88.296 160.239 88.296 160.239 0 213 0 213 214 160.239 214 160.239 125.6 52.884 125.6 52.884 214"/>
+      <polygon fill="#E9EEF4" points="50.143 214 0 214 106.5 33.395 213 214 162.857 214"/>
+      <path fill="#FFF" d="M68.780522,97.3603604 L144.219478,97.3603604 L213,214 L162.856925,214 L160.238532,214 L160.238532,131.974119 L52.8836009,131.974119 L52.8836009,214 L50.1430746,214 L0,214 L68.780522,97.3603604 Z"/>
+    </g>
+    <path fill="#ED9E9A" fill-rule="nonzero" d="M329.5,109 L268,109 L268,106 L329.5,106 L329.5,98 L348.5,107.5 L329.5,117 L329.5,109 Z" opacity=".5"/>
+  </g>
+</svg>

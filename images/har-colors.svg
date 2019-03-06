@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="692" height="397" viewBox="0 0 692 397">
+  <defs>
+    <linearGradient id="har-colors-a" x1="179.563%" x2="0%" y1="-107.827%" y2="111.047%">
+      <stop offset="0%" stop-color="#C9E301"/>
+      <stop offset="37.766%" stop-color="#FB4C46"/>
+      <stop offset="100%" stop-color="#035571"/>
+    </linearGradient>
+    <linearGradient id="har-colors-b" x1="6.591%" x2="97.555%" y1="19.149%" y2="84.973%">
+      <stop offset="0%" stop-color="#4C5762"/>
+      <stop offset="100%" stop-color="#252C33"/>
+    </linearGradient>
+    <linearGradient id="har-colors-c" x1="100%" x2="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#C9E301"/>
+      <stop offset="46.49%" stop-color="#FB4C46"/>
+      <stop offset="100%" stop-color="#035571"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="87" height="87" fill="#32677C"/>
+    <rect width="87" height="87" x="121" fill="#298B93"/>
+    <rect width="87" height="87" x="242" fill="#22CEEF"/>
+    <rect width="87" height="87" x="363" fill="#FE6763"/>
+    <rect width="87" height="87" y="122" fill="#252C33"/>
+    <rect width="87" height="87" x="121" y="122" fill="#455E66"/>
+    <rect width="87" height="87" x="242" y="122" fill="#99A8AD"/>
+    <rect width="87" height="87" x="363" y="122" fill="#DAE3E6"/>
+    <rect width="87" height="87" x="484" fill="url(#har-colors-a)"/>
+    <g transform="translate(605)">
+      <rect width="87" height="87" fill="url(#har-colors-a)"/>
+      <rect width="87" height="87" fill="url(#har-colors-b)" opacity=".598"/>
+    </g>
+    <rect width="690" height="60" y="243" fill="url(#har-colors-c)" style="mix-blend-mode:multiply"/>
+    <rect width="690" height="60" y="337" fill="url(#har-colors-c)" opacity=".15" style="mix-blend-mode:multiply"/>
+  </g>
+</svg>
