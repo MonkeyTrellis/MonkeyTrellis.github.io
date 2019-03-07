@@ -1088,6 +1088,9 @@ ul .minus:before {
   .homepage .area-1, .homepage .area-2, .homepage .area-3, .homepage .area-4 {
     margin-bottom: 4.5rem;
   }
+  .homepage .area-2 {
+    margin-top: 0rem;
+  }
 
   .case-study-desc {
     line-height: 2.1rem;
@@ -1110,9 +1113,9 @@ ul .minus:before {
     height: 210px;
   }
 
-  .homepage .area-3 {
+  /* .homepage .area-3 {
     padding-top: 7.8rem;
-  }
+  } */
 
   .homepage .area-4 {
     padding-bottom: 6rem;
@@ -1245,6 +1248,7 @@ ul .minus:before {
   /* Contact Options */
   .about .area-2 {
     grid-column: 2/3;
+    margin-top: 0;
   }
 
   .letstalk {
@@ -3067,9 +3071,11 @@ ul .minus:before {
   }
   .har .dia-7 {
     background-image: url("/images/har-app-ex-2.png");
+    margin-bottom: 4.2rem;
   }
   .har .area-17 .takeaways {
     grid-column: 2/3;
+    padding-top: 0rem;
   }
   .har .area-17 .m-1, .har .area-17 .m-2 {
     background-size: contain;
@@ -4795,8 +4801,8 @@ ul .minus:before {
   }
   .har .area-17 .m-1, .har .area-17 .m-2 {
     height: 380px;
-    margin-bottom: 5.4rem;
-    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
   .har .area-17 .m-3 {
     height: 860px;
@@ -6950,6 +6956,14 @@ ul .minus:before {
   }
   .har .results-1 {
     margin-bottom: 8.4rem;
+  }
+  .har .area-17 .m-1, .har .area-17 .m-2 {
+    height: 350px;
+  }
+  .har .area-17 .m-3 {
+    height: 840px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
   /* Info Arch Large Heading */
   .har .area-18 .wide-box {
