@@ -6,6 +6,7 @@
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
+  letter-spacing: .2px;
 }
 
 body {
@@ -18,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Gothic A1', sans-serif;
   font-weight: 900;
   color: #252C33;
+  letter-spacing: 0px;
 }
 
 /******************** GLOBAL NAVBAR ********************/
@@ -211,6 +213,7 @@ ul .plus:before, ul .minus:before {
   font-size: 2.4rem;
   content: "add_circle";
   color: #008CFF;
+  letter-spacing: 0px;
 }
 
 ul .minus:before {
@@ -522,11 +525,22 @@ ul .minus:before {
     grid-area: area-3;
   }
 
-  .area-1, .area-2, .area-3 {
+  .area-1, .area-3 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
+  }
+  .area-2 {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    margin-top: 8.4rem;
+    padding-bottom: 3rem;
+  }
+  .area-1 .duration {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
   }
   /***** Homepage *****/
 
@@ -548,9 +562,13 @@ ul .minus:before {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
-  .sh .area-5, .har .area-5, .har .area-8, .har .area-24, .har .area-h, .har .area-27, .har .area-31, .har .area-32, .har .area-35 {
+  .sh .area-5, .har .area-5, .har .area-8, .har .area-24, .har .area-h, .har .area-27, .har .area-31, .har .area-32, .har .area-33 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
+  }
+  .har .area-2 {
+    margin-top: 8.4rem;
+    padding-bottom: 0rem;
   }
   .har .area-h {
     grid-area: area-h;
@@ -573,6 +591,15 @@ ul .minus:before {
   }
   .har .area-32 {
     grid-area: area-32;
+  }
+  .har .area-33 {
+    grid-area: area-33;
+  }
+  .har .area-34 {
+    display: grid;
+    grid-area: area-34;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 6fr 1fr;
   }
   .har .area-29 h4, .har .area-29 .row-1, .har .area-29 .row-2, .har .area-29 .row-3, .har .area-29 .row-4, .har .area-29 .row-5, .har .area-29 .row-6 {
     grid-column: 1/7;
@@ -1781,7 +1808,7 @@ ul .minus:before {
 
   .area-12 .q-box-1, .area-12 .q-box-2 {
     grid-column: 1/7;
-    border-radius: 1.2rem;
+    border-radius: 0;
   }
 
   .quote-copy, .quote-auth {
@@ -2011,7 +2038,7 @@ ul .minus:before {
 
   .har .one-col-heading {
     text-align: center;
-    padding-bottom: .6rem;
+    padding-bottom: 0rem;
   }
 
   .area-21 h6, .har .area-20 h6 {
@@ -2041,7 +2068,7 @@ ul .minus:before {
 
   .area-21 .container, .har .area-20 .container {
     background-color: #FFFAF8;
-    margin-bottom: 6rem;
+    margin-bottom: 4.2rem;
   }
 
   .area-21 .col-1, .area-21 .col-2, .har .area-20 .col-1, .har .area-20 .col-2 {
@@ -2237,7 +2264,7 @@ ul .minus:before {
 
   /* Branding Pics */
   .brand-1, .brand-2, .brand-3 {
-    padding-bottom: 5.4rem;
+    padding-bottom: 6rem;
   }
 
   .process-pic-1, .process-pic-2, .process-pic-3, .process-pic-4 {
@@ -2673,12 +2700,28 @@ ul .minus:before {
     font-weight: bold;
   }
   /* Overview Content */
+  .har .area-1 .duration {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+  }
   .har .col-1, .har .col-2, .har .overview-image {
     grid-column: 2/3;
     padding-bottom: 2.1rem;
   }
+  .har .area-32 .col-1, .area-32 .har .col-2 {
+    grid-column: 2/3;
+    padding-bottom: 3rem;
+  }
   .har .overview-image {
     margin-bottom: 3rem;
+  }
+  .har .area-4 .heading-secondary {
+    padding-bottom: 3rem;
+    padding-top: 8.4rem;
+  }
+  .har .area-4 h4 {
+    padding-bottom: 0;
   }
   /* Design Process Content */
   .har .area-5 .process {
@@ -2701,6 +2744,7 @@ ul .minus:before {
   }
   .har h4 {
     text-align: center;
+    line-height: 3rem;
   }
   .har .area-20 h4 {
     font-weight: 300;
@@ -2708,7 +2752,7 @@ ul .minus:before {
     line-height: 3.3rem;
   }
   .har .area-20 h5 {
-    padding-bottom: 2.4rem;
+    padding-bottom: 1.5rem;
   }
   .har .area-20 .us-list {
     font-weight: 300;
@@ -2731,13 +2775,13 @@ ul .minus:before {
   /* Competitive Analysis */
   .har .area-10 .col-1, .har .area-10 .col-3, .har .area-10 .col-2, .har .area-10 .col-4 {
     grid-column: 1/4;
-    padding-bottom: 6rem;
+    padding-bottom: 7.2rem;
   }
   .har .area-10 .icon {
     display: flex;
     grid-column: 2/3;
     justify-content: center;
-    padding-bottom: 3rem;
+    padding-bottom: 2.4rem;
   }
   .har .area-10 .three-col-heading {
     grid-column: 2/3;
@@ -2755,8 +2799,8 @@ ul .minus:before {
     background-repeat: no-repeat;
     grid-column: 2/3;
     height: 240px;
-    margin-bottom: 3rem;
-    margin-top: 1.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
   .har .area-10 .col-1 .app-img {
     background-image: url("/images/har-ca-1.png");
@@ -2771,13 +2815,13 @@ ul .minus:before {
     background-image: url("/images/har-ca-4.png");
   }
   .har .area-10 .icon img {
-    filter: drop-shadow(0px 3px 9px #B3C1C7);
-    height: 120px;
+    filter: drop-shadow(0px 2px 6px #CCD3DA);
+    height: 60px;
   }
   .har .area-10 .desc {
     font-size: 1.8rem;
     grid-column: 2/3;
-    line-height: 3.3rem;
+    line-height: 2.4rem;
   }
   .har .area-10 .app-img {
     display: flex;
@@ -2794,8 +2838,7 @@ ul .minus:before {
     background-position: center;
     background-repeat: no-repeat;
     height: 300px;
-    margin-bottom: 3.6rem;
-    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   ul .n-1:before, ul .n-2:before, ul .n-3:before, ul .n-4:before, ul .n-5:before, ul .n-6:before {
     position: absolute;
@@ -2828,6 +2871,15 @@ ul .minus:before {
     margin-left: 4.2rem;
     text-align: left;
   }
+  .har .take-list .n-6 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.3rem;
+    padding-bottom: 0;
+    position: relative;
+    margin-left: 4.2rem;
+    text-align: left;
+  }
   .har .area-11 {
     grid-column: 1/4;
   }
@@ -2840,7 +2892,7 @@ ul .minus:before {
     grid-column: 2/3;
     font-size: 1.8rem;
     line-height: 3.3rem;
-    padding-bottom: 4.2rem;
+    margin-bottom: 0rem;
   }
   /* Charts */
   .har .data-head, .har .chart-box {
@@ -2902,7 +2954,12 @@ ul .minus:before {
   .har .area-15 .takeaways-2 {
     display: block;
     grid-column: 2/3;
-    padding-top: 0rem;
+    padding-bottom: 3rem;
+    padding-top: 1.2rem;
+  }
+  .har .area-15 .takeaways-2 .take-list {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
   }
   /* AR Methods Heading */
   .har .area-16 {
@@ -2918,11 +2975,11 @@ ul .minus:before {
     background-position: center;
     background-repeat: no-repeat;
     grid-column: 2/3;
-    height: 420px;
+    height: 460px;
     margin-bottom: 4.2rem;
   }
   .har .area-17 .one-col-copy {
-    padding-bottom: 7.2rem;
+    padding-bottom: 4.2rem;
   }
   ul .n-b-1:before, ul .n-b-2:before, ul .n-b-3:before, ul .n-b-4:before {
     position: absolute;
@@ -2944,7 +3001,7 @@ ul .minus:before {
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 3.3rem;
-    padding-bottom: 1.2rem;
+    padding-bottom: 0rem;
     position: relative;
     margin-left: 4.2rem;
     text-align: left;
@@ -2954,8 +3011,8 @@ ul .minus:before {
     background-position: center;
     background-repeat: no-repeat;
     grid-column: 2/3;
-    height: 180px;
-    margin-bottom: 4.4rem;
+    height: 150px;
+    margin-bottom: 1.5rem;
   }
   .har .dia-3 {
     margin-bottom: 0;
@@ -2967,28 +3024,28 @@ ul .minus:before {
     background-repeat: no-repeat;
     grid-column: 2/3;
     height: 200px;
-    margin-bottom: 4.4rem;
+    margin-bottom: 1.5rem;
   }
   .har .dia-4 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     grid-column: 2/3;
-    height: 180px;
-    margin-bottom: 4.4rem;
+    height: 150px;
+    margin-bottom: 1.5rem;
   }
   .har .dia-5, .har .dia-6, .har .dia-7 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     grid-column: 2/3;
-    margin: 2.1rem 0 2.1rem 0;
+    margin: 1.5rem 0 1.5rem 0;
   }
   .har .dia-5 {
-    height: 240px;
+    height: 160px;
   }
   .har .dia-6, .har .dia-7 {
-    height: 560px;
+    height: 510px;
   }
   .har .dia-1 {
     background-image: url("/images/har-dia-1.png");
@@ -3019,16 +3076,15 @@ ul .minus:before {
     background-position: center;
     background-repeat: no-repeat;
     height: 180px;
-    margin-bottom: 5.4rem;
-    margin-top: 1.5rem;
+    margin-bottom: .3rem;
   }
   .har .area-17 .m-3 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 380px;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
   .har .area-17 .m-1 {
     background-image: url("/images/har-ar-take-1.png");
@@ -3047,11 +3103,12 @@ ul .minus:before {
   .har .area-20 .triangle {
     display: flex;
     justify-content: center;
-    padding: 4.2rem 0 5.4rem 0;
+    padding: 6rem 0 6.6rem 0;
     opacity: .35;
   }
   .har .area-20 .user-story .take-line-top {
     margin: 8.4rem 0 8.4rem 0;
+    opacity: .35;
   }
   .har .area-20 .user-story, .har .area-20 .results {
     grid-column: 2/3;
@@ -3107,7 +3164,12 @@ ul .minus:before {
     background-position: center;
     background-repeat: no-repeat;
     grid-column: 2/3;
-    height: 381px;
+    height: 315px;
+    padding-bottom: .6rem;
+  }
+  .har .area-21 .heading-secondary {
+    padding-top: 12.6rem;
+    padding-bottom: 3.6rem;
   }
   .har .area-22 .container {
     background-color: #FFFAF8;
@@ -3124,6 +3186,10 @@ ul .minus:before {
     height: 210px;
     margin: 3.6rem 3.6rem;
   }
+  .har .area-23 .heading-secondary {
+    padding-bottom: 3.6rem;
+    padding-top: 12.6rem;
+  }
   .har .area-24 .wireframes {
     background-color: #FFF6F2;
   }
@@ -3135,16 +3201,16 @@ ul .minus:before {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 240px;
-    margin-bottom: 4.2rem;
+    height: 200px;
+    margin-bottom: 7.2rem;
   }
   .har .area-24 .img {
     background-image: url("/images/har-wf.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 1100px;
-    margin-bottom: 4.2rem;
+    height: 900px;
+    margin: 2.1rem;
   }
   .har .area-24 .link-underline {
     grid-column: 2/3;
@@ -3155,6 +3221,7 @@ ul .minus:before {
   }
   .har .area-h .wide-box {
     grid-column: 1/4;
+    margin-top: 12.6rem;
   }
   .har .area-26 {
     grid-column: 1/4;
@@ -3170,7 +3237,7 @@ ul .minus:before {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 210px;
+    height: 180px;
     margin-bottom: 4.2rem;
   }
   .har .area-27 .b-2 {
@@ -3191,7 +3258,7 @@ ul .minus:before {
   }
   .har .area-27 #brand-box {
     background-color: #FFFAF8;
-    padding: 1.5rem;
+    padding: .9rem;
     margin-bottom: 4.2rem;
   }
   .har .area-27 .b-3-2 {
@@ -3239,8 +3306,8 @@ ul .minus:before {
     background-position: center;
     background-repeat: no-repeat;
     filter: drop-shadow(0px 6px 10px #AAB8C0);
-    grid-column: 1/4;
-    height: 160px;
+    grid-column: 1/7;
+    height: 400px;
     margin-bottom: 3rem;
   }
   .har .area-29 .web-2 {
@@ -3249,8 +3316,8 @@ ul .minus:before {
     background-position: center;
     background-repeat: no-repeat;
     filter: drop-shadow(0px 6px 10px #CCD3DA);
-    grid-column: 4/7;
-    height: 160px;
+    grid-column: 1/7;
+    height: 400px;
     margin-bottom: 3rem;
   }
   .har .area-29 .one-col-copy {
@@ -3275,38 +3342,28 @@ ul .minus:before {
     display: none;
   }
   .har .area-29 h4 {
-    padding-bottom: 2.7rem;
+    padding-bottom: 1.5rem;
+  }
+  .har .area-29 .hi-1, .har .area-29 .hi-2, .har .area-29 .hi-3, .har .area-29 .hi-4 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 2px 6px #AAB8C0);
+    height: 260px;
+    margin-bottom: 2.1rem;
   }
   .har .area-29 .hi-1 {
     background-image: url("/images/har-hi-1.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
     grid-column: 1/4;
-    height: 280px;
-    margin-bottom: 3rem;
   }
   .har .area-29 .hi-2 {
     background-image: url("/images/har-hi-2.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
     grid-column: 4/7;
-    height: 280px;
-    margin-bottom: 3rem;
   }
   .har .area-29 .hi-3 {
     background-image: url("/images/har-hi-3.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
     grid-column: 1/4;
     grid-row: 7/8;
-    height: 280px;
-    margin-bottom: 3rem;
   }
   .har .area-29 .row-3 .text-col {
     grid-row: 8/9;
@@ -3319,84 +3376,44 @@ ul .minus:before {
   }
   .har .area-29 .hi-4 {
     background-image: url("/images/har-hi-4.png");
+    grid-column: 4/7;
+    grid-row: 7/8;
+  }
+  .har .area-29 .hi-5, .har .area-29 .hi-6, .har .area-29 .hi-7, .har .area-29 .hi-8, .har .area-29 .hi-9, .har .area-29 .hi-10, .har .area-29 .hi-11 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
-    grid-column: 4/7;
-    grid-row: 7/8;
-    height: 280px;
-    margin-bottom: 3rem;
+    filter: drop-shadow(0px 2px 6px #AAB8C0);
+    margin-bottom: 2.1rem;
+    height: 160px;
   }
   .har .area-29 .hi-5 {
     background-image: url("/images/har-hi-5.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
     grid-column: 1/7;
-    height: 150px;
-    margin-bottom: 3rem;
   }
   .har .area-29 .hi-6 {
     background-image: url("/images/har-hi-6.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
     grid-column: 1/2;
-    height: 150px;
-    margin-bottom: 3rem;
   }
   .har .area-29 .hi-7 {
     background-image: url("/images/har-hi-7.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
     grid-column: 2/3;
-    height: 150px;
-    margin-bottom: 3rem;
   }
   .har .area-29 .hi-8 {
     background-image: url("/images/har-hi-8.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
     grid-column: 3/4;
-    height: 150px;
-    margin-bottom: 3rem;
   }
   .har .area-29 .hi-9 {
     background-image: url("/images/har-app-request.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
     grid-column: 1/2;
-    height: 150px;
-    margin-bottom: 3rem;
   }
   .har .area-29 .hi-10 {
     background-image: url("/images/har-app-report.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
     grid-column: 2/3;
-    height: 150px;
-    margin-bottom: 3rem;
   }
   .har .area-29 .hi-11 {
     background-image: url("/images/har-app-find.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
     grid-column: 3/4;
-    height: 150px;
-    margin-bottom: 3rem;
   }
   .har .area-29 .row-6 .sub-three {
     grid-row: 13/14;
@@ -3406,7 +3423,7 @@ ul .minus:before {
     grid-row: 14/15;
   }
   .har .area-29 .app-sub {
-    padding-bottom: .9rem;
+    padding-bottom: 0;
     font-weight: 300;
   }
   .har .area-30 .wide-box {
@@ -3420,47 +3437,32 @@ ul .minus:before {
   }
   .har .area-32 .row-1, .har .area-32 .row-2 {
     grid-column: 2/3;
-    padding-bottom: 6.3rem;
-    padding-top: 5.4rem;
+    padding-bottom: 3.6rem;
   }
   .har .area-32 .row-2 {
     padding-top: 0;
   }
-  .har .area-32 .pref-1 {
-    background-image: url("/images/pref-test-1.png");
+  .har .area-32 .pref-1, .har .area-32 .pref-2, .har .area-32 .pref-3, .har .area-32 .pref-4 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
+    filter: drop-shadow(0px 1px 6px #AAB8C0);
     height: 210px;
-    margin-bottom: 3rem;
+    margin-bottom: 1.2rem;
+  }
+  .har .area-32 .pref-1 {
+    background-image: url("/images/pref-test-1.png");
   }
   .har .area-32 .pref-2 {
     background-image: url("/images/pref-test-2.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
-    height: 210px;
-    margin-bottom: 3rem;
   }
   .har .area-32 .pref-3 {
     background-image: url("/images/pref-test-3.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
-    height: 280px;
-    margin-bottom: 3rem;
+    height: 260px;
   }
   .har .area-32 .pref-4 {
     background-image: url("/images/pref-test-4.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 6px 10px #AAB8C0);
-    height: 280px;
-    margin-bottom: 3rem;
+    height: 260px;
   }
   .har .area-32 .row-1 .col-1, .har .area-32 .row-1 .col-2 {
     grid-column: 1/3;
@@ -3474,10 +3476,38 @@ ul .minus:before {
   .har .area-32 .text-col {
     grid-column: 1/3;
   }
+  .har .area-32 .link-underline {
+    text-align: left;
+  }
+  .area-32 .exp {
+    text-align: left;
+    padding-top: .9rem;
+  }
+  .har .area-32 .note {
+    font-size: 1.2rem;
+    grid-column: 2/3;
+  }
+  .har .area-32 .row-1 .pref-head h4, .har .area-32 .row-2 .pref-head h4 {
+    padding-bottom: 0rem;
+  }
+  .har .area-33 {
+    grid-column: 1/4;
+  }
+  .har .area-33 .heading-secondary {
+    padding-top: 12.6rem;
+  }
+  .har .area-34 .temp {
+    grid-column: 2/3;
+  }
+  .har .area-34 .progress {
+    color: #ED9E9A;
+    display: flex;
+    justify-content: center;
+    font-size: 2.1rem;
+  }
   .har .area-35, .har .area-35 .wide-box {
     grid-column: 1/4;
   }
-
 
 
 
@@ -3951,8 +3981,7 @@ ul .minus:before {
 
   /* Overview Heading */
   .klutch .area-2 {
-    margin-bottom: 3rem;
-    margin-top: 3.6rem;
+    margin-top: 8.4rem;
   }
 
   /* Roles, Deliverables, Tools */
@@ -4199,10 +4228,12 @@ ul .minus:before {
   }
 
   /* Survey 2 Quotes */
+  .area-12 .q-box-1, .area-12 .q-box-2 {
+    border-radius: 1.2rem;
+  }
   .area-12 .q-box-1 {
     grid-column: 1/4;
   }
-
   .area-12 .q-box-2 {
     grid-column: 4/7;
   }
@@ -4713,6 +4744,10 @@ ul .minus:before {
   .har .area-9 {
     grid-column: 1/4;
   }
+  .har .area-10 .icon img {
+    filter: drop-shadow(0px 3px 9px #B3C1C7);
+    height: 120px;
+  }
   .area-10 .col-1, .area-10 .col-2, .area-10 .col-3, .area-10 .col-4 {
     grid-column: 1/9;
     padding-bottom: 4.8rem;
@@ -4806,8 +4841,14 @@ ul .minus:before {
     height: 450px;
   }
   .har .area-29 .web-1, .har .area-29 .web-2 {
+    grid-column: 1/4;
     height: 400px;
   }
+  .har .area-29 .web-2 {
+    grid-column: 4/7;
+    height: 400px;
+  }
+
   .har .area-29 .hi-1, .har .area-29 .hi-2, .har .area-29 .hi-3, .har .area-29 .hi-4 {
     height: 540px;
   }
@@ -4850,7 +4891,14 @@ ul .minus:before {
   }
   .har .area-32 .pref-3, .har .area-32 .pref-4 {
     height: 540px;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .area-1 .duration, .har .area-1 .duration {
+    font-size: 1.8rem;
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.2rem;
   }
 
 
@@ -4863,7 +4911,7 @@ ul .minus:before {
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-areas:
     "navbar  navbar  navbar"
-    ".  hero  ."
+    "hero  hero  hero"
     ".  area-1  ."
     ".  area-2  ."
     ".  area-3  ."
@@ -4997,22 +5045,35 @@ ul .minus:before {
 
   /* Hero Global */
   .hero {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-area: hero;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 6fr 1fr;
     padding-bottom: 4.2rem;
     padding-top: 6rem;
   }
 
   .container-hero {
     display: grid;
-    grid-column: 1/7;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
-  /* First Three Areas Global */
+  /* First Three Areas */
   .area-1, .area-2, .area-3, .area-4 {
     grid-column-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 3rem;
+    margin-top: 0;
+  }
+  .area-1 .duration {
+    font-size: 1.8rem;
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.2rem;
+  }
+  .area-2 {
+    margin-top: 6rem;
   }
 
   /* Contact */
@@ -5221,11 +5282,12 @@ ul .minus:before {
     display: grid;
     grid-column: 1/4;
     grid-area: hero;
+    grid-template-columns: 1fr 6fr 1fr;
   }
   .har .container-hero {
     display: grid;
-    grid-column: 1/7;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   .har .area-8, .har .area-17 {
     display: grid;
@@ -5361,7 +5423,7 @@ ul .minus:before {
 
   .wide-box {
     background-color: #ED9E9A;
-    margin-top: 12rem;
+    margin-top: 12.6rem;
   }
   /* --------------------------------------- */
 
@@ -5379,7 +5441,7 @@ ul .minus:before {
   /* Headings Secondary (Case Studies Only) */
   .heading-secondary {
     grid-column: 1/7;
-    padding-bottom: 4.2rem;
+    padding-bottom: 3.6rem;
     padding-top: 6rem;
   }
 
@@ -5431,6 +5493,7 @@ ul .minus:before {
     font-size: 2.1rem;
   }
 
+
   /******************** Homepage ********************/
 
   /* Hero */
@@ -5444,20 +5507,12 @@ ul .minus:before {
   }
 
   .homepage .hero-heading, .homepage .hero-copy {
-    grid-column: 2/6;
-  }
-
-  .homepage .hero-heading{
-    grid-column: 2/6;
-  }
-
-  .homepage .hero-copy {
-    grid-column: 2/6;
+    grid-column: 3/7;
   }
 
   /* Case Studies */
   .homepage .area-3 {
-    padding-top: 24rem;
+    padding-top: 14rem;
   }
 
   .homepage .area-4 {
@@ -5538,7 +5593,7 @@ ul .minus:before {
   }
 
   .see-work {
-    grid-column: 2/6;
+    grid-column: 4/6;
   }
 
   .see-work .sw-text{
@@ -5552,7 +5607,7 @@ ul .minus:before {
   }
 
   .about .hero-heading, .about .hero-copy, .about .hero-image-me, .about .hero-copy, .about .credit {
-    grid-column: 2/6;
+    grid-column: 3/7;
   }
 
   .about .credit {
@@ -5657,11 +5712,11 @@ ul .minus:before {
 
   /************************* Contact *************************/
   .particles, .contact h2, .thankyou h2 {
-    grid-column: 1/7;
+    grid-column: 1/9;
   }
 
   .contact .image, .thankyou .image {
-    grid-column: 3/5;
+    grid-column: 3/7;
   }
 
   .contact .small-me {
@@ -5690,9 +5745,9 @@ ul .minus:before {
   /************************* Klutch *************************/
 
   /* Hero */
-  .klutch .hero-heading {
-    grid-column: 2/6;
-    text-align: center;
+
+  .klutch .hero .hero-heading {
+    grid-column: 3/7;
   }
 
   .hero-image-klutch {
@@ -5701,15 +5756,16 @@ ul .minus:before {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    grid-column: 2/6;
+    grid-column: 3/7;
   }
 
   .hero-image-pattern {
-    grid-column: 1/7;
+    grid-column: 1/9;
+    margin-bottom: 6rem;
   }
 
   .klutch .hero-copy, .klutch .hero-button {
-    grid-column: 2/6;
+    grid-column: 3/7;
   }
 
   /* Roles, Deliverables, Tools */
@@ -6622,25 +6678,40 @@ ul .minus:before {
   /************************* HUB-AR *************************/
   /* Hero */
   .har .hero-heading {
-    grid-column: 1/7;
+    grid-column: 1/9;
   }
 
   .hero-image-har {
-    height: 480px;
+    height: 540px;
     width: 100%;
-    grid-column: 2/6;
+    grid-column: 3/7;
   }
 
   .hero-image-pattern-har {
-    grid-column: 1/7;
+    grid-column: 1/9;
+    margin-bottom: 20rem;
   }
 
   .har .hero-copy, .har .hero-button {
-    grid-column: 2/6;
+    grid-column: 3/7;
+  }
+  .har .area-1 .duration {
+    font-size: 1.8rem;
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.2rem;
   }
   /* Overview */
+  .har .area-2 {
+    margin-bottom: 6rem;
+    margin-top: 12.6rem;
+  }
   .har .one-col-heading {
     text-align: center;
+  }
+  .area-3 {
+    margin-bottom: 0rem;
   }
   .har .area-3 .column-1, .har .area-3 .column-2 {
     grid-column: 2/6;
@@ -6665,13 +6736,18 @@ ul .minus:before {
   .har .area-4 {
     grid-column: 2/3;
   }
+  .har .area-4 .heading-secondary {
+    padding-bottom: 6rem;
+    padding-top: 12.6rem;
+  }
   /* Design Process Content */
   .har .area-5 .process {
     grid-column: 1/7;
-    height: 1200px;
+    height: 1000px;
   }
   .har .area-5 .takeaways {
     grid-column: 2/6;
+    padding-bottom: 0rem;
   }
   /* Discovery Heading */
   .har .area-6 .wide-box {
@@ -6682,6 +6758,9 @@ ul .minus:before {
     grid-column: 2/3;
   }
 
+  .har .area-8 .one-col-copy {
+    padding-bottom: 9.6rem;
+  }
   .har .area-8 .one-col-copy {
     padding-bottom: 9.6rem;
   }
@@ -6699,11 +6778,16 @@ ul .minus:before {
   .har .area-9 {
     grid-column: 2/3;
   }
+  .har .area-9 .heading-secondary {
+    padding-top: 3rem;
+  }
   .har .area-10 .col-1, .har .area-10 .col-3 {
     grid-column: 1/4;
+    padding-bottom: 0rem;
   }
   .har .area-10 .col-2, .har .area-10 .col-4 {
     grid-column: 4/7;
+    padding-bottom: 0rem;
   }
   .har .area-10 .col-1 .three-col-box, .har .area-10 .col-2 .three-col-box {
     height: 490px;
@@ -6725,9 +6809,13 @@ ul .minus:before {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 420px;
-    margin-bottom: 5.4rem;
-    margin-top: 4.2rem;
+    height: 390px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .har .area-10 .three-col-box .icon-bulleted-list {
+    grid-column: 1/4;
+    padding: 3rem 3.6rem;
   }
   .har .area-10 .icon img {
     filter: drop-shadow(0px 3px 9px #B3C1C7);
@@ -6758,9 +6846,16 @@ ul .minus:before {
   .har .take-list li {
     font-size: 2.1rem;
   }
+  .har .area-10 .takeaways {
+    padding-bottom: 0rem;
+  }
   /* User Research */
   .har .area-11 {
     grid-column: 2/3;
+  }
+  .har .area-11 .heading-secondary {
+    grid-column: 2/3;
+    padding-top: 12.6rem;
   }
   .har .area-12 .survey-heading {
     grid-column: 2/6;
@@ -6770,6 +6865,7 @@ ul .minus:before {
     grid-column: 2/6;
     font-size: 2.1rem;
     line-height: 3.3rem;
+    height: auto;
   }
   /* Charts */
   .har .data-head, .har .chart-box {
@@ -6777,12 +6873,10 @@ ul .minus:before {
   }
   .har .data-head {
     padding-bottom: 1.2rem;
-    padding-top: 2.1rem;
   }
   .har .chart-box {
     background-color: #F0F8FF;
     border-radius: 6px;
-    margin-bottom: 3rem;
   }
   .har .chart-container {
     padding: 2.1rem 3rem 2.1rem 3rem;
@@ -6807,6 +6901,7 @@ ul .minus:before {
     font-size: 2.1rem;
     font-weight: 400;
     margin-left: 1.8rem;
+    margin-top: .6rem;
   }
   .har svg {
     margin-bottom: 2.4rem;
@@ -6815,6 +6910,7 @@ ul .minus:before {
     color: #0070CB;
   }
   .har .area-12 .takeaways {
+    padding-bottom: 0rem;
     grid-column: 2/6;
   }
   /* Strategy Heading */
@@ -6828,13 +6924,14 @@ ul .minus:before {
   /* Personas */
   .har .area-15 .column-1, .har .area-15 .column-2, .har .area-15 .column-3, .har .area-15 .takeaways-2 {
     grid-column: 2/6;
+    padding-bottom: 0rem;
   }
   .har .area-15 .column-3 {
     padding-bottom: 0;
   }
-  .har .area-15 .takeaways-2 {
+  /* .har .area-15 .takeaways-2 {
     padding-bottom: 6.3rem;
-  }
+  } */
   .har .area-15 .row-1, .har .area-15 .row-2, .har .area-15 .row-3, .har .area-15 .row-4, .har .area-15 .row-5, .har .area-15 .row-6 {
     display: none;
   }
@@ -6843,6 +6940,13 @@ ul .minus:before {
   }
   .har .area-17 .one-col-heading, .har .area-17 .one-col-copy {
     grid-column: 2/3;
+  }
+  .har .area-17 .one-col-copy {
+    padding-bottom: 7.2rem;
+  }
+  .har .area-17 .takeaways {
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .har .results-1 {
     margin-bottom: 8.4rem;
@@ -6853,6 +6957,9 @@ ul .minus:before {
   }
   .har .area-19 {
     grid-column: 2/3;
+  }
+  .har .area-19 .heading-secondary {
+    padding-bottom: 3.6rem;
   }
   /* User Stories + Flows */
   .area-20 .container {
@@ -6897,29 +7004,29 @@ ul .minus:before {
   }
   .har .area-20 .container {
     background-color: #FFFAF8;
-    margin-bottom: 7.2rem;
+    margin-bottom: 6rem;
   }
   .har .area-20 .flow-image-1, .har .area-20 .flow-image-2 {
     grid-column: 1/7;
     margin: 0;
     padding: 4.8rem;
   }
-  .har .area-20 #bottom-link {
+  /* .har .area-20 #bottom-link {
     padding-bottom: 6.3rem;
-  }
+  } */
   .har .versions-1, .har .versions-2 {
     background-color: #FFF;
     margin-bottom: 0;
     padding-bottom: 3rem;
   }
   .har .results-1 {
-    grid-column: 1/7;
-    height: 720px;
-    margin-bottom: 12rem;
+    grid-column: 2/6;
+    height: 510px;
+    margin-bottom: 0rem;
   }
   .har .results-2 {
-    grid-column: 1/7;
-    height: 1000px;
+    grid-column: 2/6;
+    height: 510px;
     margin-bottom: 1.8rem;
   }
   .har .link-underline, .har .area-24 .link-underline {
@@ -6958,11 +7065,18 @@ ul .minus:before {
   .har .area-26, .har .area-27 {
     grid-column: 2/3;
   }
+  .har .area-26 .heading-secondary {
+    padding-bottom: 3.6rem;
+  }
   .har .area-27 .one-col-copy {
-    padding-bottom: 12rem;
+    padding-bottom: 12.6rem;
   }
   .har .area-27 .brand-img, .har .area-27 .one-col-heading, .har .area-27 .one-col-copy {
     grid-column: 2/6;
+  }
+  .har .area-27 .b-5 {
+    grid-column: 2/6;
+    height: 420px;
   }
   .har .area-29 h4, .har .area-29 .row-1, .har .area-29 .row-2, .har .area-29 .row-3, .har .area-29 .row-4, .har .area-29 .row-5 {
     grid-column: 1/7;
@@ -6977,13 +7091,16 @@ ul .minus:before {
     grid-column: 2/6;
   }
   .har .area-29 .row-1 .one-col-copy {
-    padding-bottom: 14rem;
+    padding-bottom: 12.6rem;
   }
   .har .area-29 .app-cta {
     display: block;
   }
+  .har .area-29 .row-6 .app-cta {
+    padding-bottom: 0rem;
+  }
   .har .area-29 .row-2, .har .area-29 .row-3, .har .area-29 .row-4, .har .area-29 .row-5 {
-    padding-bottom: 12rem;
+    padding-bottom: 8.4rem;
   }
   .har .area-29 h4 {
     padding-bottom: 4.4rem;
@@ -7033,7 +7150,7 @@ ul .minus:before {
     margin-bottom: 0;
   }
   .har .area-29 .hi-5 {
-    height: 315px;
+    height: 300px;
   }
   .har .area-29 .row-5 .hi-6, .har .area-29 .row-6 .hi-9 {
     grid-column: 1/2;
@@ -7085,14 +7202,14 @@ ul .minus:before {
   .har .area-30 .wide-box {
     grid-column: 1/4;
   }
-  .har .area-32 .row-1 {
-    padding-bottom: 6rem;
-  }
+
   .har .area-32 .row-1 .col-1, .har .area-32 .row-2 .col-1 {
     grid-column: 1/3;
+    padding-bottom: 0rem;
   }
   .har .area-32 .row-1 .col-2, .har .area-32 .row-2 .col-2 {
     grid-column: 3/5;
+    padding-bottom: 0rem;
   }
   .har .area-32 .text-col {
     grid-column: 5/7;
@@ -7104,12 +7221,36 @@ ul .minus:before {
     height: 200px;
   }
   .har .area-32 .pref-3, .har .area-32 .pref-4 {
-    height: 570px;
+    height: 540px;
   }
   .har .area-32 h4 {
     text-align: left;
     padding-top: 2.1rem;
   }
+  .har .area-32 .link-underline {
+    text-align: left;
+  }
+  .har .area-32 .exp {
+    padding-top: 1.2rem;
+    font-weight: 300;
+  }
+  .har .area-32 .note {
+    font-size: 1.6rem;
+    grid-column: 1/7;
+  }
+  .har .area-33 {
+    grid-column: 2/3;
+  }
+  .har .area-34 .temp {
+    grid-column: 2/3;
+  }
+  .har .area-34 .progress {
+    color: #ED9E9A;
+    display: flex;
+    justify-content: center;
+    font-size: 3.6rem;
+  }
+
 
 
 
