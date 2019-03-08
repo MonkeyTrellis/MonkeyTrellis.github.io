@@ -4915,6 +4915,9 @@ ul .minus:before {
   .har .area-36 .one-col-copy {
     grid-column: 1/4;
   }
+  .har .area-36 li {
+    padding-bottom: 2.7rem;
+  }
 
 
 
