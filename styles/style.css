@@ -4270,7 +4270,7 @@ ul .minus:before {
   }
   .area-16 .column-1, .area-16 .column-2 {
     grid-column: 1/4;
-    padding-bottom: 5.4rem;
+    padding-bottom: 7.2rem;
   }
 
   .area-16 .column-3 {
@@ -6095,8 +6095,8 @@ ul .minus:before {
   }
 
   .pers-image img {
-    height: 210px;
-    width: 210px;
+    height: 180px;
+    width: 180px;
     margin-bottom: 2.1rem;
   }
 
@@ -6928,12 +6928,14 @@ ul .minus:before {
     grid-column: 2/3;
   }
   /* Personas */
-  .har .area-15 .column-1, .har .area-15 .column-2, .har .area-15 .column-3, .har .area-15 .takeaways-2 {
+  .har .area-15 .takeaways-2 {
     grid-column: 2/6;
     padding-bottom: 0rem;
   }
+  .har .area-15 .column-1, .har .area-15 .column-2,
   .har .area-15 .column-3 {
-    padding-bottom: 0;
+    grid-column: 2/6;
+    padding-bottom: 7.2rem;
   }
   /* .har .area-15 .takeaways-2 {
     padding-bottom: 6.3rem;
@@ -6943,6 +6945,7 @@ ul .minus:before {
   }
   .har .area-16 {
     grid-column: 2/3;
+    margin-top: 6.6rem;
   }
   .har .area-17 .one-col-heading, .har .area-17 .one-col-copy {
     grid-column: 2/3;
@@ -7301,7 +7304,7 @@ ul .minus:before {
     grid-column-gap: 4.2rem;
   }
   .area-16 .row-1 img {
-    padding-top: 4.2rem;
+    margin-top: 4.2rem;
     width: auto;
   }
   .area-16 .pers-list {
