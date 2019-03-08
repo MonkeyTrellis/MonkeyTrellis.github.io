@@ -3514,7 +3514,10 @@ ul .minus:before {
   .har .area-35, .har .area-35 .wide-box {
     grid-column: 1/4;
   }
-
+  .har .area-36 .one-col-copy {
+    padding-top: 6rem;
+    grid-column: 2/3;
+  }
 
 
 
@@ -3702,6 +3705,9 @@ ul .minus:before {
   .har .area-9 {
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 1fr;
+  }
+  .har .area-36 {
+    grid-template-columns: 1fr 6fr 1fr;
   }
 
 
@@ -4906,6 +4912,9 @@ ul .minus:before {
     justify-content: center;
     padding-top: 1.2rem;
   }
+  .har .area-36 .one-col-copy {
+    grid-column: 1/4;
+  }
 
 
 
@@ -5272,7 +5281,7 @@ ul .minus:before {
     grid-column: 4/6;
   }
  /***** HUB AR *****/
-  .har .area-6, .har .area-13, .har .area-18, .har .area-31, .har .area-32, .har-area-33, .har .area-35 {
+  .har .area-6, .har .area-13, .har .area-18, .har .area-31, .har .area-32, .har-area-33, .har .area-35, .har .area-36 {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
   }
@@ -5351,6 +5360,7 @@ ul .minus:before {
     grid-column-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+
   /****************** Navbar Content Global ******************/
   .navbar-logo {
     grid-column: 1/2;
@@ -7267,7 +7277,10 @@ ul .minus:before {
     justify-content: center;
     font-size: 3.6rem;
   }
-
+  .har .area-36 .one-col-copy {
+    padding-top: 6rem;
+    grid-column: 2/3;
+  }
 
 
 
