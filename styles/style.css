@@ -3519,15 +3519,19 @@ ul .minus:before {
     padding-top: 6rem;
     grid-column: 2/3;
   }
-  .har .area-36 .arch-port:link, .har .area-36 .arch-port:visited {
+  .har .area-36 .arch-port:link, .har .area-36 .arch-port:visited, .har .area-17 .arch-port:link, .har .area-17 .arch-port:visited {
     color: #1F2429;
     text-decoration: none;
   }
-  .har .area-36 .arch-port:hover, .har .area-36 .arch-port:active {
+  .har .area-36 .arch-port:hover, .har .area-36 .arch-port:active, .har .area-17 .arch-port:hover, .har .area-17 .arch-port:active {
     background-color: #008CFF;
     color: #ffffff;
   }
   .har .area-36 .arch-port {
+    background-color: #FFE8E0;
+  }
+
+  .har .area-17 .arch-port {
     background-color: #FFE8E0;
   }
 
