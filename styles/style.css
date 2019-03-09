@@ -2966,7 +2966,7 @@ ul .minus:before {
     grid-column: 2/3;
   }
   .har .area-17 .ar-img {
-    background-image: url("/images/ar-ex-1.png");
+    background-image: url("/images/occlusion-ex.gif");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
