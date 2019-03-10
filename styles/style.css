@@ -3518,11 +3518,17 @@ ul .minus:before {
     background-color: #008CFF;
     color: #ffffff;
   }
+  .har .area-27 .arch-port:hover, .har .area-27 .arch-port:active, .har .area-27 .arch-port:hover, .har .area-27 .arch-port:active {
+    background-color: #008CFF;
+    color: #ffffff;
+  }
   .har .area-36 .arch-port {
     background-color: #FFE8E0;
   }
-
   .har .area-17 .arch-port {
+    background-color: #FFE8E0;
+  }
+  .har .area-27 .arch-port {
     background-color: #FFE8E0;
   }
 
