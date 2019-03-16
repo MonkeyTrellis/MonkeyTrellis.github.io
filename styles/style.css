@@ -384,25 +384,45 @@ ul .minus:before {
 .carousel-prev {
     left: 4%;
     padding-right: 3px;
+    padding-top: 3px;
 }
 
 .carousel-prev::before {
-  font-family: "Material Icons";
   font-size: 2.4rem;
-  content: "keyboard_arrow_left";
+  content: "navigate_before";
   color: #ffffff;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 }
 
 .carousel-next {
     right: 4%;
     padding-left: 3px;
+    padding-top: 3px;
 }
 
 .carousel-next::before {
-  font-family: "Material Icons";
   font-size: 2.4rem;
-  content: "keyboard_arrow_right";
+  content: "navigate_next";
   color: #ffffff;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 }
 
 .carousel-prev:hover,
@@ -2211,7 +2231,7 @@ ul .minus:before {
   /* Next / Prev Buttons */
   .carousel-prev,
   .carousel-next {
-    top: 38%;
+    top: 42%;
   }
 
   /* Sketched Wireframes Takeaways */
