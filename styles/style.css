@@ -5114,7 +5114,7 @@ ul .minus:before {
   .container-hero {
     display: grid;
     grid-column: 1/4;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   /* First Three Areas */
