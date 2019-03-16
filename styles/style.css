@@ -939,7 +939,7 @@ ul .minus:before {
   }
 
   /* Slide X-Toggle */
-  .trigger-container {
+  /* .trigger-container {
     grid-column: 6/7;
     grid-row: 2/4;
   }
@@ -949,56 +949,62 @@ ul .minus:before {
     width: 30px;
     cursor: pointer;
     padding-top: 3px;
-  }
+  } */
 
-  .line-1 {
+  /* .line-1 {
     border-top: 4px solid #1F2429;
     width: 30px;
     padding-bottom: 6px;
     transition: all 0.4s;
-  }
+  } */
 
-  .line-2 {
+  /* .line-2 {
     border-top: 4px solid #1F2429;
-    width: 30px;
+    width: 15px;
     transition: all 0.4s;
+    -webkit-transform: rotate(45deg);
   }
 
   .line-2-1 {
     border-top: 4px solid #1F2429;
-    width: 30px;
+    width: 15px;
     transition: all 0.4s;
     margin-top: -4px;
-  }
+    margin-left: 8px;
+    -webkit-transform: rotate(135deg);
+  } */
 
-  .line-3 {
+  /* .line-3 {
     border-top: 4px solid #1F2429;
     width: 30px;
     margin: 0px auto;
     transition: all 0.4s;
     margin-top: 6px;
-  }
+  } */
 
   /*   X-Manipulations    */
-  .line-1-x {
+  /* .line-1-x {
     opacity:0;
     transition: all 0.4s;
   }
 
   .line-2-x {
-    -webkit-transform: rotate(45deg);
+    -webkit-transform: scale(1, 2);
     transition: all 0.4s;
+    width: 30px;
   }
 
   .line-2-1-x {
+    -webkit-transform: scale(1, 2);
     -webkit-transform: rotate(-45deg);
     transition: all 0.4s;
+    width: 30px;
   }
 
   .line-3-x {
     opacity: 0;
     transition: all 0.4s;
-  }
+  } */
 
   /***** Navbar Homepage, About, and Contact *****/
   .homepage .row-navbar-menu, .about .row-navbar-menu, .contact .row-navbar-menu, .thankyou .row-navbar-menu, .klutch-sitemap .row-navbar-menu, .klutch-flow .row-navbar-menu, .sh .row-navbar-menu, .har .row-navbar-menu {
@@ -1025,26 +1031,26 @@ ul .minus:before {
     display: none;
   }
 
-  .trigger-container {
+  /* .trigger-container {
     grid-column: 6/7;
     grid-row: 2/4;
     display: flex;
     justify-content: flex-end;
-  }
+  } */
 
   .klutch .row-navbar-menu, .sh .row-navbar-menu, .har .row-navbar-menu {
     display: flex;
-    grid-column: 2/6;
-    grid-row: 3/4;
-    justify-content: center;
+    grid-column: 2/7;
+    grid-row: 2/4;
+    justify-content: flex-end;
   }
 
   .klutch .row-navbar-menu ul li, .sh .row-navbar-menu ul li, .har .row-navbar-menu ul li {
     display: inline;
     float: right;
     font-size: 1.5rem;
-    margin-left: .9rem;
-    margin-right: .9rem;
+    margin-left: 2.1rem;
+    margin-top: .7rem;
   }
 
   /* Slide Menu */
@@ -3766,17 +3772,17 @@ ul .minus:before {
   /* Navbar Klutch */
   .klutch .row-navbar-menu, .sh .row-navbar-menu, .har.row-navbar-menu {
     display: flex;
-    grid-column: 2/6;
-    grid-row: 3/4;
-    justify-content: center;
+    grid-column: 2/7;
+    grid-row: 2/4;
+    justify-content: flex-end;
   }
 
   .klutch .row-navbar-menu ul li, .sh .row-navbar-menu ul li, .har.row-navbar-menu ul li {
     display: inline;
     float: right;
     font-size: 1.5rem;
-    margin-left: 2.4rem;
-    margin-right: 2.4rem;
+    margin-left: 2.1rem;
+    margin-top: .7rem;
   }
 
   /******************* Text Styles Global ********************/
@@ -5088,7 +5094,7 @@ ul .minus:before {
   .container-hero {
     display: grid;
     grid-column: 1/4;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
   }
 
   /* First Three Areas */
@@ -6581,7 +6587,7 @@ ul .minus:before {
 
   /***** Klutch Sitemap + Klutch DigiFlow Pages *****/
   .s-image, .s-heading, .klutch-sitemap .link-underline, .klutch-flow .link-underline {
-    grid-column: 1/7;
+    grid-column: 1/4;
   }
 
   .s-heading, .klutch-sitemap .link-underline, .klutch-flow .link-underline {
