@@ -63,6 +63,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #ED9E9A;
 }
 
+/* About Song List */
+
+.about .songs:link {
+  color: #EC6E6E;
+  text-decoration: none;
+}
+
+.about .songs:visited {
+  text-decoration: none;
+  color: #ED9E9A;
+}
+
+.about .songs:hover, .about .songs:active {
+  background-color: #FFF6F2;
+}
+
 /******************** GLOBAL FOOTER ********************/
 .footer {
   background-color: #FFF6F2;
@@ -1340,6 +1356,28 @@ ul .minus:before {
      color: #ffffff;
    }
 
+   .about .heading, .about .song-list {
+     grid-column: 2/3;
+     padding-bottom: 3.9rem;
+     font-size: 1.8rem;
+     line-height: 3.3rem;
+   }
+
+   .about .song-list {
+     font-weight: 300;
+   }
+
+   .area-6 .bold {
+     font-weight: bold;
+   }
+
+   .area-6 .black {
+     color: #252C33;
+   }
+
+   .area-6 li {
+     padding-bottom: 1.2rem;
+   }
 
    /************************* Contact *************************/
    .particles, .contact h2, .thankyou h2 {
@@ -3983,9 +4021,10 @@ ul .minus:before {
     padding-bottom: 2.4rem;
   }
 
-  .about .column-1 .three-col-box,   .about .column-2 .three-col-box {
+  .about .column-1 .three-col-box, .about .column-2 .three-col-box {
     margin-bottom: 3rem;
   }
+
 
   /************************* Contact *************************/
   .contact form {
@@ -5767,6 +5806,12 @@ ul .minus:before {
   .question-1 p, .question-2 p, .question-3 p {
     font-size: 2.1rem;
     line-height: 3.3rem;
+  }
+
+  .about .heading, .about .song-list {
+    grid-column: 2/6;
+    padding-bottom: 3.9rem;
+    font-size: 2.1rem;
   }
 
   /************************* Contact *************************/
