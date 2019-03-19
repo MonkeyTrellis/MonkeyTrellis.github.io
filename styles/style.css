@@ -953,6 +953,11 @@ ul .minus:before {
     text-align: center;
   }
 
+  .homepage h6 {
+   font-style: italic;
+   padding-bottom: 1.2rem;
+  }
+
   .hero-copy {
     font-size: 1.9rem;
     line-height: 3.3rem;
