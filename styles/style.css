@@ -3868,7 +3868,7 @@ ul .minus:before {
   /******************* Text Styles Global ********************/
   /* Wide Headings (Discover, Strategy, etc.) */
   h1 {
-    font-size: 5.4rem;
+    font-size: 4.8rem;
     padding-bottom: 2rem;
     padding-top: 3rem;
     line-height: 6rem;
@@ -5174,7 +5174,7 @@ ul .minus:before {
   .klutch .container-nav, .sh .container-nav, .har .container-nav {
     grid-column: 2/3;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20px 21px 21px 12px 20px 20px;
+    grid-template-rows: 17px 21px 21px 0px 17px 15px;
   }
 
   /* Hero Global */
@@ -5551,7 +5551,7 @@ ul .minus:before {
   /******************* Text Styles Global ********************/
   /* Wide Headings (Discover, Strategy, etc.) */
   h1 {
-    font-size: 5.4rem;
+    font-size: 4.8rem;
     padding-bottom: 2rem;
     padding-top: 3rem;
   }
@@ -6899,6 +6899,7 @@ ul .minus:before {
   .har .area-5 .process {
     grid-column: 1/7;
     height: 1000px;
+    margin-bottom: 3rem;
   }
   .har .area-5 .takeaways {
     grid-column: 2/6;
