@@ -1160,10 +1160,6 @@ ul .minus:before {
     height: 210px;
   }
 
-  /* .homepage .area-3 {
-    padding-top: 7.8rem;
-  } */
-
   .homepage .area-4 {
     padding-bottom: 6rem;
   }
@@ -1175,7 +1171,7 @@ ul .minus:before {
   .homepage .area-1 .pattern-img, .homepage .area-3 .pattern-img {
     grid-column: 1/4;
     grid-row: 1/3;
-    padding-top: 1.5rem;
+    margin-top: 6rem;
   }
 
   .homepage .area-1 .laptop-img, .homepage .area-3 .laptop-img{
@@ -3939,7 +3935,7 @@ ul .minus:before {
   .homepage h6 {
     font-weight: 200;
     font-style: italic;
-    padding-bottom: 2.1rem;
+    padding-bottom: 1.6rem;
   }
 
   .hero-copy {
@@ -3981,17 +3977,17 @@ ul .minus:before {
   }
 
   .container-case-study-1 {
-    height: 540px;
+    height: 480px;
   }
-
   .container-case-study-2 {
     height: 400px;
   }
-
   .homepage .area-3 img {
     width: 100%;
   }
-
+  .homepage .area-1 .pattern-img {
+    padding-top: 3rem;
+  }
   .cs-details {
     padding-left: 33%;
     padding-right: 33%;
@@ -5242,7 +5238,7 @@ ul .minus:before {
 
   .container-case-study-2 {
     grid-column: 1/9;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   /* Pink Three-Col Boxes */
@@ -5574,6 +5570,11 @@ ul .minus:before {
     text-align: center;
   }
 
+  .homepage h2 {
+    font-size: 3.9rem;
+    line-height: 5.4rem;
+  }
+
   h3 {
     font-size: 3.6rem;
   }
@@ -5652,7 +5653,7 @@ ul .minus:before {
 
   /* Case Studies */
   .homepage .area-3 {
-    padding-top: 14rem;
+    margin-bottom: 0;
   }
 
   .homepage .area-4 {
@@ -5661,81 +5662,71 @@ ul .minus:before {
   }
 
   .container-case-study-1 {
-    height: 580px;
+    height: 500px;
   }
 
   .container-case-study-2 {
-    height: 570px;
+    height: 500px;
   }
 
   .homepage .area-1 .pattern-img {
     grid-column: 1/9;
     grid-row: 1/3;
-    padding-top: 2.1rem;
+    padding-top: 9rem;
+    opacity: .5;
   }
 
   .homepage .area-3 .pattern-img {
     grid-column: 1/9;
     grid-row: 1/3;
-    padding-top: 2.1rem;
-  }
-
-  .homepage .pattern-img img {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .homepage .area-1 .laptop-img {
-    grid-column: 2/3;
-  }
-
-  .homepage .area-3 .laptop-img {
-    grid-column: 3/7;
-  }
-
-  .homepage .area-3 img {
+    padding-top: 9rem;
     width: 100%;
   }
-
-  .cs-details {
-    padding-left: 33%;
-    padding-right: 33%;
+  .homepage .area-1 .laptop-img, .homepage .area-3 .laptop-img {
+    grid-column: 3/7;
   }
-
+  .homepage .area-3 .laptop-img {
+    padding: 10rem;
+  }
+  .homepage .area-1 .pattern-img img{
+    margin-top: 3rem;
+  }
+  .homepage .area-3 .pattern-img img{
+    margin-top: 6rem;
+  }
+  .homepage .area-3 .laptop-img img{
+    width: 100%;
+  }
+  .cs-details-mobile {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
   .case-study-desc {
-    font-size: 2.1rem;
-    line-height: 3.3rem;
-    padding-bottom: 3.6rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    padding-bottom: 2.7rem;
   }
-
   .homepage .area-2 .overlay-mobile {
     grid-column: 2/3;
   }
-
   .homepage .area-4 .overlay-mobile {
     grid-column: 2/3;
   }
-
   .overlay {
     display: block;
   }
-
   .cs-details {
     display: block;
   }
-
   .homepage .area-2 {
     margin-top: 0;
   }
-
   .homepage .footer {
     margin-top: 27rem;
   }
-
   .see-work {
     grid-column: 4/6;
   }
-
   .see-work .sw-text{
     font-size: 2.1rem;
   }
@@ -7428,8 +7419,6 @@ ul .minus:before {
   }
 
 
-
-
 }
 
 /***** Long Column Responsiveness *****/
@@ -7443,6 +7432,7 @@ ul .minus:before {
   body, .homepage, .har {
     grid-template-columns: 15% 6fr 15%;
   }
+
   /***** Klutch *****/
   .klutch .area-6 .three-col-box {
     display: block;
@@ -7549,6 +7539,14 @@ ul .minus:before {
   .area-33 .faqs-mock {
     height: 3900px;
   }
+  /* .homepage .area-3 .laptop-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .homepage .area-3 .laptop-img img{
+
+  } */
 }
 
 @media (min-width: 100rem) {
