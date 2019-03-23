@@ -6693,7 +6693,7 @@ ul .minus:before {
 
   /***** Klutch Sitemap + Klutch DigiFlow Pages *****/
   .s-image, .s-heading, .klutch-sitemap .link-underline, .klutch-flow .link-underline {
-    grid-column: 1/4;
+    grid-column: 2/8;
   }
 
   .s-heading, .klutch-sitemap .link-underline, .klutch-flow .link-underline {
