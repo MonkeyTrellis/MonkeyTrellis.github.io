@@ -5677,14 +5677,14 @@ ul .minus:before {
   .homepage .area-3 .pattern-img {
     grid-column: 1/9;
     grid-row: 1/3;
-    padding-top: 9rem;
+    padding-top: 6rem;
     width: 100%;
   }
   .homepage .area-1 .laptop-img, .homepage .area-3 .laptop-img {
     grid-column: 3/7;
   }
   .homepage .area-3 .laptop-img {
-    padding: 10rem;
+    padding: 8.5rem;
   }
   .homepage .area-1 .pattern-img img{
     margin-top: 3rem;
@@ -7426,9 +7426,7 @@ ul .minus:before {
   body, .homepage, .har {
     grid-template-columns: 15% 6fr 15%;
   }
-  /* .homepage .area-3 .laptop-img {
-    padding: 6rem;
-  } */
+
   /***** Klutch *****/
   .klutch .area-6 .three-col-box {
     display: block;
@@ -7535,14 +7533,6 @@ ul .minus:before {
   .area-33 .faqs-mock {
     height: 3900px;
   }
-  /* .homepage .area-3 .laptop-img{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .homepage .area-3 .laptop-img img{
-
-  } */
 }
 
 @media (min-width: 100rem) {
