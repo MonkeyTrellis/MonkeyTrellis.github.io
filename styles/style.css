@@ -96,7 +96,16 @@ h1, h2, h3, h4, h5, h6 {
 .footer-icons {
   display: flex;
   justify-content: center;
-  padding: 8% 0% 13% 0%;
+  padding: 2.1rem 0 5.4rem 0;
+}
+
+.res-link:link, .res-link:visited {
+  color: #FE6763;
+  text-decoration: none;
+}
+
+.res-link:hover, .res-link:active {
+  color: #008CFF;
 }
 
 .f-icon-1 {
@@ -5398,7 +5407,7 @@ ul .minus:before {
   }
 
   .container-footer {
-    grid-column: 4/6;
+    grid-column: 3/7;
   }
  /***** HUB AR *****/
   .har .area-6, .har .area-13, .har .area-18, .har .area-31, .har .area-32, .har-area-33, .har .area-35, .har .area-36 {
