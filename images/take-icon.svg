@@ -1,13 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
-  <g fill="none" transform="translate(1 1)">
-    <g transform="translate(0 9)">
-      <circle cx="12" cy="12" r="12" stroke="#000" stroke-width="2"/>
-      <g transform="translate(6 7)">
-        <circle cx="1.5" cy="1.5" r="1.5" fill="#000"/>
-        <circle cx="10.5" cy="1.5" r="1.5" fill="#000"/>
-        <path stroke="#000" stroke-linecap="round" stroke-width="2" d="M7.10542736e-15,8 C1.32526124,10 3.32526124,11 6,11 C8.67473876,11 10.6747388,10 12,8"/>
-      </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="35px" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>take-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="take-icon" transform="translate(1.000000, 1.000000)">
+            <g id="Group" transform="translate(0.000000, 9.000000)">
+                <circle id="Oval" stroke="#3E4852" stroke-width="2" cx="12" cy="12" r="12"></circle>
+                <g transform="translate(6.000000, 7.000000)">
+                    <circle id="Oval" fill="#3E4852" fill-rule="nonzero" cx="1.5" cy="1.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#3E4852" fill-rule="nonzero" cx="10.5" cy="1.5" r="1.5"></circle>
+                    <path d="M7.10542736e-15,8 C1.32526124,10 3.32526124,11 6,11 C8.67473876,11 10.6747388,10 12,8" id="Path" stroke="#3E4852" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+            </g>
+            <path d="M21,6 L21,3.55271368e-14 M26,8.94974747 L30.2426407,4.70710678 M28,14 L34,14" id="Shape" stroke="#3E4852" stroke-width="2" stroke-linecap="round"></path>
+        </g>
     </g>
-    <path stroke="#000" stroke-linecap="round" stroke-width="2" d="M21 6L21 3.55271368e-14M26 8.94974747L30.2426407 4.70710678M28 14L34 14"/>
-  </g>
 </svg>

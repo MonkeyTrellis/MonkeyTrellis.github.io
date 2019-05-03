@@ -12,13 +12,13 @@ html {
 body {
   display: grid;
   font-size: 1.6rem;
-  color: #252C33;
+  color: #3E4852;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Gothic A1', sans-serif;
   font-weight: 900;
-  color: #252C33;
+  color: #3E4852;
   letter-spacing: 0px;
 }
 
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:link, .nav-link:visited {
-  color: #252C33;
+  color: #3E4852;
   text-decoration: none;
 }
 
@@ -110,21 +110,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .f-icon-1 {
   float: left;
+  fill: #3E4852;
 }
 
 .f-icon-2 {
   padding: 0 4rem 0 4rem;
+  fill: #3E4852;
 }
 
 .f-icon-3 {
   float: right;
   height: 18px;
   width: 18px;
+  fill: #3E4852;
 }
 
 /******************** GLOBAL BUTTON ********************/
 .button {
-  background-color: #1F2429;
+  background-color: #3E4852;
   box-shadow: 0px 3px 9px 0px rgba(204,211,218,30);
   border: none;
   border-radius: 1.8rem;
