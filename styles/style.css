@@ -1492,6 +1492,12 @@ ul .minus:before {
      transition: background 0s;
    }
 
+ /************************* Example *************************/
+
+ .about .example {
+   grid-column: 2/4;
+ }
+
    /************************* Thank You *************************/
    .area-1 .getback {
      grid-column: 2/3;
